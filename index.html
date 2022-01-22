@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="img/Dragon_av.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>StickerBot</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Шапка-->
+        <header class="header">
+            <nav class="header__wrapper">
+                <img class="header__logo" src="img/Dragon_av.png" alt="logo">
+                <div class="header__links">
+                    <a href="index.html" class="header__link">Главная</a>
+                    <a href="#" class="header__link">Стикерпаки</a>
+                    <a href="#" class="header__link">Все стикеры</a>
+                    <a href="#" class="header__link">Коллекция</a>
+                    <a href="#" class="header__link">топ <br>коллекционеров</a>
+                    <a href="about.html" class="header__link">О нас</a>
+                </div>        
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <a href="#" class="header__button">Вход</a>
+            </nav>
+        </header>
+
+        <!--Основная часть-->
+        <main class="main">
+            <div class="main__wrapper">
+                <!--Слайдер-->
+                <div class="slider">
+                    <!--Блок, в котором листаются слайды-->
+                    <div class="slider__wrapper">
+                        <!--Слайд-->
+                        <div class="slider__item ">
+                            <a href="#" class="slider__link">
+                                <img class="slider__sticker" src="img/stickers/Компиляция Cesar.webp" alt="sticker">
+                                <p class="slider__text">
+                                    Новый стикерпак от <span class="slider__author-name">Cesar</span> уже в
+                                    магазине!
+                                </p>
+                            </a>
+                        </div>
+                        <!--Второй слайд и т.д.-->
+                        <div class="slider__item">
+                            <a href="#" class="slider__link">
+                                <img class="slider__sticker" src="img/stickers/Компиляция ZDarya.webp" alt="sticker">
+                                <p class="slider__text">
+                                    Новый стикерпак от <span class="slider__author-name">ZDarya</span> уже в
+                                    магазине!
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="slider__item">
+                            <a href="#" class="slider__link">
+                                <img class="slider__sticker" src="img/stickers/Компиляция Texic.webp" alt="sticker">
+                                <p class="slider__text">
+                                    Новый стикерпак от <span class="slider__author-name">Texic</span> уже в
+                                    магазине!
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="slider__item">
+                            <a href="#" class="slider__link">
+                                <img class="slider__sticker" src="img/stickers/Компиляция Shenshila_2.webp"
+                                    alt="sticker">
+                                <p class="slider__text">
+                                    Новый стикерпак от <span class="slider__author-name">Shenshila</span> уже в
+                                    магазине!
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!--Навигация слайдера-->
+                    <ul id="pager" class="slider__nav"></ul>
+                </div>
+
+                <!--Блок с приветствием-->
+                <div class="welcome-card">
+                    <div class="welcome-card__info">
+                        <h1 class="welcome-card__title">Добро пожаловать <br> в warm sticker bot</h1>
+                        <p class="welcome-card__text">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </p>
+                    </div>
+
+                    <div class="welcome-card__stickers">
+                        <div class="welcome-card__sticker-group">
+                            <div class="welcome-card__sticker welcome-card__sticker_yellow">
+                                <a href="#"><img class="welcome-card__img" src="img/stickers/5.webp" alt="sticker"></a>
+                            </div>
+                            <div class="welcome-card__sticker welcome-card__sticker_purple">
+                                <a href="#"><img class="welcome-card__img" src="img/stickers/6.webp" alt="sticker"></a>
+                            </div>
+                        </div>
+
+                        <div class="welcome-card__sticker-group">
+                            <div class="welcome-card__sticker welcome-card__sticker_purple">
+                                <a href="#"><img class="welcome-card__img" src="img/stickers/4.webp" alt="sticker"></a>
+                            </div>
+                            <div class="welcome-card__sticker welcome-card__sticker_yellow">
+                                <a href="#"><img class="welcome-card__img" src="img/stickers/8.webp" alt="sticker"></a>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+
+                <!--Инструкция-->
+                <div class="instruction">
+                    <h1 class="instruction__title">Инструкция</h1>
+
+                    <div class="instruction__item">
+                        <h2 class="instruction__item-title">Сбор прибыли</h2>
+                        <div class="instruction__info non-active">
+                            <p class="instruction__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua</p>
+                            <div class="instruction__gif-bg instruction__gif-bg_right">
+                                <img src="img/gif/1. Сбор прибыли.gif" alt="gif" class="instruction__gif">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h2 class="instruction__item-title">Отправка стикера через коллекцию</h2>
+                        <div class="instruction__info non-active">
+                            <div class="instruction__gif-bg instruction__gif-bg_left">
+                                <img src="img/gif/2. Отправка стикера через коллекцию.gif" alt="gif"
+                                    class="instruction__gif">
+                            </div>
+                            <p class="instruction__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua</p>
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h2 class="instruction__item-title">Отправка стикера через @</h2>
+                        <div class="instruction__info">
+                            <p class="instruction__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua</p>
+                            <div class="instruction__gif-bg instruction__gif-bg_right">
+                                <img src="img/gif//3. Отправка стикеров через собаку.gif" alt="gif"
+                                    class="instruction__gif">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h2 class="instruction__item-title">Покупка обычного пака за золото</h2>
+                        <div class="instruction__info">
+                            <div class="instruction__gif-bg instruction__gif-bg_left">
+                                <img src="img/gif/4. Покупка обычного пака за золото.gif" alt="gif"
+                                    class="instruction__gif">
+                            </div>
+                            <p class="instruction__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua</p>
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h2 class="instruction__item-title">Покупка пака художника</h2>
+                        <div class="instruction__info">
+                            <p class="instruction__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua</p>
+                            <div class="instruction__gif-bg instruction__gif-bg_right">
+                                <img src="img/gif/5. Покупка пака художника.gif" alt="gif" class="instruction__gif">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h2 class="instruction__item-title">Покупка алмазов</h2>
+                        <div class="instruction__info">
+                            <div class="instruction__gif-bg instruction__gif-bg_left">
+                                <img src="img/gif/6. Покупка алмазов.gif" alt="gif" class="instruction__gif">
+                            </div>
+                            <p class="instruction__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua</p>
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h2 class="instruction__item-title">Открытие паков</h2>
+                        <div class="instruction__info">
+                            <p class="instruction__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua</p>
+                            <div class="instruction__gif-bg instruction__gif-bg_right">
+                                <img src="img/gif/7. Открытие паков.gif" alt="gif" class="instruction__gif">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h2 class="instruction__item-title">Объединение стикеров</h2>
+                        <div class="instruction__info">
+                            <div class="instruction__gif-bg instruction__gif-bg_left">
+                                <img src="img/gif/8. Объединение стикеров.gif" alt="gif" class="instruction__gif">
+                            </div>
+                            <p class="instruction__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua</p>
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h2 class="instruction__item-title">Фильтр по стикерам через коллекцию</h2>
+                        <div class="instruction__info">
+                            <p class="instruction__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua</p>
+                            <div class="instruction__gif-bg instruction__gif-bg_right">
+                                <img src="img/gif/9. Фильтр по стикерам через коллекцию.gif" alt="gif"
+                                    class="instruction__gif">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h2 class="instruction__item-title">Фильтр по стикерам через @ (Смайлик/Имя)</h2>
+                        <div class="instruction__info">
+                            <div class="instruction__gif-bg instruction__gif-bg_left">
+                                <img src="img/gif/10. Фильтр по стикерам через собаку.gif" alt="gif"
+                                    class="instruction__gif">
+                            </div>
+                            <p class="instruction__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua</p>
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h2 class="instruction__item-title">Продажа стикеров на аукционе</h2>
+                        <div class="instruction__info">
+                            <p class="instruction__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua</p>
+                            <div class="instruction__gif-bg instruction__gif-bg_right">
+                                <img src="img/gif/11. Продажа стикера на аукционе.gif" alt="gif"
+                                    class="instruction__gif">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instruction__item">
+                        <h2 class="instruction__item-title">Покупка стикеров на аукционе</h2>
+                        <div class="instruction__info">
+                            <div class="instruction__gif-bg instruction__gif-bg_left">
+                                <img src="img/gif/12. Покупка стикеров на аукционе.gif" alt="gif"
+                                    class="instruction__gif">
+                            </div>
+                            <p class="instruction__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. "Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <p class="footer__text">© 2022 WyrmSticker</p>
+            <div>
+                <a href="about.html" class="footer__link">О нас</a>
+                <a href="https://t.me/wyrm_sticker_bot" class="footer__link">Telegram</a>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.cycle.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

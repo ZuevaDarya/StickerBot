@@ -109,7 +109,8 @@ body {
             display: flex;
             flex-direction: column;
             border: 1px solid rgba(0, 0, 0, 0.363);
-
+            overflow: auto;
+         
             &.active-menu{
                 top: 80px;
             }
@@ -127,13 +128,12 @@ body {
         display: inline-block;
         &:hover {
             background-color: $dark_grey;
-            border-radius: 5px;
             color: white;
             cursor: pointer;
         }
 
         @media (max-width: 995px) {
-            width: 100%;
+            width: 95%;
             padding: 10px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.363);
             margin: 0;
@@ -334,7 +334,7 @@ body {
 
     &__nav {
         display: flex;
-        z-index: 2;
+        z-index: 6;
         padding: 0 0 0 8em;
 
         @media (max-width: 551px) {
@@ -674,4 +674,31 @@ body {
 *::-webkit-scrollbar-thumb {
     background-color: rgba($yellow, 0.8);
     border-radius: 10px;
+}
+
+//Заголовки страниц
+.page-title {
+    margin: 60px 0 0 0;
+    text-align: center;
+    width: 100%;
+
+    background-color: $lite_blue;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 20px 0;
+
+    @media(max-width: 995px){
+        margin: 35px 0 0 0;
+    }
+
+    &__text {
+        font-style: italic;
+        font-weight: bold;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $yellow;
+
+        @include adaptiv-font(24, 18, 1440);
+    }
 }

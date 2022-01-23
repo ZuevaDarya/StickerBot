@@ -109,7 +109,8 @@ body {
             display: flex;
             flex-direction: column;
             border: 1px solid rgba(0, 0, 0, 0.363);
-            overflow: auto;
+            overflow-x: hidden;
+            overflow-y: auto;
          
             &.active-menu{
                 top: 80px;
@@ -128,6 +129,7 @@ body {
         display: inline-block;
         &:hover {
             background-color: $dark_grey;
+            border-radius: 5px;
             color: white;
             cursor: pointer;
         }
@@ -137,11 +139,14 @@ body {
             padding: 10px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.363);
             margin: 0;
+
             &:last-child {
                 border: none;
             }
+
             &:hover {
                 background-color: black;
+                border-radius: 0px;
             }
         }
     }

@@ -1,11 +1,14 @@
 .contacts {
   background-color: rgba(158, 163, 255, 0.4);
-  padding: 25px 45px;
+  padding: 30px 45px 40px;
+  border-radius: 5px;
+  margin: 130px 0 0 0;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 995px) {
   .contacts {
-    padding: 25px;
+    margin: 100px 0 0 0;
+    padding: 20px;
   }
 }
 
@@ -111,7 +114,7 @@
 }
 
 .contacts__info-link_dark-blue {
-  color: #3E44D2;
+  color: #3e44d2;
 }
 
 .contacts__info-link:hover {

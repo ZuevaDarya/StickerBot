@@ -1,7 +1,7 @@
 $dark_blue: #282a4f;
 $lite_blue: rgba(158, 163, 255, 0.4);
 $normal_blue: #8b84da;
-$blue:  #3E44D2;;
+$blue: #3e44d2;
 $yellow: #ffd600;
 $dark_grey: #323237;
 
@@ -20,12 +20,14 @@ $dark_grey: #323237;
 
 .contacts {
     background-color: $lite_blue;
-    padding: 25px 45px;
+    padding: 30px 45px 40px;
+    border-radius: 5px;
+    margin: 130px 0 0 0;
 
-    @media(max-width: 500px){
-        padding: 25px;
+    @media (max-width: 995px) {
+        margin: 100px 0 0 0;
+        padding: 20px;
     }
-
 
     &__card {
         background: black;
@@ -39,15 +41,15 @@ $dark_grey: #323237;
         flex-wrap: wrap;
         justify-content: space-around;
 
-        @media(max-width: 1110px){
+        @media (max-width: 1110px) {
             justify-content: center;
         }
 
-        @media(max-width: 995px){
+        @media (max-width: 995px) {
             margin: 25px 0 0 0;
         }
 
-        @media(max-width: 456px){
+        @media (max-width: 456px) {
             padding: 60px 30px;
         }
     }
@@ -58,19 +60,19 @@ $dark_grey: #323237;
         flex: 0 1 auto;
     }
 
-    &__logo-img{
+    &__logo-img {
         width: 100%;
         height: 100%;
     }
 
     &__info-row {
         margin: 30px 0 0 0;
-        &:first-child{
+        &:first-child {
             border-bottom: 1px solid $yellow;
             margin: 0;
         }
 
-        &:nth-child(2){
+        &:nth-child(2) {
             border-bottom: 1px solid $normal_blue;
         }
     }
@@ -81,14 +83,14 @@ $dark_grey: #323237;
         line-height: 21px;
         letter-spacing: 0.1em;
         color: white;
-        text-transform: uppercase; 
+        text-transform: uppercase;
         @include adaptiv-font(18, 14, 1440);
     }
 
     &__info-link {
         display: inline-block;
         margin: 0 5px 10px 0;
-        
+
         &_yellow {
             color: $yellow;
         }
@@ -101,7 +103,7 @@ $dark_grey: #323237;
             color: $blue;
         }
 
-        &:hover{
+        &:hover {
             color: white;
         }
     }
@@ -113,18 +115,16 @@ $dark_grey: #323237;
         letter-spacing: 0.1em;
         color: white;
         padding: 0 0 10px 1.5em;
-        
+
         @include adaptiv-font(18, 14, 1440);
 
-        @media(max-width: 465px){
+        @media (max-width: 465px) {
             padding: 0 0 10px 1em;
         }
 
-        &::before{
+        &::before {
             content: "\2014";
             margin: 0 10px 0 0;
         }
-          
-        
     }
 }

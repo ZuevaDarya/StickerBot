@@ -270,13 +270,13 @@ ul {
 
 @media (max-width: 548px) {
   .top__item:last-child {
-    padding: 15px 45px 15px 17px;
+    padding: 15px 45px 15px 27px;
   }
 }
 
 @media (max-width: 393px) {
   .top__item:last-child {
-    padding: 10px 45px 10px 17px;
+    padding: 10px 45px 10px 18px;
   }
 }
 

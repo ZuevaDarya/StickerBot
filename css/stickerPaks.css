@@ -1,0 +1,192 @@
+.stickerPacks-bg {
+  background-color: rgba(158, 163, 255, 0.4);
+  margin: 130px 0 0 0;
+  padding: 40px;
+}
+
+.stickerPacks__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0 0 2rem 0;
+}
+
+@media (max-width: 851px) {
+  .stickerPacks__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+  }
+  .stickerPacks__row:last-child .stickerPack:nth-child(3),
+  .stickerPacks__row:last-child .stickerPack:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .stickerPacks__row:nth-child(odd) .stickerPack:nth-child(2),
+  .stickerPacks__row:nth-child(odd) .stickerPack:nth-child(3), .stickerPacks__row:nth-child(even) .stickerPack:nth-child(2),
+  .stickerPacks__row:nth-child(even) .stickerPack:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 456px) {
+  .stickerPacks__row:nth-child(odd) .stickerPack, .stickerPacks__row:nth-child(even) .stickerPack {
+    margin: 0 0 25px 0;
+  }
+  .stickerPacks__row:last-child .stickerPack:nth-child(4) {
+    margin-bottom: 25px;
+  }
+}
+
+.stickerPacks__row:nth-child(odd) .stickerPack:nth-child(odd) {
+  background-color: #8b84da;
+}
+
+.stickerPacks__row:nth-child(odd) .stickerPack:nth-child(odd) .stickerPack__title {
+  color: white;
+}
+
+.stickerPacks__row:nth-child(odd) .stickerPack:nth-child(even) {
+  background-color: #ffd600;
+}
+
+.stickerPacks__row:nth-child(odd) .stickerPack:nth-child(even) .stickerPack__title {
+  color: #282a4f;
+}
+
+.stickerPacks__row:nth-child(even) .stickerPack:nth-child(even) {
+  background-color: #8b84da;
+}
+
+.stickerPacks__row:nth-child(even) .stickerPack:nth-child(even) .stickerPack__title {
+  color: white;
+}
+
+.stickerPacks__row:nth-child(even) .stickerPack:nth-child(odd) {
+  background-color: #ffd600;
+}
+
+.stickerPacks__row:nth-child(even) .stickerPack:nth-child(odd) .stickerPack__title {
+  color: #282a4f;
+}
+
+.stickerPack {
+  max-width: 245px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0 1rem 0 0;
+  border: 1px solid white;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.stickerPack:last-child {
+  margin: 0;
+}
+
+@media (max-width: 851px) {
+  .stickerPack {
+    margin: 0 3rem 2rem 0;
+  }
+  .stickerPack:first-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .stickerPack:nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .stickerPack:nth-child(3) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .stickerPack:last-child {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0 3rem 2rem 0;
+  }
+}
+
+@media (max-width: 642px) {
+  .stickerPack {
+    max-width: 190px;
+  }
+}
+
+@media (max-width: 572px) {
+  .stickerPack {
+    margin: 0 2rem 1.5rem 0;
+    max-width: 170px;
+  }
+  .stickerPack:last-child {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0 2rem 1.5rem 0;
+  }
+}
+
+@media (max-width: 516px) {
+  .stickerPack {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 456px) {
+  .stickerPack {
+    max-width: 245px;
+    margin: 0 2rem 2rem 0;
+  }
+}
+
+.stickerPack:hover {
+  -webkit-box-shadow: 5px 5px 5px 5px #282a4f;
+          box-shadow: 5px 5px 5px 5px #282a4f;
+}
+
+.stickerPack__link {
+  display: block;
+  max-width: 225px;
+  text-decoration: none;
+}
+
+.stickerPack__sticker {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.stickerPack__title {
+  font-style: italic;
+  font-weight: bold;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 767px) {
+  .stickerPack__title {
+    font-size: calc(16px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .stickerPack__title {
+    font-size: calc(16px + 4 * (100vw / 1440));
+  }
+}

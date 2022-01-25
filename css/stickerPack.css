@@ -1,0 +1,204 @@
+.stickerPack-bg {
+  background-color: rgba(158, 163, 255, 0.4);
+  margin: 130px 0 0 0;
+  padding: 30px 45px;
+}
+
+@media (max-width: 941px) {
+  .stickerPack-bg {
+    margin: 100px 0 0 0;
+  }
+}
+
+.page-title_name {
+  text-transform: none;
+  color: white;
+}
+
+.stickerPack {
+  margin: 3em 0 0 0;
+}
+
+@media (max-width: 941px) {
+  .stickerPack {
+    margin: 2em 0 0 0;
+  }
+}
+
+.stickerPack__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.stickerPack__row:nth-child(odd) .stickerPack__card:nth-child(odd) {
+  background-color: #8b84da;
+}
+
+.stickerPack__row:nth-child(odd) .stickerPack__card:nth-child(even) {
+  background-color: #ffd600;
+}
+
+.stickerPack__row:nth-child(even) .stickerPack__card:nth-child(even) {
+  background-color: #8b84da;
+}
+
+.stickerPack__row:nth-child(even) .stickerPack__card:nth-child(odd) {
+  background-color: #ffd600;
+}
+
+@media (max-width: 941px) {
+  .stickerPack__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .stickerPack__row:last-child .stickerPack__card:first-child {
+    margin-bottom: 0;
+  }
+  .stickerPack__row:nth-child(even) .stickerPack__card:first-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .stickerPack__row:nth-child(even) .stickerPack__card:last-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.stickerPack__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 530px;
+  min-width: 200px;
+  height: auto;
+  text-decoration: none;
+  margin: 0 40px 20px 0;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid white;
+}
+
+.stickerPack__card:hover {
+  -webkit-box-shadow: 5px 5px 5px 5px #282a4f;
+          box-shadow: 5px 5px 5px 5px #282a4f;
+}
+
+.stickerPack__card:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 941px) {
+  .stickerPack__card {
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+@media (max-width: 511px) {
+  .stickerPack__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 290px;
+  }
+}
+
+.stickerPack__sticker {
+  max-width: 160px;
+  height: 170px;
+  margin: 15px 10px;
+}
+
+@media (max-width: 511px) {
+  .stickerPack__sticker {
+    max-width: 140px;
+    height: 150px;
+    margin: 15px 0;
+  }
+}
+
+.stickerPack__card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 30px 10px;
+}
+
+@media (max-width: 511px) {
+  .stickerPack__card-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.stickerPack__card-title {
+  font-style: italic;
+  font-weight: bold;
+  line-height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #282a4f;
+}
+
+@media (max-width: 767px) {
+  .stickerPack__card-title {
+    font-size: calc(16px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .stickerPack__card-title {
+    font-size: calc(16px + 4 * (100vw / 1440));
+  }
+}
+
+.stickerPack__card-text {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: left;
+  letter-spacing: 0.05em;
+  color: #282a4f;
+}

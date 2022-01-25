@@ -4,6 +4,12 @@
   padding: 40px;
 }
 
+@media (max-width: 941px) {
+  .stickerPacks-bg {
+    margin: 100px 0 0 0;
+  }
+}
+
 .stickerPacks__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,6 +85,10 @@
 
 .stickerPacks__row:nth-child(even) .stickerPack:nth-child(odd) .stickerPack__title {
   color: #282a4f;
+}
+
+.stickerPacks__row:last-child {
+  margin-bottom: 0;
 }
 
 .stickerPack {

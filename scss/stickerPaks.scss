@@ -22,6 +22,10 @@ $dark_grey: #323237;
     background-color: $lite_blue;
     margin: 130px 0 0 0;
     padding: 40px;
+
+    @media(max-width: 941px){
+        margin: 100px 0 0 0;
+    }
 }
 
 .stickerPacks__row {
@@ -52,16 +56,16 @@ $dark_grey: #323237;
         }
     }
 
-    @media (max-width: 456px){
+    @media (max-width: 456px) {
         &:nth-child(odd),
         &:nth-child(even) {
-            .stickerPack{
+            .stickerPack {
                 margin: 0 0 25px 0;
             }
         }
 
-        &:last-child{
-            .stickerPack:nth-child(4){
+        &:last-child {
+            .stickerPack:nth-child(4) {
                 margin-bottom: 25px;
             }
         }
@@ -101,6 +105,10 @@ $dark_grey: #323237;
         .stickerPack:nth-child(odd) .stickerPack__title {
             color: $dark_blue;
         }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -144,7 +152,7 @@ $dark_grey: #323237;
     @media (max-width: 572px) {
         margin: 0 2rem 1.5rem 0;
         max-width: 170px;
-        
+
         &:last-child {
             order: 3;
             margin: 0 2rem 1.5rem 0;

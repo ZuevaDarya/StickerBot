@@ -44,7 +44,7 @@ $dark_grey: #323237;
     &__row {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
 
         &:nth-child(odd) {
             .stickerPack__card:nth-child(odd) {

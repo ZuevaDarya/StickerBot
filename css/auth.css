@@ -1,0 +1,129 @@
+.page-bg {
+  margin: 130px 0 0 0;
+  background-color: rgba(158, 163, 255, 0.4);
+  padding: 2rem 3rem;
+}
+
+@media (max-width: 997px) {
+  .page-bg {
+    margin: 100px 0 0 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .page-bg {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .page-bg {
+    padding: 2rem 1rem;
+  }
+}
+
+.auth {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.5rem;
+  margin: 2rem 0 0 0;
+  border-radius: 5px;
+}
+
+@media (max-width: 400px) {
+  .auth {
+    margin: 1.5rem 0 0 0;
+  }
+}
+
+.auth__img {
+  max-width: 350px;
+  height: auto;
+  border: 2px solid #ffd600;
+  border-radius: 200px;
+  margin: 0 0 2rem 0;
+}
+
+@media (max-width: 599px) {
+  .auth__img {
+    max-width: 300px;
+    margin: 0 0 2rem 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .auth__img {
+    width: 250px;
+    margin: 0 0 2rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .auth__img {
+    width: 200px;
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+.auth__link {
+  padding: 1.2rem 3.5rem;
+  background-color: #ffd600;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid #ffd600;
+}
+
+@media (max-width: 767px) {
+  .auth__link {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .auth__link {
+    font-size: calc(14px + 4 * (100vw / 1440));
+  }
+}
+
+.auth__link:hover {
+  background-color: #323237;
+  color: #ffd600;
+  border: 1px solid #ffd600;
+}
+
+@media (max-width: 599px) {
+  .auth__link {
+    padding: 1rem 3.5rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .auth__link {
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .auth__link {
+    padding: 1rem 2rem;
+  }
+}

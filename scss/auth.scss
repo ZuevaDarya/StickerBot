@@ -1,0 +1,110 @@
+$dark_blue: #282a4f;
+$lite_blue: rgba(158, 163, 255, 0.4);
+$normal_blue: #8b84da;
+$blue: #3e44d2;
+$yellow: #ffd600;
+$dark_grey: #323237;
+
+@mixin adaptiv-font($pcSize, $mobSize, $maxWidth) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+
+    @media (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+    }
+
+    @media (min-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+    }
+}
+
+.page-bg {
+    margin: 130px 0 0 0;
+    background-color: $lite_blue;
+    padding: 2rem 3rem;
+
+    @media (max-width: 997px) {
+        margin: 100px 0 0 0;
+    }
+
+    @media (max-width: 599px) {
+        padding: 2rem 2rem;
+    }
+
+    @media (max-width: 400px) {
+        padding: 2rem 1rem;
+    }
+}
+
+.auth {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+    margin: 2rem 0 0 0;
+    border-radius: 5px;
+
+    @media (max-width: 400px) {
+        margin: 1.5rem 0 0 0;
+    }
+
+    &__img {
+        max-width: 350px;
+        height: auto;
+        border: 2px solid $yellow;
+        border-radius: 200px;
+        margin: 0 0 2rem 0;
+
+        @media (max-width: 599px) {
+            max-width: 300px;
+            margin: 0 0 2rem 0;
+        }
+
+        @media (max-width: 460px) {
+            width: 250px;
+            margin: 0 0 2rem 0;
+        }
+
+        @media (max-width: 400px) {
+            width: 200px;
+            margin: 0 0 1.5rem 0;
+        }
+    }
+
+    &__link {
+        padding: 1.2rem 3.5rem;
+        background-color: $yellow;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+
+        font-style: italic;
+        font-weight: bold;
+        @include adaptiv-font(18, 14, 1440);
+        line-height: 21px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        border-radius: 50px;
+        border: 1px solid $yellow;
+
+        &:hover {
+            background-color: $dark_grey;
+            color: $yellow;
+            border: 1px solid $yellow;
+        }
+
+        @media (max-width: 599px) {
+            padding: 1rem 3.5rem;
+        }
+
+        @media (max-width: 460px) {
+            padding: 1rem 2.5rem;
+        }
+
+        @media (max-width: 400px) {
+            padding: 1rem 2rem;
+        }
+    }
+}

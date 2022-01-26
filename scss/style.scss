@@ -63,7 +63,7 @@ body {
         position: relative;
         margin: 0 auto;
 
-        @media (max-width: 995px) {
+        @media (max-width: 997x) {
             height: 80px;
         }
     }
@@ -76,7 +76,7 @@ body {
         border-radius: 90px;
         z-index: 4;
 
-        @media (max-width: 995px) {
+        @media (max-width: 997px) {
             max-width: 70px;
             max-height: 70px;
         }
@@ -99,7 +99,7 @@ body {
             font-size: calc(12px + 4 * ((100vw - 320px) / 1440));
         }
 
-        @media (max-width: 995px) {
+        @media (max-width: 997px) {
             position: fixed;
             width: 100%;
             left: 0;
@@ -134,7 +134,7 @@ body {
             cursor: pointer;
         }
 
-        @media (max-width: 995px) {
+        @media (max-width: 997px) {
             width: 95%;
             padding: 10px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.363);
@@ -157,6 +157,7 @@ body {
         max-height: 50px;
         background: $yellow;
         border-radius: 30px;
+        border: 1px solid $yellow;
 
         font-style: italic;
         font-weight: normal;
@@ -190,7 +191,7 @@ body {
 .header__burger {
     display: none;
 
-    @media (max-width: 995px) {
+    @media (max-width: 997px) {
         display: block;
         position: relative;
         width: 40px;
@@ -698,6 +699,7 @@ body {
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: $yellow;
+        padding: 0 5px;
 
         @include adaptiv-font(24, 18, 1440);
     }

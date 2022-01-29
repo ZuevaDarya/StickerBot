@@ -27,6 +27,12 @@
   }
 }
 
+@media (max-width: 607px) {
+  .stickers-bg {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
 .sickers-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,6 +43,13 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (max-width: 607px) {
+  .sickers-page {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .filters {
@@ -82,23 +95,11 @@
   }
 }
 
-@media (max-width: 471px) {
+@media (max-width: 607px) {
   .filters {
-    max-width: 160px;
-    padding: 0.5em 1.1em;
-  }
-}
-
-@media (max-width: 411px) {
-  .filters {
-    max-width: 140px;
-    padding: 0.5em 0.8em;
-  }
-}
-
-@media (max-width: 361px) {
-  .filters {
-    width: 125px;
+    max-width: 100%;
+    margin: 0 0 20px 0;
+    padding: 1em 2em;
   }
 }
 
@@ -189,43 +190,15 @@
   background-position: 99%;
 }
 
-@media (max-width: 411px) {
-  .filters__accordion-button {
-    width: 125px;
-  }
-}
-
-@media (max-width: 361px) {
-  .filters__accordion-button {
-    width: 120px;
-  }
-}
-
 .filters__accordion-collapse {
   max-height: 8rem;
   overflow: auto;
   display: none;
 }
 
-@media (max-width: 411px) {
-  .filters__accordion-collapse {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 135px;
-    margin: 0 0 0 20px;
-  }
-}
-
 .filters__accordion-collapse::-webkit-scrollbar {
   width: 10px;
   padding: 0;
-}
-
-@media (max-width: 361px) {
-  .filters__accordion-collapse {
-    width: 120px;
-    margin: 0 0 0 25px;
-  }
 }
 
 .filters__accordion-body {
@@ -315,13 +288,13 @@
 
 @media (max-width: 767px) {
   .filters__button {
-    font-size: calc(10px + 6.8 * ((100vw - 320px) / 1440));
+    font-size: calc(12px + 3.4 * ((100vw - 320px) / 1440));
   }
 }
 
 @media (min-width: 767px) {
   .filters__button {
-    font-size: calc(10px + 4 * (100vw / 1440));
+    font-size: calc(12px + 2 * (100vw / 1440));
   }
 }
 
@@ -330,7 +303,7 @@
   color: white;
 }
 
-@media (max-width: 361px) {
+@media (max-width: 607px) {
   .filters__button {
     padding: 1em 0.25em;
     line-height: 1.2em;
@@ -373,9 +346,10 @@ input[type="radio"]:checked + label {
   }
 }
 
-@media (max-width: 361px) {
+@media (max-width: 607px) {
   .stickers {
-    margin: 0 0 0 15px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -483,8 +457,17 @@ input[type="radio"]:checked + label {
   .stickers__sticker {
     width: 200px;
   }
+  .stickers__sticker:nth-child(odd) {
+    margin: 0 1em 1.5em 0;
+  }
   .stickers__sticker:nth-child(even) {
-    margin: 0 1em 1em 0;
+    margin: 0 1em 1.5em 0;
+  }
+}
+
+@media (max-width: 504px) {
+  .stickers__sticker {
+    width: 250px;
   }
   .stickers__sticker:nth-child(odd) {
     background-color: #8b84da;
@@ -497,24 +480,6 @@ input[type="radio"]:checked + label {
   }
   .stickers__sticker:nth-child(even) .stickers__sticker-title {
     color: #282a4f;
-  }
-}
-
-@media (max-width: 451px) {
-  .stickers__sticker {
-    max-width: 170px;
-  }
-}
-
-@media (max-width: 411px) {
-  .stickers__sticker {
-    max-width: 150px;
-  }
-}
-
-@media (max-width: 361px) {
-  .stickers__sticker {
-    max-width: 125px;
   }
 }
 
@@ -569,21 +534,9 @@ input[type="radio"]:checked + label {
   }
 }
 
-@media (max-width: 451px) {
+@media (max-width: 504px) {
   .stickers__sticker-img {
-    max-width: 160px;
-  }
-}
-
-@media (max-width: 411px) {
-  .stickers__sticker-img {
-    max-width: 120px;
-  }
-}
-
-@media (max-width: 361px) {
-  .stickers__sticker-img {
-    max-width: 115px;
+    max-width: 200px;
   }
 }
 
@@ -598,25 +551,13 @@ input[type="radio"]:checked + label {
 
 @media (max-width: 767px) {
   .stickers__sticker-title {
-    font-size: calc(14px + 10.2 * ((100vw - 320px) / 1440));
+    font-size: calc(16px + 6.8 * ((100vw - 320px) / 1440));
   }
 }
 
 @media (min-width: 767px) {
   .stickers__sticker-title {
-    font-size: calc(14px + 6 * (100vw / 1440));
-  }
-}
-
-@media (max-width: 456px) {
-  .stickers__sticker-star img {
-    width: 30px;
-  }
-}
-
-@media (max-width: 411px) {
-  .stickers__sticker-star img {
-    width: 25px;
+    font-size: calc(16px + 4 * (100vw / 1440));
   }
 }
 
@@ -625,6 +566,12 @@ input[type="radio"]:checked + label {
   margin: 50px 0 0 0;
   width: 100%;
   border-radius: 10px;
+}
+
+@media (max-width: 607px) {
+  .nav {
+    margin: 10px 0 0 0;
+  }
 }
 
 .nav__stikers-page {

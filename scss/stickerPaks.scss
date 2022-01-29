@@ -152,19 +152,35 @@ $dark_grey: #323237;
         }
 
         &:nth-child(even) {
-            .stickerPack:nth-child(1) {
+            .stickerPack:nth-child(2) {
                 background-color: $yellow;
             }
 
-            .stickerPack:nth-child(1) .stickerPack__title {
+            .stickerPack:nth-child(2) .stickerPack__title {
                 color: $dark_blue;
             }
 
-            .stickerPack:nth-child(2) {
+            .stickerPack:nth-child(1) {
                 background-color: $normal_blue;
             }
 
-            .stickerPack:nth-child(2) .stickerPack__title {
+            .stickerPack:nth-child(1) .stickerPack__title {
+                color: white;
+            }
+
+            .stickerPack:nth-child(4) {
+                background-color: $yellow;
+            }
+
+            .stickerPack:nth-child(4) .stickerPack__title {
+                color: $dark_blue;
+            }
+
+            .stickerPack:nth-child(3) {
+                background-color: $normal_blue;
+            }
+
+            .stickerPack:nth-child(3) .stickerPack__title {
                 color: white;
             }
 

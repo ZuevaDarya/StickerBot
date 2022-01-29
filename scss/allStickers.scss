@@ -35,12 +35,20 @@ $dark_grey: #323237;
     @media (max-width: 756px) {
         padding: 1rem 1rem;
     }
+
+    @media (max-width: 607px) {
+        padding: 1.5rem 1.5rem;
+    }
 }
 
 .sickers-page {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    @media (max-width: 607px) {
+        flex-wrap: wrap;
+    }
 }
 
 .filters {
@@ -64,18 +72,10 @@ $dark_grey: #323237;
         max-width: 180px;
     }
 
-    @media (max-width: 471px) {
-        max-width: 160px;
-        padding: 0.5em 1.1em;
-    }
-
-    @media (max-width: 411px) {
-        max-width: 140px;
-        padding: 0.5em 0.8em;
-    }
-
-    @media (max-width: 361px) {
-        width: 125px;
+    @media (max-width: 607px) {
+        max-width: 100%;
+        margin: 0 0 20px 0;
+        padding: 1em 2em;
     }
 
     &__categories {
@@ -149,14 +149,6 @@ $dark_grey: #323237;
                 background-position: 99%;
             }
         }
-
-        @media (max-width: 411px) {
-            width: 125px;
-        }
-
-        @media (max-width: 361px) {
-            width: 120px;
-        }
     }
 
     &__accordion-collapse {
@@ -164,20 +156,9 @@ $dark_grey: #323237;
         overflow: auto;
         display: none;
 
-        @media (max-width: 411px) {
-            box-sizing: border-box;
-            width: 135px;
-            margin: 0 0 0 20px;
-        }
-
         &::-webkit-scrollbar {
             width: 10px;
             padding: 0;
-        }
-
-        @media (max-width: 361px) {
-            width: 120px;
-            margin: 0 0 0 25px;
         }
     }
 
@@ -231,7 +212,7 @@ $dark_grey: #323237;
     }
 
     &__button {
-        @include adaptiv-font(14, 10, 1440);
+        @include adaptiv-font(14, 12, 1440);
         width: 100%;
         padding: 1.4em 0.25em;
         margin: 0 0 1em 0;
@@ -252,7 +233,7 @@ $dark_grey: #323237;
             color: white;
         }
 
-        @media (max-width: 361px) {
+        @media (max-width: 607px) {
             padding: 1em 0.25em;
             line-height: 1.2em;
         }
@@ -281,8 +262,8 @@ input[type="radio"]:checked + label {
         margin: 0 0 0 20px;
     }
 
-    @media (max-width: 361px) {
-        margin: 0 0 0 15px;
+    @media (max-width: 607px) {
+        justify-content: space-around;
     }
 
     &__sticker {
@@ -382,37 +363,34 @@ input[type="radio"]:checked + label {
 
         @media (max-width: 607px) {
             width: 200px;
-            &:nth-child(even) {
-                margin: 0 1em 1em 0;
+
+            &:nth-child(odd) {
+                margin: 0 1em 1.5em 0;
             }
+
+            &:nth-child(even) {
+                margin: 0 1em 1.5em 0;
+            }
+        }
+
+        @media (max-width: 504px){
+            width: 250px;
 
             &:nth-child(odd) {
                 background-color: $normal_blue;
-
+    
                 .stickers__sticker-title {
                     color: white;
                 }
             }
-
+    
             &:nth-child(even) {
                 background-color: $yellow;
-
+    
                 .stickers__sticker-title {
                     color: $dark_blue;
                 }
             }
-        }
-
-        @media (max-width: 451px) {
-            max-width: 170px;
-        }
-
-        @media (max-width: 411px) {
-            max-width: 150px;
-        }
-
-        @media (max-width: 361px) {
-            max-width: 125px;
         }
     }
 
@@ -451,16 +429,9 @@ input[type="radio"]:checked + label {
             max-width: 180px;
         }
 
-        @media (max-width: 451px) {
-            max-width: 160px;
-        }
-
-        @media (max-width: 411px) {
-            max-width: 120px;
-        }
-
-        @media (max-width: 361px) {
-            max-width: 115px;
+        @media (max-width: 504px){
+            max-width: 200px;
+            
         }
     }
 
@@ -469,20 +440,14 @@ input[type="radio"]:checked + label {
 
         font-style: italic;
         font-weight: bold;
-        @include adaptiv-font(20, 14, 1440);
+        @include adaptiv-font(20, 16, 1440);
         line-height: 1.1em;
         letter-spacing: 0.1em;
         text-align: center;
     }
 
     &__sticker-star img {
-        @media (max-width: 456px) {
-            width: 30px;
-        }
-
-        @media (max-width: 411px) {
-            width: 25px;
-        }
+    
     }
 }
 
@@ -491,6 +456,10 @@ input[type="radio"]:checked + label {
     margin: 50px 0 0 0;
     width: 100%;
     border-radius: 10px;
+
+    @media(max-width: 607px){
+        margin: 10px 0 0 0;
+    }
 
     &__stikers-page {
         display: flex;

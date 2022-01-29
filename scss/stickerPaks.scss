@@ -23,7 +23,7 @@ $dark_grey: #323237;
     margin: 130px 0 0 0;
     padding: 40px;
 
-    @media(max-width: 941px){
+    @media (max-width: 941px) {
         margin: 100px 0 0 0;
     }
 }
@@ -34,42 +34,6 @@ $dark_grey: #323237;
     justify-content: space-between;
     flex-wrap: nowrap;
     margin: 0 0 2rem 0;
-
-    @media (max-width: 851px) {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0;
-
-        &:last-child {
-            .stickerPack:nth-child(3),
-            .stickerPack:nth-child(4) {
-                margin-bottom: 0;
-            }
-        }
-
-        &:nth-child(odd),
-        &:nth-child(even) {
-            .stickerPack:nth-child(2),
-            .stickerPack:nth-child(3) {
-                margin-right: 0;
-            }
-        }
-    }
-
-    @media (max-width: 456px) {
-        &:nth-child(odd),
-        &:nth-child(even) {
-            .stickerPack {
-                margin: 0 0 25px 0;
-            }
-        }
-
-        &:last-child {
-            .stickerPack:nth-child(4) {
-                margin-bottom: 25px;
-            }
-        }
-    }
 
     &:nth-child(odd) {
         .stickerPack:nth-child(odd) {
@@ -110,6 +74,105 @@ $dark_grey: #323237;
     &:last-child {
         margin-bottom: 0;
     }
+
+    @media (max-width: 851px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
+
+        &:nth-child(odd) {
+            .stickerPack:nth-child(3) {
+                background-color: $yellow;
+            }
+
+            .stickerPack:nth-child(3) .stickerPack__title {
+                color: $dark_blue;
+            }
+
+            .stickerPack:nth-child(4) {
+                background-color: $normal_blue;
+            }
+
+            .stickerPack:nth-child(4) .stickerPack__title {
+                color: white;
+            }
+
+            .stickerPack:nth-child(2),
+            .stickerPack:nth-child(4){
+                margin-right: 0;
+            }
+        }
+
+        &:nth-child(even) {
+            .stickerPack:nth-child(2) {
+                background-color: $yellow;
+            }
+
+            .stickerPack:nth-child(2) .stickerPack__title {
+                color: $dark_blue;
+            }
+
+            .stickerPack:nth-child(1) {
+                background-color: $normal_blue;
+            }
+
+            .stickerPack:nth-child(1) .stickerPack__title {
+                color: white;
+            }
+
+            .stickerPack:nth-child(2),
+            .stickerPack:nth-child(4){
+                margin-right: 0;
+            }
+        }
+     
+    }
+
+    @media (max-width: 456px) {
+        &:nth-child(odd) {
+            .stickerPack:nth-child(4) {
+                background-color: $yellow;
+            }
+
+            .stickerPack:nth-child(4) .stickerPack__title {
+                color: $dark_blue;
+            }
+
+            .stickerPack:nth-child(3) {
+                background-color: $normal_blue;
+            }
+
+            .stickerPack:nth-child(3) .stickerPack__title {
+                color: white;
+            }
+
+            .stickerPack{
+                margin-right: 0;
+            }
+        }
+
+        &:nth-child(even) {
+            .stickerPack:nth-child(1) {
+                background-color: $yellow;
+            }
+
+            .stickerPack:nth-child(1) .stickerPack__title {
+                color: $dark_blue;
+            }
+
+            .stickerPack:nth-child(2) {
+                background-color: $normal_blue;
+            }
+
+            .stickerPack:nth-child(2) .stickerPack__title {
+                color: white;
+            }
+
+            .stickerPack{
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 .stickerPack {
@@ -120,45 +183,19 @@ $dark_grey: #323237;
     border: 1px solid white;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-    &:last-child {
-        margin: 0;
-    }
-
     @media (max-width: 851px) {
         margin: 0 3rem 2rem 0;
-
-        &:first-child {
-            order: 1;
-        }
-
-        &:nth-child(2) {
-            order: 2;
-        }
-
-        &:nth-child(3) {
-            order: 4;
-        }
-
-        &:last-child {
-            order: 3;
-            margin: 0 3rem 2rem 0;
-        }
     }
 
     @media (max-width: 642px) {
         max-width: 190px;
     }
-
+    
     @media (max-width: 572px) {
         margin: 0 2rem 1.5rem 0;
         max-width: 170px;
-
-        &:last-child {
-            order: 3;
-            margin: 0 2rem 1.5rem 0;
-        }
     }
-
+    
     @media (max-width: 516px) {
         max-width: 140px;
     }

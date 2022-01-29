@@ -662,26 +662,6 @@ body {
     }
 }
 
-/* W3C standard
-   сейчас только для Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: rgba($yellow, 0.8) rgba(black, 0.7);
-}
-
-/* для Chrome/Edge/Safari */
-*::-webkit-scrollbar {
-    height: 10px;
-    width: 18px;
-}
-*::-webkit-scrollbar-track {
-    background: rgba(black, 0.7);
-}
-*::-webkit-scrollbar-thumb {
-    background-color: rgba($yellow, 0.8);
-    border-radius: 10px;
-}
-
 //Заголовки страниц
 .page-title {
     text-align: center;
@@ -704,3 +684,4 @@ body {
         @include adaptiv-font(24, 18, 1440);
     }
 }
+

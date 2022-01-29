@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/Dragon_av.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/allStickers.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <title>Все стикеры</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Шапка-->
+        <header class="header">
+            <nav class="header__wrapper">
+                <img class="header__logo" src="img/Dragon_av.png" alt="logo">
+                <div class="header__links">
+                    <a href="index.html" class="header__link">Главная</a>
+                    <a href="stickerPacks.html" class="header__link">Стикерпаки</a>
+                    <a href="allStickers.html" class="header__link">Все стикеры</a>
+                    <a href="#" class="header__link">Коллекция</a>
+                    <a href="top.html" class="header__link">топ <br>коллекционеров</a>
+                    <a href="about.html" class="header__link">О нас</a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <a href="auth.html" class="header__button">Вход</a>
+            </nav>
+        </header>
+
+        <!--Основная часть-->
+        <main class="main">
+            <div class="main__wrapper">
+                <div class="stickers-bg">
+                    <div class="sickers-page">
+                        <div class="filters">
+                            <h2 class="filters__title">Фильтры</h2>
+                            <div class="filters__categories">
+                                <form id="filters" class="filters__form">
+                                    <input type="text" name="author" value="">
+                                    <input type="number" name="tier" value="">
+                                    <input type="number" name="page" value="1">
+                                    <input type="text" name="emoji" value="">
+                                    <input type="text" name="sortBy" value="">
+                                </form>
+
+                                <div id="filtersAccordion" class="filters__accordion">
+                                    <div class="filters__accordion-item">
+                                        <h2 id="headingAuthor" class="filters__accordion-title">
+                                            <button class="filters__accordion-button" type="button">Автор (Все)</button>
+                                        </h2>
+                                        <div id="collapseAuthor" class="filters__accordion-collapse">
+                                            <div class="filters__accordion-body">
+                                                <input type="radio" class="filters__variant" name="author"
+                                                    id="clear_author" autocomplete="off" value="" checked="checked">
+                                                <label class="filters__variant-title" for="clear_author">Все</label>
+
+                                                <input type="radio" class="filters__variant" name="author" id="Purrlat"
+                                                    autocomplete="off" value="Purrlat">
+                                                <label class="filters__variant-title" for="Purrlat">Purrlat</label>
+
+                                                <input type="radio" class="filters__variant" name="author"
+                                                    id="h0110w_c0ast" autocomplete="off" value="h0110w_c0ast">
+                                                <label class="filters__variant-title"
+                                                    for="h0110w_c0ast">h0110w_c0ast</label>
+
+                                                <input type="radio" class="filters__variant" name="author" id="ZDarya"
+                                                    autocomplete="off" value="ZDarya">
+                                                <label class="filters__variant-title" for="ZDarya">ZDarya</label>
+
+                                                <input type="radio" class="filters__variant" name="author"
+                                                    id="Tusya_Art" autocomplete="off" value="Tusya_Art">
+                                                <label class="filters__variant-title" for="Tusya_Art">Tusya_Art</label>
+
+                                                <input type="radio" class="filters__variant" name="author" id="Texic"
+                                                    autocomplete="off" value="Texic">
+                                                <label class="filters__variant-title" for="Texic">Texic</label>
+
+                                                <input type="radio" class="filters__variant" name="author" id="CeSar"
+                                                    autocomplete="off" value="CeSar">
+                                                <label class="filters__variant-title" for="CeSar">CeSar</label>
+
+                                                <input type="radio" class="filters__variant" name="author" id="Квасоля"
+                                                    autocomplete="off" value="Квасоля">
+                                                <label class="filters__variant-title" for="Квасоля">Квасоля</label>
+
+                                                <input type="radio" class="filters__variant" name="author"
+                                                    id="Shenshila" autocomplete="off" value="Shenshila">
+                                                <label class="filters__variant-title" for="Shenshila">Shenshila</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filters__accordion-item">
+                                        <h2 id="headingTier" class="filters__accordion-title">
+                                            <button class="filters__accordion-button" type="button">Тир (Все)</button>
+                                        </h2>
+                                        <div id="collapseTier" class="filters__accordion-collapse">
+                                            <div class="filters__accordion-body">
+                                                <input type="radio" class="filters__variant" name="tier" id="clear_tier"
+                                                    autocomplete="off" value="" checked="checked">
+                                                <label class="filters__variant-title filters__variant-title_tier"
+                                                    for="clear_tier">Все</label>
+                                                <input type="radio" class="filters__variant" name="tier" id="1"
+                                                    autocomplete="off" value="">
+                                                <label class="filters__variant-title filters__variant-title_tier "
+                                                    for="1">
+                                                    <img src="img/star.svg" alt="star" class="filters__variant-star">
+                                                </label>
+                                                <input type="radio" class="filters__variant" name="tier" id="2"
+                                                    autocomplete="off" value="">
+                                                <label class="filters__variant-title filters__variant-title_tier "
+                                                    for="2">
+                                                    <img src="img/star.svg" alt="star" class="filters__variant-star">
+                                                    <img src="img/star.svg" alt="star" class="filters__variant-star">
+                                                </label>
+                                                <input type="radio" class="filters__variant" name="tier" id="3"
+                                                    autocomplete="off" value="">
+                                                <label class="filters__variant-title filters__variant-title_tier "
+                                                    for="3">
+                                                    <img src="img/star.svg" alt="star" class="filters__variant-star">
+                                                    <img src="img/star.svg" alt="star" class="filters__variant-star">
+                                                    <img src="img/star.svg" alt="star" class="filters__variant-star">
+                                                </label>
+                                                <input type="radio" class="filters__variant" name="tier" id="4"
+                                                    autocomplete="off" value="">
+                                                <label class="filters__variant-title filters__variant-title_tier "
+                                                    for="4">
+                                                    <img src="img/star.svg" alt="star" class="filters__variant-star">
+                                                    <img src="img/star.svg" alt="star" class="filters__variant-star">
+                                                    <img src="img/star.svg" alt="star" class="filters__variant-star">
+                                                    <img src="img/star.svg" alt="star" class="filters__variant-star">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filters__accordion-item">
+                                        <h2 class="filters__accordion-title" id="headingEmoji">
+                                            <button class="filters__accordion-button" type="button">Эмоция
+                                                (Все)</button>
+                                        </h2>
+                                        <div id="collapseEmoji" class="filters__accordion-collapse">
+                                            <div class="filters__accordion-body">
+                                                <input type="radio" class="filters__variant" name="emoji"
+                                                    id="clear_emoji" autocomplete="off" value="" checked="checked">
+                                                <label class="filters__variant-title" for="clear_emoji">Все</label>
+                                                <div class="filters__accordion-emoji-ds-flex">
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😂"
+                                                        autocomplete="off" value="😂">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😂">😂</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😭"
+                                                        autocomplete="off" value="😭">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😭">😭</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="❔️"
+                                                        autocomplete="off" value="❔️">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="❔️">❔️</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😡"
+                                                        autocomplete="off" value="😡">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😡">😡</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="🔨"
+                                                        autocomplete="off" value="🔨">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="🔨">🔨</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😁"
+                                                        autocomplete="off" value="😁">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😁">😁</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😀"
+                                                        autocomplete="off" value="😀">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😀">😀</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="🤘"
+                                                        autocomplete="off" value="🤘">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="🤘">🤘</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="👋"
+                                                        autocomplete="off" value="👋">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="👋">👋</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😴"
+                                                        autocomplete="off" value="😴">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😴">😴</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😜"
+                                                        autocomplete="off" value="😜">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😜">😜</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji"
+                                                        id="😶‍🌫️" autocomplete="off" value="😶‍🌫️">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😶‍🌫️">😶‍🌫️</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😷"
+                                                        autocomplete="off" value="😷">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😷">😷</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="🥶"
+                                                        autocomplete="off" value="🥶">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="🥶">🥶</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="❤️"
+                                                        autocomplete="off" value="❤️">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="❤️">❤️</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😎"
+                                                        autocomplete="off" value="😎">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😎">😎</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="👍"
+                                                        autocomplete="off" value="👍">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="👍">👍</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="🤫"
+                                                        autocomplete="off" value="🤫">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="🤫">🤫</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😥"
+                                                        autocomplete="off" value="😥">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😥">😥</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="✋️"
+                                                        autocomplete="off" value="✋️">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="✋️">✋️</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😬"
+                                                        autocomplete="off" value="😬">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😬">😬</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="👍🏻"
+                                                        autocomplete="off" value="👍🏻">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="👍🏻">👍🏻</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="🍸"
+                                                        autocomplete="off" value="🍸">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="🍸">🍸</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😑"
+                                                        autocomplete="off" value="😑">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😑">😑</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😐"
+                                                        autocomplete="off" value="😐">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😐">😐</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="👀"
+                                                        autocomplete="off" value="👀">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="👀">👀</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="😒"
+                                                        autocomplete="off" value="😒">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="😒">😒</label>
+
+                                                    <input type="radio" class="filters__variant" name="emoji" id="🥰"
+                                                        autocomplete="off" value="🥰">
+                                                    <label class="filters__variant-title filters__variant-title_emoji"
+                                                        for="🥰">🥰</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filters__accordion-item">
+                                        <h2 class="filters__accordion-title" id="headingSortBy">
+                                            <button class="filters__accordion-button" type="button">Сортировка
+                                                (Нет)</button>
+
+                                        </h2>
+                                        <div id="collapseSortBy" class="filters__accordion-collapse">
+                                            <div class="filters__accordion-body">
+                                                <input type="radio" class="filters__variant" name="sortBy"
+                                                    id="clear_sortBy" autocomplete="off" value="" checked="checked">
+                                                <label class="filters__variant-title" for="clear_sortBy">Нет</label>
+
+                                                <input type="radio" class="filters__variant" name="sortBy" id="tier"
+                                                    autocomplete="off" value="">
+                                                <label class="filters__variant-title" for="tier">Тир
+                                                    (возрастание)</label>
+
+                                                <input type="radio" class="filters__variant" name="sortBy"
+                                                    id="tier_desc" autocomplete="off" value="">
+                                                <label class="filters__variant-title" for="tier_desc">Тир
+                                                    (убывание)</label>
+
+                                                <input type="radio" class="filters__variant" name="sortBy" id="title"
+                                                    autocomplete="off" value="">
+                                                <label class="filters__variant-title" for="title">Название</label>
+
+                                                <input type="radio" class="filters__variant" name="sortBy" id="author"
+                                                    autocomplete="off" value="">
+                                                <label class="filters__variant-title" for="author">Автор</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="filters__button">Сбросить фильтры</button>
+                            <button class="filters__button">Применить</button>
+                        </div>
+
+                        <div class="stickers">
+                            <div class="stickers__sticker">
+                                <a href="sticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/texic_1.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Like for Lisa</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img  src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="sticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/shenshila.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Тетрадка и ручка</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="sticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/shenshila1.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Зеленый маркер</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="sticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/9.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Доктор Макс</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="sticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/ZDarya_10.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Franklin King</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="sticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/IMG_5041.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Nata Doesn't know</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+                            </div>  
+                            
+                            <div class="stickers__sticker">
+                                <a href="sticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/6.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Tyler Love</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="sticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/stik2.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Lilith Headpat</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="sticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/Yara Morgan heart.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Yara Morgan heart</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+                            </div>      
+
+                            <div class="stickers__sticker">
+                                <a href="sticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/texic_11.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Hot Lisa</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+                            </div>
+
+                            
+                            <div class="stickers__sticker">
+                                <a href="sticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/ZDarya_9.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Franklin Laugh</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="sticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/Yara questioning.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Yara questioning</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <nav class="nav">
+                        <ul class="nav__stikers-page" id="pagesBottom">
+                            <li class="nav__page">
+                                <button class="nav__button"><</button>
+                            </li>
+                            <li class="nav__page">
+                                <button class="nav__button">1</button>
+                            </li>
+                            <li class="nav__page">
+                                <button class="nav__button">2</button>
+                            </li>
+                            <li class="nav__page">
+                                <button class="nav__button">3</button>
+                            </li>
+                            <li class="nav__page">
+                                <button class="nav__button">></button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <p class="footer__text">© 2022 WyrmSticker</p>
+                <div>
+                    <a href="about.html" class="footer__link">О нас</a>
+                    <a href="https://t.me/wyrm_sticker_bot" class="footer__link">Telegram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.cycle.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/allStickers.js"></script>
+    <script src="js/tgs-player.js"></script>
+</body>
+
+</html>

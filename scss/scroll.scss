@@ -1,0 +1,25 @@
+$dark_blue: #282a4f;
+$lite_blue: rgba(158, 163, 255, 0.4);
+$normal_blue: #8b84da;
+$yellow: #ffd600;
+$dark_grey: #323237;
+
+/* W3C standard
+   сейчас только для Firefox */
+   * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba($yellow, 0.8) rgba(black, 0.7);
+}
+
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 18px;
+}
+*::-webkit-scrollbar-track {
+    background: rgba(black, 0.7);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgba($yellow, 0.8);
+    border-radius: 10px;
+}

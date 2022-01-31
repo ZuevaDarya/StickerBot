@@ -21,11 +21,11 @@ $dark_grey: #323237;
 .stickers-bg {
     background-color: $lite_blue;
     margin: 130px 0 0 0;
-    padding: 2rem 2.5rem;
+    padding: 2rem 2rem;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    //align-items: center;
 
     @media (max-width: 996px) {
         margin: 100px 0 0 0;
@@ -59,6 +59,7 @@ $dark_grey: #323237;
     border-radius: 10px;
     text-align: center;
     max-width: 225px;
+    flex: 1 0 225px;
 
     display: flex;
     flex-direction: column;

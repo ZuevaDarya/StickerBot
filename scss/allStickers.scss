@@ -21,18 +21,18 @@ $dark_grey: #323237;
 .stickers-bg {
     background-color: $lite_blue;
     margin: 130px 0 0 0;
-    padding: 2rem 2.5rem;
+    padding: 2rem 2rem;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    //align-items: center;
 
     @media (max-width: 996px) {
         margin: 100px 0 0 0;
         padding: 2rem 2rem;
     }
 
-    @media (max-width: 756px) {
+    @media (max-width: 7806px) {
         padding: 1rem 1rem;
     }
 
@@ -59,12 +59,13 @@ $dark_grey: #323237;
     border-radius: 10px;
     text-align: center;
     max-width: 225px;
+    flex: 1 0 225px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    @media (max-width: 996px) {
+    @media (max-width: 1004px) {
         max-width: 200px;
     }
 
@@ -73,7 +74,11 @@ $dark_grey: #323237;
     }
 
     @media (max-width: 898px) {
-        max-width: 250px;
+        max-width: 200px;
+    }
+
+    @media (max-width: 637px) {
+        max-width: 170px;
     }
 
     @media (max-width: 607px) {
@@ -364,7 +369,7 @@ input[type="radio"]:checked + label {
             }
         }
 
-        @media (max-width: 756px) {
+        @media (max-width: 780px) {
             margin: 0 1em 1em 0;
 
             &:nth-child(3n) {

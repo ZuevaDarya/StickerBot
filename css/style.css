@@ -601,6 +601,8 @@ body {
 
 .welcome-card__sticker_yellow {
   background-color: #ffd600;
+  -webkit-animation: change_color02 4s ease infinite;
+          animation: change_color02 4s ease infinite;
 }
 
 .welcome-card__sticker_yellow:hover {
@@ -613,6 +615,8 @@ body {
 
 .welcome-card__sticker_purple {
   background-color: #8b84da;
+  -webkit-animation: change_color01 4s ease infinite;
+          animation: change_color01 4s ease infinite;
 }
 
 .welcome-card__sticker_purple:hover {
@@ -621,6 +625,44 @@ body {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   background: rgba(139, 132, 218, 0.4);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes change_color01 {
+  0%, 100% {
+    background-color: #8b84da;
+  }
+  50% {
+    background-color: rgba(139, 132, 218, 0.4);
+  }
+}
+
+@keyframes change_color01 {
+  0%, 100% {
+    background-color: #8b84da;
+  }
+  50% {
+    background-color: rgba(139, 132, 218, 0.4);
+  }
+}
+
+@-webkit-keyframes change_color02 {
+  0%, 100% {
+    background-color: rgba(255, 214, 0, 0.4);
+  }
+  50% {
+    background-color: #ffd600;
+  }
+}
+
+@keyframes change_color02 {
+  0%, 100% {
+    background-color: rgba(255, 214, 0, 0.4);
+  }
+  50% {
+    background-color: #ffd600;
+  }
 }
 
 .welcome-card__img {

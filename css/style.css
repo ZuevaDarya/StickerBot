@@ -290,6 +290,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation: change_color 2s linear infinite;
+          animation: change_color 2s linear infinite;
+}
+
+@-webkit-keyframes change_color {
+  0%, 100% {
+    border: 4px solid #ffd600;
+  }
+  50% {
+    border: 4px solid #8b84da;
+  }
+}
+
+@keyframes change_color {
+  0%, 100% {
+    border: 4px solid #ffd600;
+  }
+  50% {
+    border: 4px solid #8b84da;
+  }
 }
 
 @media (max-width: 551px) {
@@ -418,6 +438,8 @@ body {
 }
 
 .welcome-card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: black;
   padding: 40px 60px;
   margin: 55px 0 0 0;
@@ -581,8 +603,24 @@ body {
   background-color: #ffd600;
 }
 
+.welcome-card__sticker_yellow:hover {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  background: rgba(255, 214, 0, 0.4);
+}
+
 .welcome-card__sticker_purple {
   background-color: #8b84da;
+}
+
+.welcome-card__sticker_purple:hover {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  background: rgba(139, 132, 218, 0.4);
 }
 
 .welcome-card__img {

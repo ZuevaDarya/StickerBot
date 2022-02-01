@@ -111,8 +111,8 @@ body {
             border: 1px solid rgba(0, 0, 0, 0.363);
             overflow-x: hidden;
             overflow-y: auto;
-         
-            &.active-menu{
+
+            &.active-menu {
                 top: 80px;
             }
         }
@@ -268,13 +268,27 @@ body {
 .slider {
     margin: 120px 0 0 0;
     height: 240px;
+
     background: $lite_blue;
+
     border: 2px solid $yellow;
     border-radius: 5px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    animation: change_color 2s linear infinite;
+
+    @keyframes change_color {
+        0%, 100%{
+            border: 4px solid $yellow;
+        }    
+
+        50%{
+            border: 4px solid $normal_blue;
+        }
+    }
 
     @media (max-width: 551px) {
         height: 360px;
@@ -369,6 +383,7 @@ body {
 
 //Добро пожаловать
 .welcome-card {
+    box-sizing: border-box;
     background-color: black;
     padding: 40px 60px;
     margin: 55px 0 0 0;
@@ -431,7 +446,6 @@ body {
         min-width: 250px;
         margin: 40px 0 0 0;
         flex: 1 1 430px;
-
         @media (max-width: 901px) {
             flex-wrap: wrap;
             align-items: flex-start;
@@ -465,10 +479,22 @@ body {
 
         &_yellow {
             background-color: $yellow;
+
+            &:hover{
+                 transition: all 0.5s ease-out 0s;
+                 transform: scale(1.3);
+                 background: rgba($yellow, 0.4);
+             }
         }
 
         &_purple {
             background-color: $normal_blue;
+
+            &:hover{
+                transition: all 0.5s ease-out 0s;
+                transform: scale(1.3);
+                background: rgba($normal_blue, 0.4);
+            }
         }
     }
 
@@ -684,4 +710,3 @@ body {
         @include adaptiv-font(24, 18, 1440);
     }
 }
-

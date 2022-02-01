@@ -42,16 +42,52 @@
   background-color: #8b84da;
 }
 
+.stickerPack__row:nth-child(odd) .stickerPack__card:nth-child(odd):hover {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #8b84da;
+  z-index: 2;
+}
+
 .stickerPack__row:nth-child(odd) .stickerPack__card:nth-child(even) {
   background-color: #ffd600;
+}
+
+.stickerPack__row:nth-child(odd) .stickerPack__card:nth-child(even):hover {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #ffd600;
+  z-index: 2;
 }
 
 .stickerPack__row:nth-child(even) .stickerPack__card:nth-child(even) {
   background-color: #8b84da;
 }
 
+.stickerPack__row:nth-child(even) .stickerPack__card:nth-child(even):hover {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #8b84da;
+  z-index: 2;
+}
+
 .stickerPack__row:nth-child(even) .stickerPack__card:nth-child(odd) {
   background-color: #ffd600;
+}
+
+.stickerPack__row:nth-child(even) .stickerPack__card:nth-child(odd):hover {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #ffd600;
+  z-index: 2;
 }
 
 @media (max-width: 941px) {

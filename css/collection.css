@@ -426,12 +426,30 @@ input[type="radio"]:checked + label {
   color: white;
 }
 
+.stickers__sticker:nth-child(odd):hover {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #8b84da;
+  z-index: 2;
+}
+
 .stickers__sticker:nth-child(even) {
   background-color: #ffd600;
 }
 
 .stickers__sticker:nth-child(even) .stickers__sticker-title {
   color: #282a4f;
+}
+
+.stickers__sticker:nth-child(even):hover {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #ffd600;
+  z-index: 2;
 }
 
 .stickers__sticker:hover {
@@ -527,11 +545,27 @@ input[type="radio"]:checked + label {
   .stickers__sticker:nth-child(odd) .stickers__sticker-title {
     color: white;
   }
+  .stickers__sticker:nth-child(odd):hover {
+    -webkit-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background: #8b84da;
+    z-index: 2;
+  }
   .stickers__sticker:nth-child(even) {
     background-color: #ffd600;
   }
   .stickers__sticker:nth-child(even) .stickers__sticker-title {
     color: #282a4f;
+  }
+  .stickers__sticker:nth-child(even):hover {
+    -webkit-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background: #ffd600;
+    z-index: 2;
   }
 }
 

@@ -49,20 +49,48 @@ $dark_grey: #323237;
         &:nth-child(odd) {
             .stickerPack__card:nth-child(odd) {
                 background-color: $normal_blue;
+
+                &:hover {
+                    transition: all 0.5s ease-out 0s;
+                    transform: scale(1.1);
+                    background: $normal_blue;
+                    z-index: 2;
+                }
             }
 
             .stickerPack__card:nth-child(even) {
                 background-color: $yellow;
+
+                &:hover {
+                    transition: all 0.5s ease-out 0s;
+                    transform: scale(1.1);
+                    background: $yellow;
+                    z-index: 2;
+                }
             }
         }
 
         &:nth-child(even) {
             .stickerPack__card:nth-child(even) {
                 background-color: $normal_blue;
+
+                &:hover {
+                    transition: all 0.5s ease-out 0s;
+                    transform: scale(1.1);
+                    background: $normal_blue;
+                    z-index: 2;
+                }
             }
 
             .stickerPack__card:nth-child(odd) {
                 background-color: $yellow;
+
+                &:hover {
+                    transition: all 0.5s ease-out 0s;
+                    transform: scale(1.1);
+                    background: $yellow;
+                    z-index: 2;
+                }
             }
         }
 
@@ -157,7 +185,7 @@ $dark_grey: #323237;
         color: $dark_blue;
 
         @media (max-width: 511px) {
-           // align-self: center;
+            // align-self: center;
         }
     }
 

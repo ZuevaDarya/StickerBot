@@ -164,11 +164,11 @@ $dark_grey: #323237;
         }
 
         @media (max-width: 637px) {
-            width: 170px; 
+            width: 170px;
         }
 
         @media (max-width: 607px) {
-            width: 100%; 
+            width: 100%;
         }
     }
 
@@ -178,7 +178,7 @@ $dark_grey: #323237;
         display: none;
 
         @media (max-width: 898px) {
-           max-width: 200px;
+            max-width: 200px;
         }
 
         @media (max-width: 607px) {
@@ -314,6 +314,13 @@ input[type="radio"]:checked + label {
             .stickers__sticker-title {
                 color: white;
             }
+
+            &:hover {
+                transition: all 0.5s ease-out 0s;
+                transform: scale(1.1);
+                background: $normal_blue;
+                z-index: 2;
+            }
         }
 
         &:nth-child(even) {
@@ -321,6 +328,13 @@ input[type="radio"]:checked + label {
 
             .stickers__sticker-title {
                 color: $dark_blue;
+            }
+
+            &:hover {
+                transition: all 0.5s ease-out 0s;
+                transform: scale(1.1);
+                background: $yellow;
+                z-index: 2;
             }
         }
 
@@ -406,20 +420,20 @@ input[type="radio"]:checked + label {
             }
         }
 
-        @media (max-width: 504px){
+        @media (max-width: 504px) {
             width: 250px;
 
             &:nth-child(odd) {
                 background-color: $normal_blue;
-    
+
                 .stickers__sticker-title {
                     color: white;
                 }
             }
-    
+
             &:nth-child(even) {
                 background-color: $yellow;
-    
+
                 .stickers__sticker-title {
                     color: $dark_blue;
                 }
@@ -462,9 +476,8 @@ input[type="radio"]:checked + label {
             max-width: 180px;
         }
 
-        @media (max-width: 504px){
+        @media (max-width: 504px) {
             max-width: 200px;
-            
         }
     }
 
@@ -496,7 +509,7 @@ input[type="radio"]:checked + label {
     width: 100%;
     border-radius: 10px;
 
-    @media(max-width: 607px){
+    @media (max-width: 607px) {
         margin: 10px 0 0 0;
     }
 

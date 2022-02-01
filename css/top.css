@@ -185,6 +185,8 @@ ul {
   background-repeat: no-repeat;
   border-top: 2px dashed #282a4f;
   border-bottom: 2px dashed #282a4f;
+  -webkit-animation: num_animate 2s ease infinite, color_animate 2s ease infinite;
+          animation: num_animate 2s ease infinite, color_animate 2s ease infinite;
   background-color: black;
 }
 
@@ -215,6 +217,8 @@ ul {
   background-repeat: no-repeat;
   background-color: black;
   border-bottom: 2px dashed #282a4f;
+  -webkit-animation: num_animate 2s ease infinite, color_animate 2s ease infinite;
+          animation: num_animate 2s ease infinite, color_animate 2s ease infinite;
 }
 
 @media (max-width: 548px) {
@@ -242,6 +246,8 @@ ul {
   background-position: 30px 0;
   background-size: 3rem 3rem;
   background-repeat: no-repeat;
+  -webkit-animation: num_animate 2s ease infinite, color_animate 2s ease infinite;
+          animation: num_animate 2s ease infinite, color_animate 2s ease infinite;
   background-color: black;
 }
 
@@ -262,6 +268,46 @@ ul {
 
 .top__item:nth-child(3)::before {
   content: "";
+}
+
+@-webkit-keyframes num_animate {
+  0%,
+  100% {
+    background-size: 3rem 3rem;
+  }
+  50% {
+    background-size: 3.3rem 3.3rem;
+  }
+}
+
+@keyframes num_animate {
+  0%,
+  100% {
+    background-size: 3rem 3rem;
+  }
+  50% {
+    background-size: 3.3rem 3.3rem;
+  }
+}
+
+@-webkit-keyframes color_animate {
+  0%,
+  100% {
+    color: white;
+  }
+  50% {
+    color: rgba(255, 236, 69, 0.89);
+  }
+}
+
+@keyframes color_animate {
+  0%,
+  100% {
+    color: white;
+  }
+  50% {
+    color: rgba(255, 236, 69, 0.89);
+  }
 }
 
 .top__item:last-child {

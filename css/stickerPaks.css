@@ -30,12 +30,30 @@
   background-color: #8b84da;
 }
 
+.stickerPacks__row:nth-child(odd) .stickerPack:nth-child(odd):hover {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #8b84da;
+  z-index: 2;
+}
+
 .stickerPacks__row:nth-child(odd) .stickerPack:nth-child(odd) .stickerPack__title {
   color: white;
 }
 
 .stickerPacks__row:nth-child(odd) .stickerPack:nth-child(even) {
   background-color: #ffd600;
+}
+
+.stickerPacks__row:nth-child(odd) .stickerPack:nth-child(even):hover {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #ffd600;
+  z-index: 2;
 }
 
 .stickerPacks__row:nth-child(odd) .stickerPack:nth-child(even) .stickerPack__title {
@@ -46,12 +64,30 @@
   background-color: #8b84da;
 }
 
+.stickerPacks__row:nth-child(even) .stickerPack:nth-child(even):hover {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #8b84da;
+  z-index: 2;
+}
+
 .stickerPacks__row:nth-child(even) .stickerPack:nth-child(even) .stickerPack__title {
   color: white;
 }
 
 .stickerPacks__row:nth-child(even) .stickerPack:nth-child(odd) {
   background-color: #ffd600;
+}
+
+.stickerPacks__row:nth-child(even) .stickerPack:nth-child(odd):hover {
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #ffd600;
+  z-index: 2;
 }
 
 .stickerPacks__row:nth-child(even) .stickerPack:nth-child(odd) .stickerPack__title {

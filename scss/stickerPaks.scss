@@ -38,6 +38,13 @@ $dark_grey: #323237;
     &:nth-child(odd) {
         .stickerPack:nth-child(odd) {
             background-color: $normal_blue;
+            
+            &:hover{
+                transition: all 0.5s ease-out 0s;
+                transform: scale(1.1);
+                background: $normal_blue;
+                z-index: 2;
+            }
         }
 
         .stickerPack:nth-child(odd) .stickerPack__title {
@@ -46,6 +53,13 @@ $dark_grey: #323237;
 
         .stickerPack:nth-child(even) {
             background-color: $yellow;
+
+            &:hover{
+                transition: all 0.5s ease-out 0s;
+                transform: scale(1.1);
+                background: $yellow;
+                z-index: 2;
+            }
         }
 
         .stickerPack:nth-child(even) .stickerPack__title {
@@ -56,6 +70,13 @@ $dark_grey: #323237;
     &:nth-child(even) {
         .stickerPack:nth-child(even) {
             background-color: $normal_blue;
+
+            &:hover{
+                transition: all 0.5s ease-out 0s;
+                transform: scale(1.1);
+                background: $normal_blue;
+                z-index: 2;
+            }
         }
 
         .stickerPack:nth-child(even) .stickerPack__title {
@@ -64,6 +85,13 @@ $dark_grey: #323237;
 
         .stickerPack:nth-child(odd) {
             background-color: $yellow;
+
+            &:hover{
+                transition: all 0.5s ease-out 0s;
+                transform: scale(1.1);
+                background: $yellow;
+                z-index: 2;
+            }
         }
 
         .stickerPack:nth-child(odd) .stickerPack__title {

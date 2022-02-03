@@ -1,0 +1,344 @@
+$dark_blue: #282a4f;
+$lite_blue: rgba(158, 163, 255, 0.4);
+$normal_blue: #8b84da;
+$yellow: #ffd600;
+$dark_grey: #323237;
+
+@mixin adaptiv-font($pcSize, $mobSize, $maxWidth) {
+      $addSize: $pcSize - $mobSize;
+      $addMobSize: $addSize + $addSize * 0.7;
+
+      @media (max-width: 767px) {
+            font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+      }
+
+      @media (min-width: 767px) {
+            font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+      }
+}
+
+.docements-bg {
+      background-color: $lite_blue;
+      margin: 130px 0 0 0;
+      padding: 2rem 2rem;
+
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 996px) {
+            margin: 100px 0 0 0;
+            padding: 2rem 2rem;
+      }
+
+      @media (max-width: 756px) {
+            padding: 1rem 1rem;
+      }
+
+      @media (max-width: 607px) {
+            padding: 1.5rem 1.5rem;
+      }
+}
+
+.documents {
+      background-color: black;
+      border-radius: 10px;
+      margin: 30px 0 0 0;
+      padding: 2em 0.5em;
+
+      @media (max-width: 436px) {
+            padding: 1em 0;
+      }
+
+      &__card {
+            @include adaptiv-font(20, 14, 1440);
+            font-family: Arial, Helvetica, sans-serif;
+      }
+
+      &__list {
+            color: white;
+      }
+
+      &__list-item {
+            margin: 20px;
+            &:hover {
+                  color: $yellow;
+            }
+      }
+
+      &__list-link {
+            color: white;
+            &:hover {
+                  color: $yellow;
+            }
+      }
+
+      &__license-info {
+            display: none;
+            flex-direction: column;
+            z-index: 10;
+            background-color: black;
+            padding: 0.5rem 2rem 1em;
+      }
+
+      &__title-bg {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid $yellow;
+      }
+
+      &__title {
+            @include adaptiv-font(24, 18, 1440);
+            color: $yellow;
+            margin-right: 10px;
+      }
+
+      &__text {
+            @include adaptiv-font(16, 12, 1440);
+            color: white;
+            letter-spacing: 0.05em;
+            line-height: 1.5em;
+      }
+
+      &__license-list {
+            color: white;
+            padding: 0 0 1.5em 0;
+            border-bottom: 1px solid $yellow;
+      }
+
+      &__info-list-dot {
+            color: white;
+      }
+
+      &__info-list-link {
+            color: white;
+
+            &:hover {
+                  color: $yellow;
+            }
+      }
+
+      &__privacy-policy {
+            display: none;
+            flex-direction: column;
+            z-index: 10;
+            background-color: black;
+            padding: 0.5rem 2rem 1em;
+      }
+
+      &__privacy-policy-list {
+            color: white;
+            padding: 0 0 1.5em 0;
+            border-bottom: 1px solid $yellow;
+      }
+
+      &__prices {
+            display: none;
+            flex-direction: column;
+            z-index: 10;
+            background-color: black;
+            padding: 0.5rem 2rem 1em;
+
+            p {
+                  margin: 10px 0 5px 0;
+            }
+      }
+
+      &__prices-info {
+            margin: 10px 0 20px 0;
+            padding: 0 15px 15px;
+            border-bottom: 1px solid $yellow;
+      }
+
+      &__prices-list {
+            color: white;
+      }
+
+      &__requisities {
+            display: none;
+            flex-direction: column;
+            z-index: 10;
+            background-color: black;
+            padding: 0.5rem 2rem 1em;
+            height: 100vh;
+      }
+
+      &__requisities-title {
+            color: white;
+            @include adaptiv-font(20, 14, 1440);
+            margin-bottom: 0;
+      }
+
+      &__requisites-list {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            border-bottom: 1px solid $yellow;
+            padding-bottom: 10px;
+            height: 70vh;
+
+            @include adaptiv-font(18, 14, 1440);
+
+            li {
+                  margin: 10px;
+            }
+      }
+
+      &__close {
+            display: block;
+            position: relative;
+            width: 25px;
+            height: 25px;
+
+            background-color: $dark_grey;
+            
+            border: 10px solid $dark_grey;
+            border-radius: 5px;
+            z-index: 4;
+            cursor: pointer;
+
+            &:hover {
+                  &::before,
+                  &::after {
+                        background-color: white;
+                  }
+            }
+
+            &::before,
+            &::after {
+                  content: "";
+                  background-color: $yellow;
+                  position: absolute;
+                  width: 35px;
+                  height: 2px;
+                  left: 0;
+            }
+
+            &::before {
+                  top: 0;
+                  border-bottom: 0.5px solid $yellow;
+                  transform: translateY(11px) translateX(-5px) rotate(45deg);
+            }
+
+            &::after {
+                  bottom: 0;
+                  border-bottom: 0.5px solid $yellow;
+                  transform: translateY(-11px) translateX(-5px) rotate(-45deg);
+            }
+
+            @media (max-width: 431px) {
+                  width: 15px;
+                  height: 15px;
+                  padding: 0 2px;
+
+                  &::before,
+                  &::after {
+                        content: "";
+                        width: 25px;
+                        height: 2px;
+                        left: 0;
+                  }
+
+                  &::before {
+                        top: 0;
+                        transform: translate(-3px, 6px) rotate(45deg);
+                  }
+
+                  &::after {
+                        bottom: 0;
+                        transform: translate(-3px, -6px) rotate(-45deg);
+                  }
+            }
+
+            @media (max-width: 335px) {
+                  width: 15px;
+                  height: 15px;
+                  padding: 0 2px;
+
+                  &::before,
+                  &::after {
+                        content: "";
+                        width: 25px;
+                        height: 2px;
+                        left: 0;
+                  }
+
+                  &::before {
+                        top: 0;
+                        transform: translate(-4px, 6px) rotate(45deg);
+                  }
+
+                  &::after {
+                        bottom: 0;
+                        transform: translate(-4px, -6px) rotate(-45deg);
+                  }
+            }
+      }
+
+      &__button {
+            left: 0;
+            background-color: $yellow;
+            padding: 1em;
+            border-radius: 50px;
+            @include adaptiv-font(16, 12, 1440);
+            cursor: pointer;
+
+            border: 2px solid $yellow;
+            &:hover {
+                  background-color: $dark_grey;
+                  color: white;
+            }
+            position: relative;
+            margin: 0 auto;
+      }
+}
+
+ol {
+      list-style: none;
+      margin: 10px 0;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+ol li b {
+      color: $yellow;
+}
+
+ul li {
+      list-style: disc;
+}
+
+//1
+ol {
+      counter-reset: num;
+}
+
+ol > li {
+      counter-increment: num;
+}
+
+ol > li::before {
+      @include adaptiv-font(16, 12, 1440);
+      content: counter(num) ". ";
+}
+
+/* 2-й уровень */
+ol ol {
+      counter-reset: num2;
+}
+ol ol > li {
+      counter-increment: num2;
+}
+ol ol > li::before {
+      content: counter(num) "." counter(num2) ". ";
+}
+
+/* 3-й уровень */
+ol ol ol {
+      counter-reset: num3;
+}
+ol ol ol > li {
+      counter-increment: num3;
+}
+ol ol ol > li::before {
+      content: counter(num) "." counter(num2) "." counter(num3) ". ";
+}

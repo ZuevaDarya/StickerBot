@@ -4,7 +4,7 @@
   padding: 30px 45px;
 }
 
-@media (max-width: 996px) {
+@media (max-width: 990px) {
   .stickerPack-bg {
     margin: 100px 0 0 0;
   }
@@ -43,11 +43,10 @@
 }
 
 .stickerPack__row:nth-child(odd) .stickerPack__card:nth-child(odd):hover {
-  -webkit-transition: all 0.5s ease-out 0s;
-  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background: #8b84da;
   z-index: 2;
 }
 
@@ -56,11 +55,10 @@
 }
 
 .stickerPack__row:nth-child(odd) .stickerPack__card:nth-child(even):hover {
-  -webkit-transition: all 0.5s ease-out 0s;
-  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background: #ffd600;
   z-index: 2;
 }
 
@@ -69,11 +67,10 @@
 }
 
 .stickerPack__row:nth-child(even) .stickerPack__card:nth-child(even):hover {
-  -webkit-transition: all 0.5s ease-out 0s;
-  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background: #8b84da;
   z-index: 2;
 }
 
@@ -82,11 +79,10 @@
 }
 
 .stickerPack__row:nth-child(even) .stickerPack__card:nth-child(odd):hover {
-  -webkit-transition: all 0.5s ease-out 0s;
-  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background: #ffd600;
   z-index: 2;
 }
 

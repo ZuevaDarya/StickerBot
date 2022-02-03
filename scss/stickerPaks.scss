@@ -40,9 +40,8 @@ $dark_grey: #323237;
             background-color: $normal_blue;
             
             &:hover{
-                transition: all 0.5s ease-out 0s;
+                transition: all .2s ease-out 0s;
                 transform: scale(1.1);
-                background: $normal_blue;
                 z-index: 2;
             }
         }
@@ -55,9 +54,8 @@ $dark_grey: #323237;
             background-color: $yellow;
 
             &:hover{
-                transition: all 0.5s ease-out 0s;
+                transition: all 0.2s ease-out 0s;
                 transform: scale(1.1);
-                background: $yellow;
                 z-index: 2;
             }
         }
@@ -72,9 +70,8 @@ $dark_grey: #323237;
             background-color: $normal_blue;
 
             &:hover{
-                transition: all 0.5s ease-out 0s;
+                transition: all 0.2s ease-out 0s;
                 transform: scale(1.1);
-                background: $normal_blue;
                 z-index: 2;
             }
         }
@@ -87,9 +84,8 @@ $dark_grey: #323237;
             background-color: $yellow;
 
             &:hover{
-                transition: all 0.5s ease-out 0s;
+                transition: all 0.1s ease 0s;
                 transform: scale(1.1);
-                background: $yellow;
                 z-index: 2;
             }
         }

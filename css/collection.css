@@ -427,11 +427,10 @@ input[type="radio"]:checked + label {
 }
 
 .stickers__sticker:nth-child(odd):hover {
-  -webkit-transition: all 0.5s ease-out 0s;
-  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background: #8b84da;
   z-index: 2;
 }
 
@@ -444,11 +443,10 @@ input[type="radio"]:checked + label {
 }
 
 .stickers__sticker:nth-child(even):hover {
-  -webkit-transition: all 0.5s ease-out 0s;
-  transition: all 0.5s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  background: #ffd600;
   z-index: 2;
 }
 
@@ -498,7 +496,7 @@ input[type="radio"]:checked + label {
   }
 }
 
-@media (max-width: 756px) {
+@media (max-width: 765px) {
   .stickers__sticker {
     margin: 0 1em 1em 0;
   }

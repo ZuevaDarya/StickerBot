@@ -23,7 +23,7 @@ $dark_grey: #323237;
     margin: 130px 0 0 0;
     padding: 30px 45px;
 
-    @media (max-width: 996px) {
+    @media (max-width: 990px) {
         margin: 100px 0 0 0;
     }
 }
@@ -51,9 +51,8 @@ $dark_grey: #323237;
                 background-color: $normal_blue;
 
                 &:hover {
-                    transition: all 0.5s ease-out 0s;
+                    transition: all 0.2s ease-out 0s;
                     transform: scale(1.1);
-                    background: $normal_blue;
                     z-index: 2;
                 }
             }
@@ -62,9 +61,8 @@ $dark_grey: #323237;
                 background-color: $yellow;
 
                 &:hover {
-                    transition: all 0.5s ease-out 0s;
+                    transition: all 0.2s ease-out 0s;
                     transform: scale(1.1);
-                    background: $yellow;
                     z-index: 2;
                 }
             }
@@ -75,9 +73,8 @@ $dark_grey: #323237;
                 background-color: $normal_blue;
 
                 &:hover {
-                    transition: all 0.5s ease-out 0s;
+                    transition: all 0.2s ease-out 0s;
                     transform: scale(1.1);
-                    background: $normal_blue;
                     z-index: 2;
                 }
             }
@@ -86,9 +83,8 @@ $dark_grey: #323237;
                 background-color: $yellow;
 
                 &:hover {
-                    transition: all 0.5s ease-out 0s;
+                    transition: all 0.2s ease-out 0s;
                     transform: scale(1.1);
-                    background: $yellow;
                     z-index: 2;
                 }
             }

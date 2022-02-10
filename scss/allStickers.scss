@@ -437,6 +437,26 @@ input[type="radio"]:checked + label {
                 }
             }
         }
+
+        @media (max-width: 321px) {
+            width: 220px;
+
+            &:nth-child(odd) {
+                background-color: $normal_blue;
+
+                .stickers__sticker-title {
+                    color: white;
+                }
+            }
+
+            &:nth-child(even) {
+                background-color: $yellow;
+
+                .stickers__sticker-title {
+                    color: $dark_blue;
+                }
+            }
+        }
     }
 
     &__sticker-link {

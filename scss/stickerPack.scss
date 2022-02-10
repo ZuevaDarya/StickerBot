@@ -179,10 +179,6 @@ $dark_grey: #323237;
         text-align: center;
         letter-spacing: 0.05em;
         color: $dark_blue;
-
-        @media (max-width: 511px) {
-            // align-self: center;
-        }
     }
 
     &__card-text {
@@ -193,5 +189,19 @@ $dark_grey: #323237;
         text-align: left;
         letter-spacing: 0.05em;
         color: $dark_blue;
+
+        @media (max-width: 511px) {
+           text-align: center;
+        }
+    }
+
+    &__card-stars {
+        @media(max-width: 314px){
+            text-align: center;
+            img{
+                width: 30px;
+            }
+            
+        }
     }
 }

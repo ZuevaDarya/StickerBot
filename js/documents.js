@@ -9,18 +9,18 @@ $(document).ready(function () {
 
     function hideBlock($block_id, $button_id, $cross_id) {
         $( $cross_id).click(function (event) {
-            $($block_id).fadeOut(500);
+            $($block_id).fadeOut(100);
             $('header, footer, .main__wrapper').css('display', 'block');
         });
 
         $($button_id).click(function (event) {
-            $($block_id).fadeOut(500);
+            $($block_id).fadeOut(100);
             $('header, footer, .main__wrapper').css('display', 'block');
         });
 
         $(document).keyup(function (event) {
             if (event.key === 'Escape' || event.key === 27) {
-                $($block_id).fadeOut(500);
+                $($block_id).fadeOut(100);
                 $('header, footer, .main__wrapper').show();
             }
         });

@@ -76,7 +76,7 @@ ul {
     &__range {
         background-color: $normal_blue;
 
-        @media (max-width: 961px) {
+        @media (max-width: 966px) {
             width: 80%;
         }
 
@@ -143,14 +143,14 @@ ul {
         &:first-child {
             background-image: url(../img/rang01.svg);
             padding-left: 3.8rem;
-            background-position: 30px 0;
+            background-position: 25px 0;
             background-size: 3rem 3rem;
             background-repeat: no-repeat;
 
             border-top: 2px dashed $dark_blue;
             border-bottom: 2px dashed $dark_blue;
 
-            animation: num_animate 2s ease infinite, color_animate 2s ease infinite;
+            animation: num_animate 1.5s ease infinite, color_animate 2s ease infinite;
 
             background-color: black;
 
@@ -163,6 +163,7 @@ ul {
                 background-size: 2.5rem 2.5rem;
                 background-position: 10px 0;
                 padding-left: 2.1rem;
+                animation: num_animate01 1.5s ease infinite, color_animate 2s ease infinite;
             }
 
             &::before {
@@ -173,14 +174,14 @@ ul {
         &:nth-child(2) {
             background-image: url(../img/rang02.svg);
             padding-left: 3.8rem;
-            background-position: 30px 0;
+            background-position: 25px 0;
             background-size: 3rem 3rem;
             background-repeat: no-repeat;
 
             background-color: black;
 
             border-bottom: 2px dashed $dark_blue;
-            animation: num_animate 2s ease infinite, color_animate 2s ease infinite;
+            animation: num_animate 1.5s ease infinite, color_animate 2s ease infinite;
 
             @media (max-width: 548px) {
                 padding-left: 3rem;
@@ -191,6 +192,8 @@ ul {
                 background-size: 2.5rem 2.5rem;
                 background-position: 10px 0;
                 padding-left: 2.1rem;
+                animation: num_animate01 1.5s ease infinite, color_animate 2s ease infinite;
+
             }
 
             &::before {
@@ -201,10 +204,10 @@ ul {
         &:nth-child(3) {
             background-image: url(../img/rang03.svg);
             padding-left: 3.8rem;
-            background-position: 30px 0;
+            background-position: 25px 0;
             background-size: 3rem 3rem;
             background-repeat: no-repeat;
-            animation: num_animate 2s ease infinite, color_animate 2s ease infinite;
+            animation: num_animate 1.5s ease infinite, color_animate 2s ease infinite;
             
 
             background-color: black;
@@ -217,6 +220,7 @@ ul {
                 background-size: 2.5rem 2.5rem;
                 background-position: 10px 0;
                 padding-left: 2.1rem;
+                animation: num_animate01 1.5s ease infinite, color_animate 2s ease infinite;
             }
 
             &::before {
@@ -227,11 +231,22 @@ ul {
         @keyframes num_animate {
             0%,
             100% {
-                background-size: 3rem 3rem;
+               background-position-y: 0px;
             }
 
             50% {
-                background-size: 3.3rem 3.3rem;
+                background-position-y: 4px;
+            }
+        }
+
+        @keyframes num_animate01 {
+            0%,
+            100% {
+               background-position-y: 0px;
+            }
+
+            50% {
+                background-position-y: 3px;
             }
         }
 

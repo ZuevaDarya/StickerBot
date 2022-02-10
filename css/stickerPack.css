@@ -234,3 +234,18 @@
   letter-spacing: 0.05em;
   color: #282a4f;
 }
+
+@media (max-width: 511px) {
+  .stickerPack__card-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 314px) {
+  .stickerPack__card-stars {
+    text-align: center;
+  }
+  .stickerPack__card-stars img {
+    width: 30px;
+  }
+}

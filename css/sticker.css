@@ -151,6 +151,12 @@
   padding: 5px 15px;
 }
 
+@media (max-width: 365px) {
+  .sticker__info {
+    padding: 5px 5px;
+  }
+}
+
 .sticker__info-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,6 +165,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+@media (max-width: 314px) {
+  .sticker__info-row img {
+    width: 25px;
+  }
 }
 
 .sticker__star {
@@ -241,6 +253,13 @@
 @media (min-width: 767px) {
   .sticker__description {
     font-size: calc(14px + 4 * (100vw / 1440));
+  }
+}
+
+@media (max-width: 365px) {
+  .sticker__description {
+    padding: 5px 5px;
+    text-align: center;
   }
 }
 

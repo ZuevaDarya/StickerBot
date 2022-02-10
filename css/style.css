@@ -63,6 +63,10 @@ body {
   }
 }
 
+.header__logo-link {
+  z-index: 4;
+}
+
 .header__logo {
   max-width: 90px;
   max-height: 90px;

@@ -452,6 +452,10 @@ input[type="radio"]:checked + label {
                 }
             }
         }
+
+        @media (max-width: 321px) {
+            width: 220px;
+        }
     }
 
     &__sticker-link {

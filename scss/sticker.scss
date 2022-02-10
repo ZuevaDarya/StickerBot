@@ -112,11 +112,22 @@ $dark_grey: #323237;
         width: 95%;
         border-bottom: 1px solid $normal_blue;
         padding: 5px 15px;
+
+        @media(max-width: 365px){
+            padding: 5px 5px;
+        }
     }
 
     &__info-row {
         display: flex;
         flex-direction: row;
+
+        @media(max-width: 314px){
+            img{
+                width: 25px;
+            }
+            
+        }
     }
 
     &__star {
@@ -167,6 +178,11 @@ $dark_grey: #323237;
         letter-spacing: 0.1em;
         color: $normal_blue;
         padding: 5px 15px;
+
+        @media(max-width: 365px){
+            padding: 5px 5px;
+            text-align: center;
+        }
     }
 }
 

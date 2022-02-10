@@ -567,6 +567,12 @@ input[type="radio"]:checked + label {
   }
 }
 
+@media (max-width: 321px) {
+  .stickers__sticker {
+    width: 220px;
+  }
+}
+
 .stickers__sticker-link {
   display: -webkit-box;
   display: -ms-flexbox;

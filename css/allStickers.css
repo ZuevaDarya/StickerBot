@@ -547,6 +547,24 @@ input[type="radio"]:checked + label {
   }
 }
 
+@media (max-width: 321px) {
+  .stickers__sticker {
+    width: 220px;
+  }
+  .stickers__sticker:nth-child(odd) {
+    background-color: #8b84da;
+  }
+  .stickers__sticker:nth-child(odd) .stickers__sticker-title {
+    color: white;
+  }
+  .stickers__sticker:nth-child(even) {
+    background-color: #ffd600;
+  }
+  .stickers__sticker:nth-child(even) .stickers__sticker-title {
+    color: #282a4f;
+  }
+}
+
 .stickers__sticker-link {
   display: -webkit-box;
   display: -ms-flexbox;

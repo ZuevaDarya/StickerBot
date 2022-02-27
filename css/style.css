@@ -105,13 +105,13 @@ body {
 
 @media (max-width: 767px) {
   .header__links {
-    font-size: calc(12px + 6.8 * ((100vw - 320px) / 1440));
+    font-size: calc(16px + 0 * ((100vw - 320px) / 1440));
   }
 }
 
 @media (min-width: 767px) {
   .header__links {
-    font-size: calc(12px + 4 * (100vw / 1440));
+    font-size: calc(16px + 0 * (100vw / 1440));
   }
 }
 

@@ -87,7 +87,7 @@ body {
     &__links {
         font-style: italic;
         font-weight: normal;
-        @include  adaptiv-font(16, 12, 1440);
+        @include  adaptiv-font(16, 16, 1440);
         line-height: 19px;
         text-transform: uppercase;
         letter-spacing: 0.1em;

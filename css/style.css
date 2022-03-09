@@ -408,13 +408,13 @@ body {
 
 @media (max-width: 767px) {
   .slider__text {
-    font-size: calc(16px + 13.6 * ((100vw - 320px) / 1440));
+    font-size: calc(20px + 6.8 * ((100vw - 320px) / 1440));
   }
 }
 
 @media (min-width: 767px) {
   .slider__text {
-    font-size: calc(16px + 8 * (100vw / 1440));
+    font-size: calc(20px + 4 * (100vw / 1440));
   }
 }
 

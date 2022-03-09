@@ -282,6 +282,7 @@ input[type="radio"]:checked + label {
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
+    height: 50%;
 
     @media (max-width: 1160px) {
         margin: 0 0 0 40px;

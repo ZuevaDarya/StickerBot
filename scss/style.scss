@@ -348,7 +348,7 @@ body {
         color: white;
         text-transform: uppercase;
         flex: 1 1 500px;
-        @include adaptiv-font(24, 16, 1440);
+        @include adaptiv-font(24, 20, 1440);
     }
 
     &__author-name {

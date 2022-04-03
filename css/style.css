@@ -312,7 +312,8 @@ body {
 }
 
 @-webkit-keyframes change_color {
-  0%, 100% {
+  0%,
+  100% {
     border: 4px solid #ffd600;
   }
   50% {
@@ -321,7 +322,8 @@ body {
 }
 
 @keyframes change_color {
-  0%, 100% {
+  0%,
+  100% {
     border: 4px solid #ffd600;
   }
   50% {
@@ -649,7 +651,8 @@ body {
 }
 
 @-webkit-keyframes change_color01 {
-  0%, 100% {
+  0%,
+  100% {
     background-color: #8b84da;
   }
   50% {
@@ -658,7 +661,8 @@ body {
 }
 
 @keyframes change_color01 {
-  0%, 100% {
+  0%,
+  100% {
     background-color: #8b84da;
   }
   50% {
@@ -667,7 +671,8 @@ body {
 }
 
 @-webkit-keyframes change_color02 {
-  0%, 100% {
+  0%,
+  100% {
     background-color: rgba(255, 214, 0, 0.4);
   }
   50% {
@@ -676,7 +681,8 @@ body {
 }
 
 @keyframes change_color02 {
-  0%, 100% {
+  0%,
+  100% {
     background-color: rgba(255, 214, 0, 0.4);
   }
   50% {
@@ -684,9 +690,49 @@ body {
   }
 }
 
+@media (max-width: 561px) {
+  .welcome-card__sticker-img {
+    max-width: 215.5px;
+    min-width: 117.5px;
+    height: auto;
+  }
+}
+
 .welcome-card__img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
+  min-width: 200px;
   height: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 561px) {
+  .welcome-card__img {
+    max-width: 215.5px;
+    min-width: 117.5px;
+  }
+}
+
+.welcome-card__img-tgs {
+  max-width: 190px;
+  margin: 0 5px 10px 5px;
+  height: 100%;
+}
+
+@media (max-width: 901px) {
+  .welcome-card__img-tgs {
+    max-width: 210px;
+    height: auto;
+  }
+}
+
+@media (max-width: 561px) {
+  .welcome-card__img-tgs {
+    width: auto;
+    height: 100%;
+    min-width: 117.5px;
+  }
 }
 
 .instruction {

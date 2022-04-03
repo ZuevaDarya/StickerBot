@@ -1,7 +1,7 @@
 ДЛЯ ГЛАВНОЙ СТРАНИЦЫ
 
 для tgs заменить класс welcome-card__img
-добавить класс welcome-card__img-tgs
+на класс welcome-card__img-tgs
 
 для div, в котором лежит img еще добавить
 класс welcome-card__sticker-img

@@ -51,7 +51,7 @@ $dark_grey: #323237;
     padding: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
 
     @media (max-width: 756px) {
@@ -81,6 +81,7 @@ $dark_grey: #323237;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        flex: 0 1 700px;
 
         @media (max-width: 756px) {
             margin: 15px 0 0 0;
@@ -113,7 +114,7 @@ $dark_grey: #323237;
         border-bottom: 1px solid $normal_blue;
         padding: 5px 15px;
 
-        @media(max-width: 365px){
+        @media (max-width: 365px) {
             padding: 5px 5px;
         }
     }
@@ -122,11 +123,10 @@ $dark_grey: #323237;
         display: flex;
         flex-direction: row;
 
-        @media(max-width: 314px){
-            img{
+        @media (max-width: 314px) {
+            img {
                 width: 25px;
             }
-            
         }
     }
 
@@ -179,7 +179,7 @@ $dark_grey: #323237;
         color: $normal_blue;
         padding: 5px 15px;
 
-        @media(max-width: 365px){
+        @media (max-width: 365px) {
             padding: 5px 5px;
             text-align: center;
         }

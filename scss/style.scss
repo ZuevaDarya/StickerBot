@@ -66,7 +66,7 @@ body {
         }
     }
 
-    &__logo-link{
+    &__logo-link {
         z-index: 4;
     }
 
@@ -87,7 +87,7 @@ body {
     &__links {
         font-style: italic;
         font-weight: normal;
-        @include  adaptiv-font(16, 16, 1440);
+        @include adaptiv-font(16, 16, 1440);
         line-height: 19px;
         text-transform: uppercase;
         letter-spacing: 0.1em;
@@ -285,11 +285,12 @@ body {
     animation: change_color 2s linear infinite;
 
     @keyframes change_color {
-        0%, 100%{
+        0%,
+        100% {
             border: 4px solid $yellow;
-        }    
+        }
 
-        50%{
+        50% {
             border: 4px solid $normal_blue;
         }
     }
@@ -485,19 +486,19 @@ body {
             background-color: $yellow;
             animation: change_color02 7s ease infinite;
 
-            &:hover{
-                 transition: all 0.1s ease-out 0s;
-                 transform: scale(1.2);
-                 background: rgba($yellow, 0.4);
-                 animation-play-state: paused;
-             }
+            &:hover {
+                transition: all 0.1s ease-out 0s;
+                transform: scale(1.2);
+                background: rgba($yellow, 0.4);
+                animation-play-state: paused;
+            }
         }
 
         &_purple {
             background-color: $normal_blue;
             animation: change_color01 7s ease infinite;
 
-            &:hover{
+            &:hover {
                 transition: all 0.1s ease-out 0s;
                 transform: scale(1.2);
                 background: rgba($normal_blue, 0.4);
@@ -506,29 +507,65 @@ body {
         }
 
         @keyframes change_color01 {
-            0%, 100%{
+            0%,
+            100% {
                 background-color: $normal_blue;
             }
 
-            50%{
+            50% {
                 background-color: rgba($normal_blue, 0.4);
             }
         }
 
         @keyframes change_color02 {
-            0%, 100%{
+            0%,
+            100% {
                 background-color: rgba($yellow, 0.4);
             }
 
-            50%{
+            50% {
                 background-color: $yellow;
             }
         }
     }
 
+    &__sticker-img {
+        @media (max-width: 561px) {
+            max-width: 215.5px;
+            min-width: 117.5px;
+            height: auto;
+        }
+    }
+
     &__img {
+        object-fit: cover;
         width: 100%;
+        min-width: 200px;
         height: 100%;
+
+        margin: 0 auto;
+
+        @media (max-width: 561px) {
+            max-width: 215.5px;
+            min-width: 117.5px;
+        }
+    }
+
+    &__img-tgs {
+        max-width: 190px;
+        margin: 0 5px 10px 5px;
+        height: 100%;
+
+        @media (max-width: 901px) {
+            max-width: 210px;
+            height: auto;
+        }
+
+        @media (max-width: 561px) {
+            width: auto;
+            height: 100%;
+            min-width: 117.5px;
+        }
     }
 }
 

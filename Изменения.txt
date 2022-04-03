@@ -3,6 +3,7 @@
 для tgs заменить класс welcome-card__img
 на класс welcome-card__img-tgs
 
+ДЛЯ СТРАНИЦЫ СТИКЕР
 для div, в котором лежит img еще добавить
 класс welcome-card__sticker-img
 

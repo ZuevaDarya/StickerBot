@@ -655,7 +655,7 @@
   }
 }
 
-@media (max-width: 390.5px) {
+@media (max-width: 400px) {
   .auction-put__price {
     max-width: 135px;
   }
@@ -770,9 +770,9 @@
   }
 }
 
-@media (max-width: 493px) {
+@media (max-width: 503px) {
   .auction-add__text {
-    margin: 0;
+    margin: 0 5px;
   }
 }
 
@@ -916,7 +916,7 @@
   }
 }
 
-@media (max-width: 493px) {
+@media (max-width: 503px) {
   .auction-return__text {
     margin: 0 5px;
   }

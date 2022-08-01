@@ -478,6 +478,8 @@ $dark_grey: #323237;
         color: white;
 
         margin: 10px 0;
+
+        display: block;
     }
 
     &__price {
@@ -496,7 +498,7 @@ $dark_grey: #323237;
 
         vertical-align: middle;
 
-        @media (max-width: 400px) {
+        @media (max-width: 600px) {
             max-width: 135px;
         }
 
@@ -504,6 +506,7 @@ $dark_grey: #323237;
             max-width: 65px;
         }
     }
+    
 }
 
 .auction-add {
@@ -573,7 +576,7 @@ $dark_grey: #323237;
         font-family: "Raleway";
         font-style: italic;
         font-weight: 700;
-        @include adaptiv-font(15, 14, 1440);
+        @include adaptiv-font(15, 12, 1440);
         line-height: 18px;
 
         text-align: center;
@@ -693,7 +696,7 @@ $dark_grey: #323237;
         font-family: "Raleway";
         font-style: italic;
         font-weight: 700;
-        @include adaptiv-font(15, 14, 1440);
+        @include adaptiv-font(15, 12, 1440);
         line-height: 18px;
 
         text-align: center;

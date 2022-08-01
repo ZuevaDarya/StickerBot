@@ -96,6 +96,10 @@ stickers.forEach(sticker => {
                             sumStar = 0;
                             checkSumStar = 0;
                         }
+
+                        if (joinNum.classList.contains('join-stickers__agree-button_full')) {
+                            joinNum.classList.remove('join-stickers__agree-button_full');
+                        }
                     } else if (sum > 1 && changeNum > 0) {
                         sum -= 1;
                         changeNum -= 1;

@@ -54,9 +54,11 @@ ul {
 
     &__experience,
     &__range {
-        flex: 1 1 520px;
+        flex: 1 1 auto;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
+        
+        width: 550px;
     }
 
     &__experience {
@@ -64,6 +66,7 @@ ul {
         background-color: $yellow;
 
         @media (max-width: 966px) {
+
             margin: 0 0 30px 0;
             width: 80%;
         }

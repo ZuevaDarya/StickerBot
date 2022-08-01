@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/Dragon_av.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>Профиль</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Шапка-->
+        <header class="header">
+            <nav class="header__wrapper">
+                <a href="index.html" class="header__logo-link"><img class="header__logo" src="img/Dragon_av.png"
+                        alt="logo"></a>
+
+                <!--! ----------Переписана шапка---------- -->
+                <div class="header__links-wrapper">
+                    <ul class="header__menu">
+                        <li><a href="index.html" class="header__menu-link">Главная</a></li>
+                        <li><a href="#" class="header__menu-link header__menu-link_select">Стикеры</a>
+                            <ul class="header__sub-menu">
+                                <li><a href="allStickers.html" class="header__sub-menu-link">Все стикеры</a></li>
+                                <li><a id="stickerPacks" href="stickerPacks.html"
+                                        class="header__sub-menu-link">Стикерпаки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="profile.html" class="header__menu-link">Профиль</a></li>
+                        <li><a href="shop.html" class="header__menu-link">Магазин</a></li>
+                        <li><a href="auction.html" class="header__menu-link">Аукцион</a></li>
+                        <li><a href="top.html" class="header__menu-link">Топ коллекционеров</a></li>
+                    </ul>
+                </div>
+                <!--!---------------------------------------- -->
+
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <a href="auth.html" class="header__button">Вход</a>
+            </nav>
+        </header>
+
+        <!--Основная часть-->
+        <main class="main">
+            <div class="main__wrapper">
+                <div class="stickers-bg">
+                    <div class="page-title">
+                        <h2 class="page-title__text">Профиль</h2>
+                    </div>
+
+                    <div class="sickers-page">
+                        <!--! Новое меню навигации -->
+                        <nav class="left-nav">
+                            <ul class="left-nav__menu">
+                                <li><a href="openPacks.html" class="left-nav__link">Открыть пак</a></li>
+                                <li><a href="collection.html" class="left-nav__link">Коллекция</a></li>
+                                <li><a href="joinStickers.html" class="left-nav__link">Объединение стикеров</a></li>
+                                <li><a href="inviteFriend.html" class="left-nav__link">Пригласить друга</a></li>
+                                <li><a href="settingsPage.html" class="left-nav__link">Настройка уведомлений</a></li>
+                            </ul>
+                        </nav>
+                        <!--!-------------------------->
+
+                        <div class="collection">
+                            <div class="collection__info">
+                                <p class="collection__info-title">Пользователь:<span
+                                        class="collection__info-title_bold">
+                                        Yjga125</span></p>
+                                <div class="collection__data">
+                                    <div class="collection__data-column">
+                                        <p class="collection__text collection__text_yellow collection__info-title_bold">
+                                            Уровень: <span class="collection__data-num">7 </span><span
+                                                class="collection__data-symbol">🆙</span></p>
+                                        <p
+                                            class="collection__text  collection__text_yellow collection__info-title_bold">
+                                            Текущий опыт:
+                                            <span class="collection__data-num">15869 </span><span
+                                                class="collection__data-symbol">🧪</span>
+                                        </p>
+                                        <p
+                                            class="collection__text  collection__text_yellow collection__info-title_bold">
+                                            Всего опыта:
+                                            <span class="collection__data-num">65629 </span><span
+                                                class="collection__data-symbol">🧪</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="collection__data-column">
+                                        <p class="collection__data-title">Баланс</p>
+                                        <p class="collection__text collection__text_blue collection__info-title_bold">
+                                            Монеты: <span class="collection__data-num">281150 </span><span
+                                                class="collection__data-symbol">💰</span></p>
+                                        <p class="collection__text  collection__text_blue collection__info-title_bold">
+                                            Алмазы: <span class="collection__data-num">2197 </span><span
+                                                class="collection__data-symbol">💎</span></p>
+
+                                        <p class="collection__text  collection__text_blue collection__info-title_bold">
+                                            Конфеты: <span class="collection__data-num">551 </span><span
+                                                class="collection__data-symbol">🍬</span></p>
+                                        <!--! Добавлена кнопка собарть прибыль-->
+                                        <div class="collection__block">
+                                            <p
+                                                class="collection__text  collection__text_blue collection__info-title_bold">
+                                                Размер копилки:
+                                                <span class="collection__data-num">800 </span>
+                                                <span class="collection__data-symbol">💰</span>
+                                                <span class="collection__data-num"> 200 </span>
+                                                <span class="collection__data-symbol">🍬</span>
+                                            </p>
+
+                                            <button class="collection__collect-button">Собрать
+                                                <span class="collection__data-num">800</span>
+                                                <span class="collection__data-symbol">💰</span>
+                                                <span class="collection__data-num"> 200</span>
+                                                <span class="collection__data-symbol">🍬</span>
+                                            </button>
+                                        </div>
+                                        <!--! --------------------------------->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- !Новое -->
+                            <div class="collection__info">
+                                <h3 class="collection__info-title collection__info-title_bold">Ежедневное задание:</h3>
+
+                                <table class="collection__list-table">
+                                    <tr>
+                                        <td
+                                            class="collection__list-table-item collection__text collection__text_yellow">
+                                            Отправка стикеров 5-и пользователям
+                                        </td>
+                                        <td><span class="collection__item-progress collection__data-num">(0/5)</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="collection__info">
+                                <div class="collection__block-title">
+                                    <h3 class="collection__info-title collection__info-title_bold">Задания Новичка:</h3>
+                                    <p class="collection__text">Пригласил:
+                                        <span class="collection__info-title_bold"> User00001</span>
+                                    </p>
+                                </div>
+
+                                <p class="collection__text collection__check-progress">Прогресс выполнения <span
+                                        class="collection__item-progress collection__data-num">(<span
+                                            class="collection__text_yellow">6</span>/12)</span></p>
+
+                                <table class="collection__list-table">
+                                    <tr>
+                                        <td
+                                            class="collection__list-table-item collection__text collection__text_yellow">
+                                            Открыть любой пак</td>
+                                        <td><span class="collection__progress-img_false"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="collection__list-table-item collection__text collection__text_yellow">
+                                            Собрать прибыль 3 раза</td>
+                                        <td><span class="collection__progress-img_false"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="collection__list-table-item collection__text collection__text_yellow">
+                                            Купить обычный пак</td>
+                                        <td><span class="collection__progress-img_true"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="collection__list-table-item collection__text collection__text_yellow">
+                                            Отправить 3-ём друзьям стикер</td>
+                                        <td><span class="collection__progress-img_false"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="collection__list-table-item collection__text collection__text_yellow">
+                                            Объединить стикеры</td>
+                                        <td><span class="collection__progress-img_true"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="collection__list-table-item collection__text collection__text_yellow">
+                                            Поучаствовать в раздаче стикера в чате</td>
+                                        <td><span class="collection__progress-img_true"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="collection__list-table-item collection__text collection__text_yellow">
+                                            Сыграть в рулетку 6 раз</td>
+                                        <td><span class="collection__progress-img_true"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="collection__list-table-item collection__text collection__text_yellow">
+                                            Выиграть в рулетку 2 раза</td>
+                                        <td><span class="collection__progress-img_false"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="collection__list-table-item collection__text collection__text_yellow">
+                                            Купить стикер на аукционе</td>
+                                        <td><span class="collection__progress-img_true"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="collection__list-table-item collection__text collection__text_yellow">
+                                            Выставить стикер на аукцион</td>
+                                        <td><span class="collection__progress-img_true"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="collection__list-table-item collection__text collection__text_yellow">
+                                            Купить любое количество алмазов</td>
+                                        <td><span class="collection__progress-img_false"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="collection__list-table-item collection__text collection__text_yellow">
+                                            Пригласить друга</td>
+                                        <td><span class="collection__progress-img_false"></span></td>
+                                    </tr>
+                                </table>
+
+                                <p class="collection__text collection__text_underline">На выполнение осталось
+                                    <span class="collection__text_yellow collection__data-num"> 10</span> дней.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <p class="footer__text">© 2022 WyrmSticker</p>
+                <div>
+                    <a href="documents.html" class="footer__link">Документы</a>
+                    <a href="about.html" class="footer__link">О нас</a>
+                    <a href="https://t.me/wyrm_sticker_bot" class="footer__link">Telegram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.cycle.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/allStickers.js"></script>
+    <script src="js/tgs-player.js"></script>
+</body>
+
+</html>

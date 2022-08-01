@@ -19,15 +19,28 @@
         <!--Шапка-->
         <header class="header">
             <nav class="header__wrapper">
-                <a href="index.html" class="header__logo-link"><img class="header__logo" src="img/Dragon_av.png" alt="logo"></a>
-                <div class="header__links">
-                    <a href="index.html" class="header__link">Главная</a>
-                    <a href="stickerPacks.html" class="header__link">Стикерпаки</a>
-                    <a href="allStickers.html" class="header__link">Все стикеры</a>
-                    <a href="collection.html" class="header__link">Коллекция</a>
-                    <a href="top.html" class="header__link">топ <br>коллекционеров</a>
-                    <a href="about.html" class="header__link">О нас</a>
+                <a href="index.html" class="header__logo-link"><img class="header__logo" src="img/Dragon_av.png"
+                        alt="logo"></a>
+
+                <!--! ----------Переписана шапка---------- -->
+                <div class="header__links-wrapper">
+                    <ul class="header__menu">
+                        <li><a href="index.html" class="header__menu-link">Главная</a></li>
+                        <li><a href="#" class="header__menu-link header__menu-link_select">Стикеры</a>
+                            <ul class="header__sub-menu">
+                                <li><a href="allStickers.html" class="header__sub-menu-link">Все стикеры</a></li>
+                                <li><a id="stickerPacks" href="stickerPacks.html"
+                                        class="header__sub-menu-link">Стикерпаки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="profile.html" class="header__menu-link">Профиль</a></li>
+                        <li><a href="shop.html" class="header__menu-link">Магазин</a></li>
+                        <li><a href="auction.html" class="header__menu-link">Аукцион</a></li>
+                        <li><a href="top.html" class="header__menu-link">Топ коллекционеров</a></li>
+                    </ul>
                 </div>
+                <!--!---------------------------------------- -->
+
                 <div class="header__burger">
                     <span></span>
                 </div>
@@ -42,25 +55,29 @@
                     <div class="stickerPacks__row">
                         <div class="stickerPack">
                             <a href="stickerPack.html" class="stickerPack__link">
-                                <img src="img/stickers/Компиляция Texic.webp" alt="stickerPack" class="stickerPack__sticker">
+                                <img src="img/stickers/Компиляция Texic.webp" alt="stickerPack"
+                                    class="stickerPack__sticker">
                                 <h2 class="stickerPack__title">Texic</h2>
                             </a>
                         </div>
                         <div class="stickerPack">
                             <a href="stickerPack.html" class="stickerPack__link">
-                                <img src="img/stickers/Компиляция Cesar.webp" alt="stickerPack" class="stickerPack__sticker">
+                                <img src="img/stickers/Компиляция Cesar.webp" alt="stickerPack"
+                                    class="stickerPack__sticker">
                                 <h2 class="stickerPack__title">CeSar</h2>
                             </a>
                         </div>
                         <div class="stickerPack">
                             <a href="stickerPack.html" class="stickerPack__link">
-                                <img src="img/stickers/Компиляция ZDarya.webp" alt="stickerPack" class="stickerPack__sticker">
+                                <img src="img/stickers/Компиляция ZDarya.webp" alt="stickerPack"
+                                    class="stickerPack__sticker">
                                 <h2 class="stickerPack__title">ZDarya</h2>
                             </a>
                         </div>
                         <div class="stickerPack">
                             <a href="stickerPack.html" class="stickerPack__link">
-                                <img src="img/stickers/Компиляция Hollow.webp" alt="stickerPack" class="stickerPack__sticker">
+                                <img src="img/stickers/Компиляция Hollow.webp" alt="stickerPack"
+                                    class="stickerPack__sticker">
                                 <h2 class="stickerPack__title">h0110w_c0ast</h2>
                             </a>
                         </div>
@@ -68,26 +85,54 @@
                     <div class="stickerPacks__row">
                         <div class="stickerPack">
                             <a href="stickerPack.html" class="stickerPack__link">
-                                <img src="img/stickers/Компиляция Tsuya_Art.webp" alt="stickerPack" class="stickerPack__sticker">
+                                <img src="img/stickers/Компиляция Tsuya_Art.webp" alt="stickerPack"
+                                    class="stickerPack__sticker">
                                 <h2 class="stickerPack__title">Tusya_Art</h2>
                             </a>
                         </div>
                         <div class="stickerPack">
                             <a href="stickerPack.html" class="stickerPack__link">
-                                <img src="img/stickers/Компиляция Shenshila_2.webp" alt="stickerPack" class="stickerPack__sticker">
+                                <img src="img/stickers/Компиляция Shenshila_2.webp" alt="stickerPack"
+                                    class="stickerPack__sticker">
                                 <h2 class="stickerPack__title">Shenshila</h2>
                             </a>
                         </div>
                         <div class="stickerPack">
                             <a href="stickerPack.html" class="stickerPack__link">
-                                <img src="img/stickers/Компиляция Квасоля.webp" alt="stickerPack" class="stickerPack__sticker">
+                                <img src="img/stickers/Компиляция Квасоля.webp" alt="stickerPack"
+                                    class="stickerPack__sticker">
                                 <h2 class="stickerPack__title">Квасоля</h2>
                             </a>
                         </div>
                         <div class="stickerPack">
                             <a href="stickerPack.html" class="stickerPack__link">
-                                <img src="img/stickers/Компиляция Purrlat.webp" alt="stickerPack" class="stickerPack__sticker">
+                                <img src="img/stickers/Компиляция Purrlat.webp" alt="stickerPack"
+                                    class="stickerPack__sticker">
                                 <h2 class="stickerPack__title">Purrlat</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="stickerPacks__row">
+                        <div class="stickerPack">
+                            <a href="stickerPack.html" class="stickerPack__link">
+                                <img src="img/stickers/Компиляция Cesar.webp" alt="stickerPack"
+                                    class="stickerPack__sticker">
+                                <h2 class="stickerPack__title">CeSar</h2>
+                            </a>
+                        </div>
+                        <div class="stickerPack">
+                            <a href="stickerPack.html" class="stickerPack__link">
+                                <img src="img/stickers/Компиляция ZDarya.webp" alt="stickerPack"
+                                    class="stickerPack__sticker">
+                                <h2 class="stickerPack__title">ZDarya</h2>
+                            </a>
+                        </div>
+
+                        <div class="stickerPack">
+                            <a href="stickerPack.html" class="stickerPack__link">
+                                <img src="img/stickers/Компиляция Tsuya_Art.webp" alt="stickerPack"
+                                    class="stickerPack__sticker">
+                                <h2 class="stickerPack__title">Tusya_Art</h2>
                             </a>
                         </div>
                     </div>

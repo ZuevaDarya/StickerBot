@@ -8,11 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="icon" href="img/Dragon_av.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/allStickers.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/scroll.css">
-    <link rel="stylesheet" href="css/profile.css">
-    
-    <title>Коллекция</title>
+    <title>Все стикеры</title>
 </head>
 
 <body>
@@ -49,28 +48,12 @@
             </nav>
         </header>
 
+        <!--Основная часть-->
         <main class="main">
             <div class="main__wrapper">
                 <div class="stickers-bg">
-                    <div class="page-title">
-                        <h2 class="page-title__text">Коллекция</h2>
-                    </div>
-
                     <div class="sickers-page">
                         <div class="filters">
-                            <!--! Новое меню навигации -->
-                            <nav class="left-nav left-nav_filter">
-                                <ul class="left-nav__menu">
-                                    <li><a href="openPacks.html" class="left-nav__link">Открыть пак</a></li>
-                                    <li><a href="collection.html" class="left-nav__link">Коллекция</a></li>
-                                    <li><a href="joinStickers.html" class="left-nav__link">Объединение стикеров</a></li>
-                                    <li><a href="inviteFriend.html" class="left-nav__link">Пригласить друга</a></li>
-                                    <li><a href="settingsPage.html" class="left-nav__link">Настройка уведомлений</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <!--!-------------------------->
-
                             <h2 class="filters__title">Фильтры</h2>
                             <div class="filters__categories">
                                 <form id="filters" class="filters__form">
@@ -361,30 +344,285 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!--!Ноновое, фильтр по цене-->
+                            <div class="price">
+                                <p class="price__title">Цена:</p>
+                                <div class="price__checkbox">
+                                    <div class="price__checkbox-block">
+                                        <input type="checkbox" name="price" id="range0-50">
+                                        <label for="range0-50" class="price__checkbox-title">
+                                            0 - 50 <span class="price__symbol">💎</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="price__checkbox-block">
+                                        <input type="checkbox" name="price" id="range50-300">
+                                        <label for="range50-300" class="price__checkbox-title">
+                                            50 - 300 <span class="price__symbol">💎</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="price__checkbox-block">
+                                        <input type="checkbox" name="price" id="range300-2000">
+                                        <label for="range300-2000" class="price__checkbox-title">
+                                            300 - 2000 <span class="price__symbol">💎</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="price__checkbox-block">
+                                        <input type="checkbox" name="price" id="range2000-10000">
+                                        <label for="range2000-10000" class="price__checkbox-title">
+                                            2000 - 10000 <span class="price__symbol">💎</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="price__checkbox-block">
+                                        <input type="checkbox" name="price" id="range-10000">
+                                        <label for="range-10000" class="price__checkbox-title">
+                                            от 10000 <span class="price__symbol">💎</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="range-slider">
+                                    <div class="range-slider__block">  
+                                        <div class="range-slider__field">
+                                            <span class="range-slider__text">Мин.</span>
+                                            <input type="number" id="numberMin" class="range-slider__text range-slider__input-min" value="0">
+                                        </div>
+                                        <div class="range-slider__field">
+                                            <span class="range-slider__text">Макс.</span>
+                                            <input type="number" id="numberMax" class="range-slider__text range-slider__input-max" value="20000">
+                                        </div>
+                                    </div>
+                                    <div class="range-slider__slider">
+                                        <div class="range-slider__progress"></div>
+                                    </div>
+                                    <div class="range-slider__range-input">
+                                        <input type="range" id="rangeMin" class="range-slider__min" min="0" max="20000" value="0" step="1">
+                                        <input type="range" id="rangeMax" class="range-slider__max" min="0" max="20000" value="20000" step="1">
+                                    </div>
+                                </div>
+                                <!--!----------------------------------->
+                                
+                            </div>
                             <button class="filters__button">Сбросить фильтры</button>
                             <button class="filters__button">Применить</button>
                         </div>
 
                         <div class="stickers">
                             <div class="stickers__sticker">
-                                <a href="collectionSticker.html" class="stickers__sticker-link">
-                                    <img src="img/stickers/02.webp" alt="sticker" class="stickers__sticker-img">
-                                    <h2 class="stickers__sticker-title">Franklin Rose</h2>
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/texic_1.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Like for Lisa</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">56</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/shenshila.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Тетрадка и ручка</h2>
                                     <div class="stickers__sticker-star">
                                         <img src="img/star.svg" alt="star">
                                         <img src="img/star.svg" alt="star">
                                         <img src="img/star.svg" alt="star">
                                     </div>
                                 </a>
+
                                 <div class="stickers__num-block">
-                                    <div data-title="Количество в коллекции пользователя" class="stickers__num stickers__num_helper">2</div>
-                                    <div data-title="Количество стикеров, выставленных на аукцион пользователем" class="stickers__num stickers__num_red stickers__num_helper">1</div>
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">71</div>
                                 </div>
                             </div>
 
                             <div class="stickers__sticker">
-                                <a href="collectionSticker.html" class="stickers__sticker-link">
-                                    <img src="img/stickers/05.webp" alt="sticker" class="stickers__sticker-img">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/shenshila1.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Зеленый маркер</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">15</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/9.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Доктор Макс</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">10</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/ZDarya_10.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Franklin King</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">35</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/IMG_5041.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Nata Doesn't know</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">20</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/6.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Tyler Love</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">38</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/stik2.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Lilith Headpat</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">18</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/Yara Morgan heart.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Yara Morgan heart</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">6</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/texic_11.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Hot Lisa</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">105</div>
+                                </div>
+                            </div>
+
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/ZDarya_9.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Franklin Laugh</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">19</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/Yara questioning.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Yara questioning</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">13</div>
+                                </div>
+                            </div>
+
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/8.webp" alt="sticker" class="stickers__sticker-img">
                                     <h2 class="stickers__sticker-title">Тетрадка "Загляни!"</h2>
                                     <div class="stickers__sticker-star">
                                         <img src="img/star.svg" alt="star">
@@ -392,15 +630,16 @@
                                         <img src="img/star.svg" alt="star">
                                     </div>
                                 </a>
+
                                 <div class="stickers__num-block">
-                                    <div data-title="Количество в коллекции пользователя" class="stickers__num stickers__num_helper">3</div>
-                                    <div data-title="Количество стикеров, выставленных на аукцион пользователем" class="stickers__num stickers__num_red stickers__num_helper">0</div>
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">82</div>
                                 </div>
                             </div>
 
                             <div class="stickers__sticker">
-                                <a href="collectionSticker.html" class="stickers__sticker-link">
-                                    <img src="img/stickers/010.webp" alt="sticker" class="stickers__sticker-img">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/10.webp" alt="sticker" class="stickers__sticker-img">
                                     <h2 class="stickers__sticker-title">Reese Smile</h2>
                                     <div class="stickers__sticker-star">
                                         <img src="img/star.svg" alt="star">
@@ -409,29 +648,32 @@
                                         <img src="img/star.svg" alt="star">
                                     </div>
                                 </a>
+
                                 <div class="stickers__num-block">
-                                    <div data-title="Количество в коллекции пользователя" class="stickers__num stickers__num_helper">2</div>
-                                    <div data-title="Количество стикеров, выставленных на аукцион пользователем" class="stickers__num stickers__num_red stickers__num_helper">4</div>
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">47</div>
                                 </div>
                             </div>
 
                             <div class="stickers__sticker">
-                                <a href="collectionSticker.html" class="stickers__sticker-link">
-                                    <img src="img/stickers/Pink bonk.webp" alt="sticker" class="stickers__sticker-img">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/Pink bonk.webp" alt="sticker"
+                                        class="stickers__sticker-img">
                                     <h2 class="stickers__sticker-title">Pink bonk</h2>
                                     <div class="stickers__sticker-star">
                                         <img src="img/star.svg" alt="star">
                                     </div>
                                 </a>
+
                                 <div class="stickers__num-block">
-                                    <div data-title="Количество в коллекции пользователя" class="stickers__num stickers__num_helper">1</div>
-                                    <div data-title="Количество стикеров, выставленных на аукцион пользователем" class="stickers__num stickers__num_red stickers__num_helper">150</div>
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">126</div>
                                 </div>
                             </div>
 
                             <div class="stickers__sticker">
-                                <a href="collectionSticker.html" class="stickers__sticker-link">
-                                    <img src="img/stickers/Yara encouragment.webp" alt="sticker"
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/Yara encouragment.webp" alt="sticker"
                                         class="stickers__sticker-img">
                                     <h2 class="stickers__sticker-title">Yara encouragment</h2>
                                     <div class="stickers__sticker-star">
@@ -440,9 +682,142 @@
                                         <img src="img/star.svg" alt="star">
                                     </div>
                                 </a>
+
                                 <div class="stickers__num-block">
-                                    <div data-title="Количество в коллекции пользователя" class="stickers__num stickers__num_helper">7</div>
-                                    <div data-title="Количество стикеров, выставленных на аукцион пользователем" class="stickers__num stickers__num_red stickers__num_helper">25</div>
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">22</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/4.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Franklin Questioning</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">39</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/Cesar/7.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Воорон и вороненок</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">5</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/08.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Franklin Rose</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">16</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/3.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Reggie Rock</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">6</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/7.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Franklin "What?"</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">27</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/Cesar/3.webp" alt="sticker" class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Стражник</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">75</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <img src="img/stickers/forSale/IMG_5038.webp" alt="sticker"
+                                        class="stickers__sticker-img">
+                                    <h2 class="stickers__sticker-title">Nata Scarf</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">41</div>
+                                </div>
+                            </div>
+
+                            <div class="stickers__sticker">
+                                <a href="auctionSticker.html" class="stickers__sticker-link">
+                                    <tgs-player autoplay loop mode="normal" src="img/stickers/Cesar/smd2.tgs"
+                                        class="stickers__sticker-img"></tgs-player>
+                                    <h2 class="stickers__sticker-title">Лекси</h2>
+                                    <div class="stickers__sticker-star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                        <img src="img/star.svg" alt="star">
+                                    </div>
+                                </a>
+
+                                <div class="stickers__num-block">
+                                    <div data-title="Количество предложений на аукционе"
+                                        class="stickers__num stickers__num_red stickers__num_helper">9</div>
                                 </div>
                             </div>
                         </div>
@@ -453,7 +828,6 @@
                             <li class="nav__page">
                                 <button class="nav__button">
                                     < </button>
-
                             </li>
                             <li class="nav__page">
                                 <button class="nav__button">1</button>
@@ -473,6 +847,7 @@
             </div>
         </main>
 
+
         <footer class="footer">
             <div class="footer__wrapper">
                 <p class="footer__text">© 2022 WyrmSticker</p>
@@ -483,12 +858,14 @@
                 </div>
             </div>
         </footer>
+    </div>
 
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/jquery.cycle.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/allStickers.js"></script>
-        <script src="js/tgs-player.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.cycle.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/rangeSlider.js"></script>
+    <script src="js/allStickers.js"></script>
+    <script src="js/tgs-player.js"></script>
 </body>
 
 </html>

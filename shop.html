@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/Dragon_av.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/shop.css">
+
+    <title>Магазин</title>
+</head>
+
+<body>
+    <div class="error-window">
+        <h2 class="error-window__title">Недостаточно валюты!</h2>
+        <p class="error-window__info"> Для совершения покупки Вам не хватает
+            <span class="error-window__info_yellow">800 </span>
+            <span class="tabs-card__symbol">💎</span>,
+            добавить в корзину
+            <span class="error-window__info_yellow">1000 </span>
+            <span class="tabs-card__symbol">💎</span>
+            за
+            <span class="error-window__info_yellow">200 руб ?</span>
+        </p>
+
+        <div class="error-window__buttons">
+            <button class="error-window__button error-window__button_disagree"></button>
+            <button class="error-window__button error-window__button_agree"></button>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <!--Шапка-->
+        <header class="header">
+            <nav class="header__wrapper">
+                <a href="index.html" class="header__logo-link"><img class="header__logo" src="img/Dragon_av.png"
+                        alt="logo"></a>
+
+                <!--! ----------Переписана шапка---------- -->
+                <div class="header__links-wrapper">
+                    <ul class="header__menu">
+                        <li><a href="index.html" class="header__menu-link">Главная</a></li>
+                        <li><a href="#" class="header__menu-link header__menu-link_select">Стикеры</a>
+                            <ul class="header__sub-menu">
+                                <li><a href="allStickers.html" class="header__sub-menu-link">Все стикеры</a></li>
+                                <li><a id="stickerPacks" href="stickerPacks.html"
+                                        class="header__sub-menu-link">Стикерпаки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="profile.html" class="header__menu-link">Профиль</a></li>
+                        <li><a href="shop.html" class="header__menu-link">Магазин</a></li>
+                        <li><a href="auction.html" class="header__menu-link">Аукцион</a></li>
+                        <li><a href="top.html" class="header__menu-link">Топ коллекционеров</a></li>
+                    </ul>
+                </div>
+                <!--!---------------------------------------- -->
+
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <a href="auth.html" class="header__button">Вход</a>
+            </nav>
+        </header>
+
+        <!--! Для каждой карточки магазина для цены (<p> с классом .tabs-card__price) в зависимости от вида-->
+        <!--! алмазы, золото или рубли лобавляется соответствующий класс-->
+        <!--! для алмазов: .tabs-card__price_diamond -->
+        <!--! для золота: .tabs-card__price_gold -->
+        <!--! для рублей: .tabs-card__price_ruble -->
+        <!--! Ножно для JS - считать ИТОГО и прочие цифры -->
+
+        <!--Основная часть-->
+        <main class="main">
+            <div class="main__wrapper">
+                <div class="stickers-bg">
+                    <div class="page-title">
+                        <h2 class="page-title__text">Магазин</h2>
+                    </div>
+
+                    <div class="shop-container">
+                        <nav class="tabs">
+                            <a href="#specialOffers" class="tabs__item" id="specialOffersLink">Специальные
+                                предложения</a>
+                            <a href="#packs" class="tabs__item">Паки</a>
+                            <a href="#subscriptions" class="tabs__item">Подписки</a>
+                            <a href="#price" class="tabs__item">Валюта</a>
+                        </nav>
+
+                        <div class="shop">
+                            <div class="shop__tabs-body">
+
+                                <!--СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ-->
+                                <div id="specialOffers" class="shop__tabs-block">
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Скидка:
+                                                        </span>40%</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            подарок
+                                                            вы получите: </span> стикер Kitty Matilda</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Дата
+                                                            окончания акции: </span>бессрочно</p>
+                                                    <p class="helper__text">
+                                                        <span class="helper__text_yellow">Описание: </span>
+                                                        15 наборов Texic и стикер Kitty Matilda по специальной цене!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/Компиляция Texic.webp" alt="Пак"
+                                                class="tabs-card__img">
+                                            <p class="tabs-card__title">Предложение от Texic</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">900 <span
+                                                    class="tabs-card__symbol">💎</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Скидка:
+                                                        </span>70%</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Дата
+                                                            окончания акции: </span>31.07.2022</p>
+                                                    <p class="helper__text">
+                                                        <span class="helper__text_yellow">Описание: </span>
+                                                        10 наборов NETAPAI по невероятно выгодной цене!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/netapai.webp" alt="Пак" class="tabs-card__img">
+                                            <p class="tabs-card__title">10 наборов NETAPAI</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">1500 <span
+                                                    class="tabs-card__symbol">💎</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Скидка:
+                                                        </span></p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            подарок
+                                                            вы получите: </span> стикер Cool Sugar</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Дата
+                                                            окончания акции: </span>07.08.2022</p>
+                                                    <p class="helper__text">
+                                                        <span class="helper__text_yellow">Описание: </span>
+                                                        10 наборов Gibsi и тир 4 стикер Cool Sugar в подарок!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/cabriollet.webp" alt="Пак" class="tabs-card__img">
+                                            <p class="tabs-card__title">Gibsi МЕГА НАБОР!</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">3000 <span
+                                                    class="tabs-card__symbol">💎</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Скидка:
+                                                        </span></p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            подарок
+                                                            вы получите: </span> стикер 3 тира</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Дата
+                                                            окончания акции: </span>07.08.2022</p>
+                                                    <p class="helper__text">
+                                                        <span class="helper__text_yellow">Описание: </span>
+                                                        15 наборов Gibsi и случайный тир 3 стикер в подарок!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/Превью.png" alt="Пак" class="tabs-card__img">
+                                            <p class="tabs-card__title">Gibsi стартовый набор</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">900 <span
+                                                    class="tabs-card__symbol">💎</span>
+                                            </p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Скидка:
+                                                        </span>100%</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Дата
+                                                            окончания акции: </span>бессрочно</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span>7 стартовых паков бесплатно!</p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/Рука 1.png" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">Набор стартовых паков</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">бесплатно <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-----------------ПАКИ---------------->
+                                <div id="packs" class="shop__tabs-block">
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> обычный пак</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 21614шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В рублях:
+                                                        </span>
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span>из данного пака есть шанс получить абсолютно любой стикер
+                                                        любого автора!</p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/Рука 1.png" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">Обычный пак</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">100 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> обычный пак</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 21614шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В рублях:
+                                                        </span>
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span>из данного пака есть шанс получить абсолютно любой стикер
+                                                        любого автора!</p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/Рука 1.png" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">Обычный пак</p>
+                                            <p class="tabs-card__price tabs-card__price_gold">1000 <span
+                                                    class="tabs-card__symbol">💰</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card exclusive">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> NETAPAI</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 34шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            рублях:</span> 1700₽
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span>
+                                                        Нетопышка! Веселая и милая снаружи, но хитрая внутри. В прошлой
+                                                        жизни она точно была кошечкой!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/netapai.webp" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">NETAPAI</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">250 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> Dorka_pomidorka</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 0шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            рублях:</span> 0₽
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span>Демон-они Аня и её типичная домашняя жизнь</p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/dorka.webp" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">Dorka_pomidorka</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">100 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> Gibsi</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 0шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            рублях:</span> 0₽
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span>Встречайте сахарную принцессу Sugar Crush! Прямиком из
+                                                        королевства сладостей и вафельных трубочек.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/cabriollet.webp" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">Gibsi</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">100 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> Cabbriolet</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 35шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            рублях:</span> 700₽
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span></p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/gibsi.webp" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">Cabbriolet</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">100 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> Shenshila</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 115шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            рублях:</span> 2300₽
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span></p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/gif/Анимированное превью.gif" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">Shenshila</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">100 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> Texic</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 49шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            рублях:</span> 980₽
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span></p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/gif/Анимированное превью 01.gif" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">Texic</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">100 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> CeSar</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 269шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            рублях:</span> 5380₽
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span></p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/gif/Анимированное превью 02.gif" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">CeSar</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">100 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> ZDarya</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 5шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            рублях:</span> 100₽
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span></p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/Компиляция ZDarya.webp" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">ZDarya</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">100 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> Purrlat</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 6шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            рублях:</span> 120₽
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span></p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/Компиляция Purrlat.webp" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">Purrlat</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">100 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> Квасоля</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 13шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            рублях:</span> 260₽
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span></p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/Компиляция Квасоля.webp" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">Квасоля</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">100 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> Tusya_Art</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 7шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            рублях:</span> 140₽
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span></p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/Компиляция Tsuya_Art.webp" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">Tusya_Art</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">100 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">Пак
+                                                            художника:
+                                                        </span> h0110w_c0ast</p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Статистика: </span>
+                                                        пользователи открыли этот пак за все время: 2шт.</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">В
+                                                            рублях:</span> 40₽
+                                                    </p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span></p>
+                                                </div>
+                                            </div>
+                                            <img src="img/stickers/Компиляция Hollow.webp" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_hand">
+                                            <p class="tabs-card__title">h0110w_c0ast</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">100 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-----------------ПОДПИСКИ---------------->
+                                <div id="subscriptions" class="shop__tabs-block">
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text"><span class="helper__text_yellow">
+                                                            Период действия:
+                                                        </span>28 дней</p>
+                                                    <p class="helper__text"><span class="helper__text_yellow">Описание:
+                                                        </span>
+                                                        Раз в 7 дней выдаётся эксклюзивный пак.
+                                                        Также выдаются алмазы - 50
+                                                        <span class="tabs-card__symbol">💎</span> в 3-й день недели и
+                                                        75 <span class="tabs-card__symbol">💎</span> в 7-й день недели.
+                                                    </p>
+                                                    <p class="helper__text"><span
+                                                            class="helper__text_yellow">Дополнительно: </span>
+                                                        При покупке нескольких подписок сразу награда суммируется.
+                                                        Награда должна забираться в указанный день.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/Dragon_av.png" alt="Пак"
+                                                class="tabs-card__img tabs-card__img">
+                                            <p class="tabs-card__title">Месяц эксклюзива и алмазов</p>
+                                            <p class="tabs-card__price tabs-card__price_ruble">150 <span
+                                                    class="tabs-card__symbol">₽</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-----------------ВАЛЮТА---------------->
+                                <div id="price" class="shop__tabs-block">
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text">
+                                                        Покупка монет производится за алмазы 1
+                                                        <span class="tabs-card__symbol">💎</span>
+                                                        = 10 <span class="tabs-card__symbol">💰</span>.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/money01.png" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_price">
+                                            <p class="tabs-card__title">300 монет</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">30 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text">
+                                                        Покупка монет производится за алмазы 1
+                                                        <span class="tabs-card__symbol">💎</span>
+                                                        = 10 <span class="tabs-card__symbol">💰</span>.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/money01.png" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_price">
+                                            <p class="tabs-card__title">600 монет</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">60 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text">
+                                                        Покупка монет производится за алмазы 1
+                                                        <span class="tabs-card__symbol">💎</span>
+                                                        = 10 <span class="tabs-card__symbol">💰</span>.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/money01.png" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_price">
+                                            <p class="tabs-card__title">900 монет</p>
+                                            <p class="tabs-card__price tabs-card__price_diamond">90 <span
+                                                    class="tabs-card__symbol">💎</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text">
+                                                        Покупка алмазов производится по курсу 20
+                                                        <span class="tabs-card__symbol">₽</span>
+                                                        = 100 <span class="tabs-card__symbol">💎</span>.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/diamond01.png" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_price">
+                                            <p class="tabs-card__title">500 алмазов</p>
+                                            <p class="tabs-card__price tabs-card__price_ruble">100 <span
+                                                    class="tabs-card__symbol">₽</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text">
+                                                        Покупка алмазов производится по курсу 20
+                                                        <span class="tabs-card__symbol">₽</span>
+                                                        = 100 <span class="tabs-card__symbol">💎</span>.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/diamond01.png" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_price">
+                                            <p class="tabs-card__title">5000 алмазов</p>
+                                            <p class="tabs-card__price tabs-card__price_ruble">200 <span
+                                                    class="tabs-card__symbol">₽</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="shop__tabs-container">
+                                        <div class="shop__tabs-card tabs-card">
+                                            <div class="tabs-card__helper helper">
+                                                <span class="helper__hover-block">i</span>
+                                                <div class="helper__info">
+                                                    <p class="helper__text">
+                                                        Покупка алмазов производится по курсу 20
+                                                        <span class="tabs-card__symbol">₽</span>
+                                                        = 100 <span class="tabs-card__symbol">💎</span>.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <img src="img/diamond01.png" alt="Пак"
+                                                class="tabs-card__img tabs-card__img_price">
+                                            <p class="tabs-card__title">1500 алмазов</p>
+                                            <p class="tabs-card__price tabs-card__price_ruble">300 <span
+                                                    class="tabs-card__symbol">₽</span></p>
+                                        </div>
+
+                                        <div class="shop__buttons">
+                                            <button class="shop__button shop__button_minus"></button>
+                                            <span class="shop__num">0</span>
+                                            <button class="shop__button shop__button_plus"></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="shop__total">
+                                    <p class="shop__total-text">
+                                        <span class="shop__total-text_uppercase">Итого:</span>
+                                        <span class="shop__total-text_num tabs-card__price_diamond">0
+                                            <span class="tabs-card__symbol">💎</span>
+                                        </span>
+                                        <span class="shop__total-text_num tabs-card__price_gold">0
+                                            <span class="tabs-card__symbol">💰</span>
+                                        </span>
+                                        <span class="shop__total-text_num tabs-card__price_ruble">0
+                                            <span class="tabs-card__symbol"> ₽</span>
+                                        </span>
+                                    </p>
+
+                                    <button id="buyButton" class="shop__total-button">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <p class="footer__text">© 2022 WyrmSticker</p>
+                <div>
+                    <a href="documents.html" class="footer__link">Документы</a>
+                    <a href="about.html" class="footer__link">О нас</a>
+                    <a href="https://t.me/wyrm_sticker_bot" class="footer__link">Telegram</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.cycle.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/shop.js"></script>
+        <script src="js/tgs-player.js"></script>
+</body>
+
+</html>

@@ -2,6 +2,13 @@
   background-color: rgba(158, 163, 255, 0.4);
   margin: 130px 0 0 0;
   padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (max-width: 941px) {
@@ -18,9 +25,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   margin: 0 0 2rem 0;
@@ -31,8 +38,8 @@
 }
 
 .stickerPacks__row:nth-child(odd) .stickerPack:nth-child(odd):hover {
-  -webkit-transition: all .2s ease-out 0s;
-  transition: all .2s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   z-index: 2;
@@ -186,10 +193,14 @@
   max-width: 245px;
   padding: 15px;
   border-radius: 10px;
-  margin: 0 1rem 0 0;
+  margin: 0 2rem 0 0;
   border: 1px solid white;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.stickerPack:last-child {
+  margin-right: 0;
 }
 
 @media (max-width: 851px) {

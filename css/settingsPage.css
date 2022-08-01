@@ -1,0 +1,142 @@
+@charset "UTF-8";
+.settings {
+  background-color: black;
+  border-radius: 10px;
+  margin-left: 30px;
+  padding: 20px 40px 60px 40px;
+}
+
+@media (max-width: 811px) {
+  .settings {
+    padding: 20px 20px 40px 20px;
+  }
+}
+
+@media (max-width: 607px) {
+  .settings {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.settings__title {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: bold;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: #8b84da;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .settings__title {
+    font-size: calc(16px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .settings__title {
+    font-size: calc(16px + 4 * (100vw / 1440));
+  }
+}
+
+.settings__table {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 40px;
+  -ms-grid-columns: minmax(200px, 350px) minmax(200px, 350px);
+      grid-template-columns: minmax(200px, 350px) minmax(200px, 350px);
+  row-gap: 30px;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  justify-items: stretch;
+  -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (max-width: 811px) {
+  .settings__table {
+    row-gap: 20px;
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+  }
+}
+
+@media (max-width: 751px) {
+  .settings__table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.settings__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  background-color: rgba(158, 163, 255, 0.34);
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .settings__button {
+    font-size: calc(13px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .settings__button {
+    font-size: calc(13px + 2 * (100vw / 1440));
+  }
+}
+
+.settings__button:hover {
+  background-color: #323237;
+}
+
+.settings__info {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.settings__icon {
+  display: inline-block;
+  background-image: url("../img/icons8-колокольчик-48.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 30px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.settings-checked {
+  background-color: #323237;
+}
+
+.settings-checked .settings__icon {
+  background-image: url("../img/icons8-перечеркнутый-колокольчик-48.png");
+}

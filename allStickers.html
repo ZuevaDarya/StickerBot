@@ -20,14 +20,25 @@
         <header class="header">
             <nav class="header__wrapper">
                 <a href="index.html" class="header__logo-link"><img class="header__logo" src="img/Dragon_av.png" alt="logo"></a>
-                <div class="header__links">
-                    <a href="index.html" class="header__link">Главная</a>
-                    <a href="stickerPacks.html" class="header__link">Стикерпаки</a>
-                    <a href="allStickers.html" class="header__link">Все стикеры</a>
-                    <a href="collection.html" class="header__link">Коллекция</a>
-                    <a href="top.html" class="header__link">топ <br>коллекционеров</a>
-                    <a href="about.html" class="header__link">О нас</a>
+            
+                 <!--! ----------Переписана шапка---------- -->
+                 <div class="header__links-wrapper">
+                    <ul class="header__menu">
+                        <li><a href="index.html" class="header__menu-link">Главная</a></li>
+                        <li><a href="#" class="header__menu-link header__menu-link_select">Стикеры</a>
+                            <ul class="header__sub-menu">
+                                <li><a href="allStickers.html" class="header__sub-menu-link">Все стикеры</a></li>
+                                <li><a  id="stickerPacks" href="stickerPacks.html" class="header__sub-menu-link">Стикерпаки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="profile.html" class="header__menu-link">Профиль</a></li>
+                        <li><a href="shop.html" class="header__menu-link">Магазин</a></li>
+                        <li><a href="auction.html" class="header__menu-link">Аукцион</a></li>
+                        <li><a href="top.html" class="header__menu-link">Топ коллекционеров</a></li>
+                    </ul>
                 </div>
+                <!--!---------------------------------------- -->
+
                 <div class="header__burger">
                     <span></span>
                 </div>
@@ -652,6 +663,7 @@
             </div>
         </main>
 
+        
         <footer class="footer">
             <div class="footer__wrapper">
                 <p class="footer__text">© 2022 WyrmSticker</p>

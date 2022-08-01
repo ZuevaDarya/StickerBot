@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $('.slider__wrapper').cycle({
         fx: 'fade',
@@ -21,11 +20,12 @@ $(document).ready(function () {
 
     //Бургер
     $('.header__burger').click(function (event) {
-        $('.header__burger, .header__links').toggleClass('active-menu');
+        $('.header__burger, .header__links-wrapper').toggleClass('active-menu');
     });
 
-    $('#stickerPacks').click(function (event) {
-        $('body').fadeIn(500);
+    //Настройки
+    $('.settings__button').click(function (event) {
+        $(this).toggleClass('settings-checked');
     });
 });
 

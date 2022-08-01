@@ -1,0 +1,188 @@
+.invite {
+  background-color: black;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 780px;
+  margin-left: 20px;
+}
+
+@media (max-width: 607px) {
+  .invite {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 356px) {
+  .invite {
+    padding: 15px;
+  }
+}
+
+.invite__block {
+  border-bottom: 1px solid rgba(158, 163, 255, 0.34);
+  padding: 10px 0 20px 20px;
+}
+
+.invite__block:first-child {
+  text-align: center;
+  padding-left: 0;
+}
+
+.invite__block > p {
+  display: block;
+  margin: 20px 0 10px 20px;
+}
+
+@media (max-width: 356px) {
+  .invite__block > p {
+    margin-left: 15px;
+  }
+}
+
+.invite__block:last-child {
+  border: none;
+}
+
+@media (max-width: 811px) {
+  .invite__block {
+    padding-left: 0;
+  }
+}
+
+.invite__button {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgba(158, 163, 255, 0.34);
+  padding: 15px 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  .invite__button {
+    font-size: calc(12px + 5.1 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .invite__button {
+    font-size: calc(12px + 3 * (100vw / 1440));
+  }
+}
+
+.invite__button:hover {
+  background-color: #323237;
+}
+
+.invite__title {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: #8b84da;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+  .invite__title {
+    font-size: calc(14px + 10.2 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .invite__title {
+    font-size: calc(14px + 6 * (100vw / 1440));
+  }
+}
+
+.invite__text {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .invite__text {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .invite__text {
+    font-size: calc(14px + 4 * (100vw / 1440));
+  }
+}
+
+.invite__text_yellow {
+  color: #ffd600;
+}
+
+.invite__text_blue {
+  color: #8b84da;
+}
+
+.invite__text_bold {
+  font-weight: bold;
+}
+
+.invite__link {
+  word-break: break-all;
+}
+
+.invite__link:hover {
+  color: rgba(158, 163, 255, 0.4);
+}
+
+.invite__friend-list {
+  margin: 0;
+  text-align: justify;
+}
+
+.invite__bonus-list {
+  margin: 0;
+  text-align: justify;
+}
+
+@media (max-width: 356px) {
+  .friend-list {
+    padding-left: 25px;
+  }
+}
+
+.friend-list__item {
+  margin-bottom: 15px;
+  line-height: 26px;
+}
+
+.bonus-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.bonus-list__item {
+  margin-bottom: 15px;
+  line-height: 26px;
+}
+
+.bonus-list__item::before {
+  content: "\2014";
+  color: white;
+}
+
+@media (max-width: 356px) {
+  .bonus-list {
+    padding-left: 15px;
+  }
+}

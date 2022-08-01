@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,10 @@
         rel="stylesheet">
     <link rel="icon" href="img/Dragon_av.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sticker.css">
     <link rel="stylesheet" href="css/scroll.css">
-    <title>Стикер</title>
+    <link rel="stylesheet" href="css/settingsPage.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>Настройки уведомлений</title>
 </head>
 
 <body>
@@ -51,41 +52,44 @@
         <!--Основная часть-->
         <main class="main">
             <div class="main__wrapper">
-                <div class="sticker-bg">
+                <div class="stickers-bg">
                     <div class="page-title">
-                        <h1 class="page-title__text">Стикерпак от <span class="page-title_name">CeSar</span></h1>
+                        <h2 class="page-title__text">Настройка уведомлений</h2>
                     </div>
-                    <div class="sticker">
-                        <img autoplay loop mode="normal" src="img/stickers/Cesar/2.webp"
-                            class="sticker__img">
-                        <div class="sticker__card">
-                            <h2 class="sticker__name">Галеас</h2>
-                            <div class="sticker__info">
-                                <div class="sticker__info-row">
-                                    <p class="sticker__info-text">Редкость:</p>
-                                    <img src="img/star.svg" alt="star" class="sticker__star">
-                                </div>
 
-                                <p class="sticker__info-text">Прибыль: Приносит <span
-                                        class="sticker__text-num">1</span><span class="sticker__symbol">💰</span>
-                                    за <span class="sticker__text-time">60</span><span class="sticker__symbol">⏱</span>
-                                    минут</p>
-                                <p class="sticker__info-text">Эмоция: <span class="sticker__emoji">👍🏻</span></p>
-                                <p class="sticker__info-text">Эффект: <span class="sticker__effect">Нет эффекта</span>
-                                </p>
+                    <div class="sickers-page">
+                        <!--! Новое меню навигации -->
+                        <nav class="left-nav">
+                            <ul class="left-nav__menu">
+                                <li><a href="openPacks.html" class="left-nav__link">Открыть пак</a></li>
+                                <li><a href="collection.html" class="left-nav__link">Коллекция</a></li>
+                                <li><a href="joinStickers.html" class="left-nav__link">Объединение стикеров</a></li>
+                                <li><a href="inviteFriend.html" class="left-nav__link">Пригласить друга</a></li>
+                                <li><a href="settingsPage.html" class="left-nav__link">Настройка уведомлений</a></li>
+                            </ul>
+                        </nav>
+                        <!--!-------------------------->
+
+                        <div class="settings">
+                            <h3 class="settings__title">Настройка уведомлений в Telegram</h3>
+                            <div class="settings__table">
+                                <a href="#" class="settings__button"><span class="settings__info">Ежедневные задания</span> <span class="settings__icon"></span></a>
+                                <a href="#" class="settings__button">Эффекты стикеров <span class="settings__icon"></span></a>
+
+                                <a href="#" class="settings__button">Получение опыта <span class="settings__icon"></span></a>
+                                <a href="#" class="settings__button">Прогресс еж. заданий <span class="settings__icon"></span></a>
+
+                                <a href="#" class="settings__button">Наполнение копилки <span class="settings__icon"></span></a>
+                                <a href="#" class="settings__button">Рассылки <span class="settings__icon"></span></a>
                             </div>
-                            <p class="sticker__description">Славная работа, сэр! Держите моё рыцарское одобрение.</p>
                         </div>
+
                     </div>
 
-                    <div class="sticker-nav">
-                        <a href="#" class="sticker-nav__link-prev"></a>
-                        <a href="stickerPack.html" class="sticker-nav__link">К стикерпаку</a>
-                        <a href="#" class="sticker-nav__link-next"></a>
-                    </div>
                 </div>
             </div>
         </main>
+
         <footer class="footer">
             <div class="footer__wrapper">
                 <p class="footer__text">© 2022 WyrmSticker</p>
@@ -96,12 +100,12 @@
                 </div>
             </div>
         </footer>
-    </div>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.cycle.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/tgs-player.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.cycle.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/allStickers.js"></script>
+        <script src="js/tgs-player.js"></script>
 </body>
 
 </html>

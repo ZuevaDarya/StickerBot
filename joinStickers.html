@@ -11,11 +11,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/scroll.css">
     <link rel="stylesheet" href="css/profile.css">
-    
-    <title>Коллекция</title>
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/joinSticker.css">
+    <link rel="stylesheet" href="css/getStickerAnimation.css">
+
+    <title>Объединение стикеров</title>
 </head>
 
 <body>
+    <div class="get-sticker-window">
+        <h2 class="get-sticker-window__title">Получено</h2>
+        <div class="get-sticker-window__sticker">
+            <span class="flare"></span>
+            <img src="img/stickers/7.webp" alt="sticker" class="get-sticker-window__sticker-img">
+            <h2 class="get-sticker-window__sticker-title">Тетрадка "что?"</h2>
+            <div class="get-sticker-window__sticker-star">
+                <img src="img/star.svg" alt="star">
+                <img src="img/star.svg" alt="star">
+            </div>
+        </div>
+    </div>
+
     <div class="wrapper">
         <!--Шапка-->
         <header class="header">
@@ -53,7 +69,7 @@
             <div class="main__wrapper">
                 <div class="stickers-bg">
                     <div class="page-title">
-                        <h2 class="page-title__text">Коллекция</h2>
+                        <h2 class="page-title__text">Объединение стикеров</h2>
                     </div>
 
                     <div class="sickers-page">
@@ -365,84 +381,122 @@
                             <button class="filters__button">Применить</button>
                         </div>
 
-                        <div class="stickers">
-                            <div class="stickers__sticker">
-                                <a href="collectionSticker.html" class="stickers__sticker-link">
-                                    <img src="img/stickers/02.webp" alt="sticker" class="stickers__sticker-img">
-                                    <h2 class="stickers__sticker-title">Franklin Rose</h2>
-                                    <div class="stickers__sticker-star">
-                                        <img src="img/star.svg" alt="star">
-                                        <img src="img/star.svg" alt="star">
-                                        <img src="img/star.svg" alt="star">
-                                    </div>
-                                </a>
-                                <div class="stickers__num-block">
-                                    <div data-title="Количество в коллекции пользователя" class="stickers__num stickers__num_helper">2</div>
-                                    <div data-title="Количество стикеров, выставленных на аукцион пользователем" class="stickers__num stickers__num_red stickers__num_helper">1</div>
+                        <div class="stickers-container">
+                            <div class="container-with-button">
+
+                                <div class="join-block">
+
+                                </div>
+
+                                <div class="bottom-pannel">
+                                    <p class="bottom-pannel__text">Стоимость объединения: 1000
+                                        <span class="bottom-pannel__symbol">💰</span>
+                                    </p>
+
+                                    <button class="join-stickers__agree-button">0/5</button>
                                 </div>
                             </div>
 
-                            <div class="stickers__sticker">
-                                <a href="collectionSticker.html" class="stickers__sticker-link">
-                                    <img src="img/stickers/05.webp" alt="sticker" class="stickers__sticker-img">
-                                    <h2 class="stickers__sticker-title">Тетрадка "Загляни!"</h2>
-                                    <div class="stickers__sticker-star">
-                                        <img src="img/star.svg" alt="star">
-                                        <img src="img/star.svg" alt="star">
-                                        <img src="img/star.svg" alt="star">
-                                    </div>
-                                </a>
-                                <div class="stickers__num-block">
-                                    <div data-title="Количество в коллекции пользователя" class="stickers__num stickers__num_helper">3</div>
-                                    <div data-title="Количество стикеров, выставленных на аукцион пользователем" class="stickers__num stickers__num_red stickers__num_helper">0</div>
-                                </div>
-                            </div>
 
-                            <div class="stickers__sticker">
-                                <a href="collectionSticker.html" class="stickers__sticker-link">
-                                    <img src="img/stickers/010.webp" alt="sticker" class="stickers__sticker-img">
-                                    <h2 class="stickers__sticker-title">Reese Smile</h2>
-                                    <div class="stickers__sticker-star">
-                                        <img src="img/star.svg" alt="star">
-                                        <img src="img/star.svg" alt="star">
-                                        <img src="img/star.svg" alt="star">
-                                        <img src="img/star.svg" alt="star">
+                            <div class="stickers">
+                                <div class="stickers__sticker">
+                                    <div class="stickers__sticker-link">
+                                        <img src="img/stickers/02.webp" alt="sticker" class="stickers__sticker-img">
+                                        <h2 class="stickers__sticker-title">Franklin Rose</h2>
+                                        <div class="stickers__sticker-star">
+                                            <img src="img/star.svg" alt="star">
+                                            <img src="img/star.svg" alt="star">
+                                            <img src="img/star.svg" alt="star">
+                                        </div>
                                     </div>
-                                </a>
-                                <div class="stickers__num-block">
-                                    <div data-title="Количество в коллекции пользователя" class="stickers__num stickers__num_helper">2</div>
-                                    <div data-title="Количество стикеров, выставленных на аукцион пользователем" class="stickers__num stickers__num_red stickers__num_helper">4</div>
+                                    <div class="stickers__num-block">
+                                        <div data-title="Количество в коллекции пользователя"
+                                            class="stickers__num stickers__num_helper">4</div>
+                                        <div data-title="Количество стикеров, выставленных на аукцион пользователем"
+                                            class="stickers__num stickers__num_red stickers__num_helper">0</div>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="stickers__sticker">
-                                <a href="collectionSticker.html" class="stickers__sticker-link">
-                                    <img src="img/stickers/Pink bonk.webp" alt="sticker" class="stickers__sticker-img">
-                                    <h2 class="stickers__sticker-title">Pink bonk</h2>
-                                    <div class="stickers__sticker-star">
-                                        <img src="img/star.svg" alt="star">
+                                <div class="stickers__sticker">
+                                    <div class="stickers__sticker-link">
+                                        <img src="img/stickers/03.webp" alt="sticker" class="stickers__sticker-img">
+                                        <h2 class="stickers__sticker-title">Стражник</h2>
+                                        <div class="stickers__sticker-star">
+                                            <img src="img/star.svg" alt="star">
+                                        </div>
                                     </div>
-                                </a>
-                                <div class="stickers__num-block">
-                                    <div data-title="Количество в коллекции пользователя" class="stickers__num stickers__num_helper">1</div>
-                                    <div data-title="Количество стикеров, выставленных на аукцион пользователем" class="stickers__num stickers__num_red stickers__num_helper">150</div>
+                                    <div class="stickers__num-block">
+                                        <div data-title="Количество в коллекции пользователя"
+                                            class="stickers__num stickers__num_helper">2</div>
+                                        <div data-title="Количество стикеров, выставленных на аукцион пользователем"
+                                            class="stickers__num stickers__num_red stickers__num_helper">1</div>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="stickers__sticker">
-                                <a href="collectionSticker.html" class="stickers__sticker-link">
-                                    <img src="img/stickers/Yara encouragment.webp" alt="sticker"
-                                        class="stickers__sticker-img">
-                                    <h2 class="stickers__sticker-title">Yara encouragment</h2>
-                                    <div class="stickers__sticker-star">
-                                        <img src="img/star.svg" alt="star">
-                                        <img src="img/star.svg" alt="star">
-                                        <img src="img/star.svg" alt="star">
+                                <div class="stickers__sticker">
+                                    <div class="stickers__sticker-link">
+                                        <img src="img/stickers/texic1.webp" alt="sticker" class="stickers__sticker-img">
+                                        <h2 class="stickers__sticker-title">Like for Lisa</h2>
+                                        <div class="stickers__sticker-star">
+                                            <img src="img/star.svg" alt="star">
+                                        </div>
                                     </div>
-                                </a>
-                                <div class="stickers__num-block">
-                                    <div data-title="Количество в коллекции пользователя" class="stickers__num stickers__num_helper">7</div>
-                                    <div data-title="Количество стикеров, выставленных на аукцион пользователем" class="stickers__num stickers__num_red stickers__num_helper">25</div>
+                                    <div class="stickers__num-block">
+                                        <div data-title="Количество в коллекции пользователя"
+                                            class="stickers__num stickers__num_helper">2</div>
+                                        <div data-title="Количество стикеров, выставленных на аукцион пользователем"
+                                            class="stickers__num stickers__num_red stickers__num_helper">0</div>
+                                    </div>
+                                </div>
+
+                                <div class="stickers__sticker">
+                                    <div class="stickers__sticker-link">
+                                        <img src="img/stickers/1.webp" alt="sticker" class="stickers__sticker-img">
+                                        <h2 class="stickers__sticker-title">Зелёный маркер</h2>
+                                        <div class="stickers__sticker-star">
+                                            <img src="img/star.svg" alt="star">
+                                        </div>
+                                    </div>
+                                    <div class="stickers__num-block">
+                                        <div data-title="Количество в коллекции пользователя"
+                                            class="stickers__num stickers__num_helper">4</div>
+                                        <div data-title="Количество стикеров, выставленных на аукцион пользователем"
+                                            class="stickers__num stickers__num_red stickers__num_helper">2</div>
+                                    </div>
+                                </div>
+
+                                <div class="stickers__sticker">
+                                    <div class="stickers__sticker-link">
+                                        <img src="img/stickers/Pink bonk.webp" alt="sticker"
+                                            class="stickers__sticker-img">
+                                        <h2 class="stickers__sticker-title">Pink bonk</h2>
+                                        <div class="stickers__sticker-star">
+                                            <img src="img/star.svg" alt="star">
+                                        </div>
+                                    </div>
+                                    <div class="stickers__num-block">
+                                        <div data-title="Количество в коллекции пользователя"
+                                            class="stickers__num stickers__num_helper">7</div>
+                                        <div data-title="Количество стикеров, выставленных на аукцион пользователем"
+                                            class="stickers__num stickers__num_red stickers__num_helper">150</div>
+                                    </div>
+                                </div>
+
+                                <div class="stickers__sticker">
+                                    <div class="stickers__sticker-link">
+                                        <img src="img/stickers/Morgan crying.webp" alt="sticker"
+                                            class="stickers__sticker-img">
+                                        <h2 class="stickers__sticker-title">Morgan crying</h2>
+                                        <div class="stickers__sticker-star">
+                                            <img src="img/star.svg" alt="star">
+                                        </div>
+                                    </div>
+                                    <div class="stickers__num-block">
+                                        <div data-title="Количество в коллекции пользователя"
+                                            class="stickers__num stickers__num_helper">10</div>
+                                        <div data-title="Количество стикеров, выставленных на аукцион пользователем"
+                                            class="stickers__num stickers__num_red stickers__num_helper">25</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -487,7 +541,7 @@
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/jquery.cycle.js"></script>
         <script src="js/script.js"></script>
-        <script src="js/allStickers.js"></script>
+        <script src="js/joinStickers.js"></script>
         <script src="js/tgs-player.js"></script>
 </body>
 

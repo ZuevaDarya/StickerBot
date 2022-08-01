@@ -20,14 +20,25 @@
         <header class="header">
             <nav class="header__wrapper">
                 <a href="index.html" class="header__logo-link"><img class="header__logo" src="img/Dragon_av.png" alt="logo"></a>
-                <div class="header__links">
-                    <a href="index.html" class="header__link">Главная</a>
-                    <a id="stickerPacks" href="stickerPacks.html" class="header__link">Стикерпаки</a>
-                    <a href="allStickers.html" class="header__link">Все стикеры</a>
-                    <a href="collection.html" class="header__link">Коллекция</a>
-                    <a href="top.html" class="header__link">топ <br>коллекционеров</a>
-                    <a href="about.html" class="header__link">О нас</a>
+                
+                <!--! ----------Переписана шапка---------- -->
+                <div class="header__links-wrapper">
+                    <ul class="header__menu">
+                        <li><a href="index.html" class="header__menu-link">Главная</a></li>
+                        <li><a href="#" class="header__menu-link header__menu-link_select">Стикеры</a>
+                            <ul class="header__sub-menu">
+                                <li><a href="allStickers.html" class="header__sub-menu-link">Все стикеры</a></li>
+                                <li><a  id="stickerPacks" href="stickerPacks.html" class="header__sub-menu-link">Стикерпаки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="profile.html" class="header__menu-link">Профиль</a></li>
+                        <li><a href="shop.html" class="header__menu-link">Магазин</a></li>
+                        <li><a href="auction.html" class="header__menu-link">Аукцион</a></li>
+                        <li><a href="top.html" class="header__menu-link">Топ коллекционеров</a></li>
+                    </ul>
                 </div>
+                <!--!---------------------------------------- -->
+
                 <div class="header__burger">
                     <span></span>
                 </div>
@@ -105,18 +116,19 @@
 
                     <div class="welcome-card__stickers">
                         <div class="welcome-card__sticker-group">
-                            <div class="welcome-card__sticker welcome-card__sticker_yellow">
+                            <div class="welcome-card__sticker welcome-card__sticker_yellow ">
                                 <a href="allStickers.html">
                                     <tgs-player autoplay loop mode="normal" src="img/stickers/Cesar/smd2.tgs" class="welcome-card__img-tgs"></tgs-player>
+                                    <!-- <img class="welcome-card__img" src="img/stickers/forSale/6.webp" alt="sticker"> -->
                                    </a>
                             </div>
-                            <div class="welcome-card__sticker welcome-card__sticker_purple welcome-card__sticker-img">
-                                <a href="allStickers.html"><img class="welcome-card__img" src="img/stickers/6.webp" alt="sticker"></a>
+                            <div class="welcome-card__sticker welcome-card__sticker_purple">
+                                <a href="allStickers.html"><img class="welcome-card__img" src="img/stickers/07.webp" alt="sticker"></a>
                             </div>
                         </div>
 
                         <div class="welcome-card__sticker-group">
-                            <div class="welcome-card__sticker welcome-card__sticker_purple">
+                            <div class="welcome-card__sticker welcome-card__sticker_purple ">
                                 <a href="allStickers.html">
                                     <tgs-player autoplay loop mode="normal" src="img/stickers/forSale/data_2_watermark.tgs" class="welcome-card__img-tgs"></tgs-player>
                                 </a>

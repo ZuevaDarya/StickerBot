@@ -101,6 +101,9 @@
 @media (max-width: 756px) {
   .sticker__card {
     margin: 15px 0 0 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
   }
 }
 
@@ -383,4 +386,594 @@
 .sticker-nav__link:hover {
   background-color: white;
   color: #282a4f;
+}
+
+.sticker__num-block {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.sticker__num {
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.2em;
+  background: rgba(158, 163, 255, 0.4);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  padding: 8px 15px;
+  margin: 5px 0 0 5px;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .sticker__num {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .sticker__num {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+
+.sticker__num_red {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.sticker__num_helper {
+  cursor: pointer;
+}
+
+.sticker__num_helper:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 40px;
+  border: 2px solid #ffd600;
+  border-radius: 5px;
+  left: -10px;
+  top: 30px;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .sticker__num_helper:hover::after {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .sticker__num_helper:hover::after {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+
+.auction-info {
+  background-color: black;
+  margin: 30px 0 0 0;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 2rem;
+  text-align: center;
+}
+
+.auction-info__title {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  border-bottom: 1px solid rgba(158, 163, 255, 0.34);
+  padding: 0 0 20px 0;
+}
+
+@media (max-width: 767px) {
+  .auction-info__title {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .auction-info__title {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+
+.auction-info__recommend-price {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #8b84da;
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .auction-info__recommend-price {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .auction-info__recommend-price {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+
+.auction-info__price-num {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.auction-info__symbol {
+  font-style: normal;
+}
+
+.auction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.auction-table td,
+.auction-table th {
+  border: 1px solid rgba(255, 214, 0, 0.3);
+  padding: 10px 5px;
+}
+
+.auction-table tr:nth-child(odd) > td {
+  background-color: rgba(158, 163, 255, 0.34);
+}
+
+.auction-table__title {
+  background-color: rgba(255, 214, 0, 0.5);
+}
+
+.auction-table__text {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffd600;
+}
+
+@media (max-width: 767px) {
+  .auction-table__text {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .auction-table__text {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
+}
+
+.auction-table__num {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.auction-table__buy-button {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(158, 163, 255, 0.34);
+  border: 1px solid rgba(158, 163, 255, 0.34);
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+.auction-table__buy-button:hover {
+  background-color: white;
+  color: #282a4f;
+}
+
+.auction-table_scroll {
+  display: block;
+  overflow-x: auto;
+}
+
+.auction-table_scroll td:nth-child(3) {
+  width: 20%;
+}
+
+.auction-table_scroll td:nth-child(4) {
+  width: 15%;
+}
+
+.auction-table_scroll td:nth-child(5) {
+  width: 25%;
+}
+
+.auction-put {
+  margin-top: 40px;
+}
+
+.auction-put__price-title {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  color: white;
+  margin: 10px 0;
+}
+
+@media (max-width: 767px) {
+  .auction-put__price-title {
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .auction-put__price-title {
+    font-size: calc(16px + 2 * (100vw / 1440));
+  }
+}
+
+.auction-put__price {
+  background-color: #323237;
+  border: 2px solid #ffd600;
+  border-radius: 5px;
+  line-height: 21px;
+  text-align: right;
+  padding: 5px;
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  color: white;
+  vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+  .auction-put__price {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .auction-put__price {
+    font-size: calc(14px + 4 * (100vw / 1440));
+  }
+}
+
+@media (max-width: 370px) {
+  .auction-put__price {
+    max-width: 65px;
+  }
+}
+
+.auction-add {
+  margin-top: 30px;
+}
+
+@media (max-width: 455px) {
+  .auction-add {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.auction-add__link-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #ffd600;
+  background-image: url("../img/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #ffd600;
+}
+
+.auction-add__link-prev:hover {
+  background-color: white;
+}
+
+@media (max-width: 493px) {
+  .auction-add__link-prev {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 473px) {
+  .auction-add__link-prev {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 455px) {
+  .auction-add__link-prev {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 10px 10px 0 10px;
+  }
+}
+
+.auction-add__button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  cursor: pointer;
+}
+
+.auction-add__button:hover {
+  background-color: white;
+}
+
+.auction-add__text {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #282a4f;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 10px;
+  border: 1px slid;
+  background-color: #ffd600;
+}
+
+@media (max-width: 767px) {
+  .auction-add__text {
+    font-size: calc(14px + 1.7 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .auction-add__text {
+    font-size: calc(14px + 1 * (100vw / 1440));
+  }
+}
+
+@media (max-width: 493px) {
+  .auction-add__text {
+    margin: 0;
+  }
+}
+
+@media (max-width: 455px) {
+  .auction-add__text {
+    width: 100%;
+  }
+}
+
+.auction-add__num {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.auction-add__link-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #ffd600;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #ffd600;
+}
+
+.auction-add__link-next:hover {
+  background-color: white;
+}
+
+@media (max-width: 493px) {
+  .auction-add__link-next {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 473px) {
+  .auction-add__link-next {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 455px) {
+  .auction-add__link-next {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 10px 10px 10px 0;
+  }
+}
+
+.auction-return {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 455px) {
+  .auction-return {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.auction-return__link-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #8b84da;
+  background-image: url("../img/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #8b84da;
+}
+
+.auction-return__link-prev:hover {
+  background-color: white;
+}
+
+@media (max-width: 493px) {
+  .auction-return__link-prev {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 473px) {
+  .auction-return__link-prev {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 455px) {
+  .auction-return__link-prev {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 10px 10px 10px 0;
+  }
+}
+
+.auction-return__text {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #282a4f;
+  background-color: #8b84da;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 25px;
+}
+
+@media (max-width: 767px) {
+  .auction-return__text {
+    font-size: calc(14px + 1.7 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .auction-return__text {
+    font-size: calc(14px + 1 * (100vw / 1440));
+  }
+}
+
+@media (max-width: 493px) {
+  .auction-return__text {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 455px) {
+  .auction-return__text {
+    width: 100%;
+  }
+}
+
+.auction-return__num {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.auction-return__link-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #8b84da;
+  background-image: url("../img/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #8b84da;
+}
+
+.auction-return__link-next:hover {
+  background-color: white;
+}
+
+@media (max-width: 493px) {
+  .auction-return__link-next {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 473px) {
+  .auction-return__link-next {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 455px) {
+  .auction-return__link-next {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 10px 10px 10px 0;
+  }
+}
+
+.small {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  background-size: 70%;
+}
+
+.num {
+  color: white;
 }

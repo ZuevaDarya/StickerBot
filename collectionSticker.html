@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/Dragon_av.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sticker.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <title>Стикер</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Шапка-->
+        <header class="header">
+            <nav class="header__wrapper">
+                <a href="index.html" class="header__logo-link"><img class="header__logo" src="img/Dragon_av.png"
+                        alt="logo"></a>
+
+                <!--! ----------Переписана шапка---------- -->
+                <div class="header__links-wrapper">
+                    <ul class="header__menu">
+                        <li><a href="index.html" class="header__menu-link">Главная</a></li>
+                        <li><a href="#" class="header__menu-link header__menu-link_select">Стикеры</a>
+                            <ul class="header__sub-menu">
+                                <li><a href="allStickers.html" class="header__sub-menu-link">Все стикеры</a></li>
+                                <li><a id="stickerPacks" href="stickerPacks.html"
+                                        class="header__sub-menu-link">Стикерпаки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="profile.html" class="header__menu-link">Профиль</a></li>
+                        <li><a href="shop.html" class="header__menu-link">Магазин</a></li>
+                        <li><a href="auction.html" class="header__menu-link">Аукцион</a></li>
+                        <li><a href="top.html" class="header__menu-link">Топ коллекционеров</a></li>
+                    </ul>
+                </div>
+                <!--!---------------------------------------- -->
+
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <a href="auth.html" class="header__button">Вход</a>
+            </nav>
+        </header>
+
+        <!--Основная часть-->
+        <main class="main">
+            <div class="main__wrapper">
+                <div class="sticker-bg">
+                    <div class="page-title">
+                        <h1 class="page-title__text">Результаты поиска по &laquo;Коллекция&raquo;</h1>
+                    </div>
+                    <div class="sticker">
+                        <img src="img/stickers/forSale/08.webp" class="sticker__img">
+                        
+                        <div class="sticker__num-block">
+                            <div id="userStickNum" data-title="Количество в коллекции пользователя" class="sticker__num sticker__num_helper">7</div>
+                            <div id="auctionStickNum" data-title="Количество стикеров, выставленных на аукцион пользователем" class="sticker__num sticker__num_red sticker__num_helper">25</div>
+                        </div>
+                        <div class="sticker__card">
+                            <h2 class="sticker__name">Franklin Rose</h2>
+                            <div class="sticker__info">
+                                <div class="sticker__info-row">
+                                    <p class="sticker__info-text">Редкость:</p>
+                                    <img src="img/star.svg" alt="star" class="sticker__star">
+                                    <img src="img/star.svg" alt="star" class="sticker__star">
+                                    <img src="img/star.svg" alt="star" class="sticker__star">
+                                </div>
+
+                                <p class="sticker__info-text">Прибыль: Приносит <span
+                                        class="sticker__text-num">1</span><span class="sticker__symbol">💰</span>
+                                    за <span class="sticker__text-time">60</span><span class="sticker__symbol">⏱</span>
+                                    минут</p>
+                                <p class="sticker__info-text">Эмоция: <span class="sticker__emoji">❤</span></p>
+                                <p class="sticker__info-text">Эффект: <span class="sticker__effect">Нет эффекта</span>
+                                </p>
+                            </div>
+                            <p class="sticker__description">Франклин знает толк в моде: шикарная укладка, красная
+                                бабочка и прекрасный цветок - идеальный образ, куда это он собрался?</p>
+                        </div>
+                    </div>
+
+                    <div class="auction-info">
+                        <h3 class="auction-info__title">Предложения на аукционе</h3>
+                        <p class="auction-info__recommend-price">Рекомендованная цена:  <span class="auction-info__price-num">30-50</span> 
+                            <span class="auction-info__symbol">💎</span>
+                        </p>
+
+                        <table class="auction-table">
+                            <tr>
+                                <th class="auction-table__title auction-table__text">Цена за 1 стикер</th>
+                                <th class="auction-table__title auction-table__text">Количество предложений</th>
+                            </tr>
+                            <tr>
+                                <td class="auction-table__text auction-table__num">10 <span class="auction-info__symbol">💎</span></td>
+                                <td class="auction-table__text auction-table__num">11</td>
+                            </tr>
+                            <tr>
+                                <td class="auction-table__text auction-table__num">11 <span class="auction-info__symbol">💎</span></td>
+                                <td class="auction-table__text auction-table__num">7</td>
+                            </tr>
+                            <tr>
+                                <td class="auction-table__text auction-table__num">25 <span class="auction-info__symbol">💎</span></td>
+                                <td class="auction-table__text auction-table__num">2</td>
+                            </tr>
+                            <tr>
+                                <td class="auction-table__text auction-table__num">33 <span class="auction-info__symbol">💎</span></td>
+                                <td class="auction-table__text auction-table__num">3</td>
+                            </tr>
+                            <tr>
+                                <td class="auction-table__text auction-table__num">45 <span class="auction-info__symbol">💎</span></td>
+                                <td class="auction-table__text auction-table__num">2</td>
+                            </tr>
+                        </table>
+
+                        <div class="auction-put">
+                            <label for="auctionPrice" class="auction-put__price-title">Цена:
+                                <input id="auctionPrice" type="text" class="auction-put__price">
+                                <span class="auction-info__symbol">💎</span>
+                            </label>
+
+                            <div class="auction-add">
+                                <button id="auctionAddPrev" class="auction-add__link-prev"></button>
+                                <button class="auction-add__text auction-add__button">Выставить на аукцион (<span id="auctionAddNum" class="auction-add__num">0</span>)</button>
+                                <button id="auctionAddNext" class="auction-add__link-next"></button>
+                            </div>
+
+                            <div class="auction-return">
+                                <button id="auctionReturnPrev" class="auction-return__link-prev"></button>
+                                <button class="auction-return__text auction-add__button">Вернуть с аукциона (<span id="auctionReturnNum" class="auction-return__num">25</span>)</button>
+                                <button id="auctionReturnNext" class="auction-return__link-next"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sticker-nav">
+                        <a href="#" class="sticker-nav__link-prev"></a>
+                        <a href="collection.html" class="sticker-nav__link">К коллекции</a>
+                        <a href="#" class="sticker-nav__link-next"></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <p class="footer__text">© 2022 WyrmSticker</p>
+                <div>
+                    <a href="documents.html" class="footer__link">Документы</a>
+                    <a href="about.html" class="footer__link">О нас</a>
+                    <a href="https://t.me/wyrm_sticker_bot" class="footer__link">Telegram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.cycle.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/addReturnCollection.js"></script>
+    <script src="js/tgs-player.js"></script>
+</body>
+
+</html>

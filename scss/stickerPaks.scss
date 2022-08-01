@@ -23,6 +23,8 @@ $dark_grey: #323237;
     margin: 130px 0 0 0;
     padding: 40px;
 
+    display: flex;
+    flex-direction: column;
     @media (max-width: 941px) {
         margin: 100px 0 0 0;
     }
@@ -31,16 +33,16 @@ $dark_grey: #323237;
 .stickerPacks__row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     margin: 0 0 2rem 0;
 
     &:nth-child(odd) {
         .stickerPack:nth-child(odd) {
             background-color: $normal_blue;
-            
-            &:hover{
-                transition: all .2s ease-out 0s;
+
+            &:hover {
+                transition: all 0.2s ease-out 0s;
                 transform: scale(1.1);
                 z-index: 2;
             }
@@ -53,7 +55,7 @@ $dark_grey: #323237;
         .stickerPack:nth-child(even) {
             background-color: $yellow;
 
-            &:hover{
+            &:hover {
                 transition: all 0.2s ease-out 0s;
                 transform: scale(1.1);
                 z-index: 2;
@@ -69,7 +71,7 @@ $dark_grey: #323237;
         .stickerPack:nth-child(even) {
             background-color: $normal_blue;
 
-            &:hover{
+            &:hover {
                 transition: all 0.2s ease-out 0s;
                 transform: scale(1.1);
                 z-index: 2;
@@ -83,7 +85,7 @@ $dark_grey: #323237;
         .stickerPack:nth-child(odd) {
             background-color: $yellow;
 
-            &:hover{
+            &:hover {
                 transition: all 0.1s ease 0s;
                 transform: scale(1.1);
                 z-index: 2;
@@ -122,7 +124,7 @@ $dark_grey: #323237;
             }
 
             .stickerPack:nth-child(2),
-            .stickerPack:nth-child(4){
+            .stickerPack:nth-child(4) {
                 margin-right: 0;
             }
         }
@@ -145,11 +147,10 @@ $dark_grey: #323237;
             }
 
             .stickerPack:nth-child(2),
-            .stickerPack:nth-child(4){
+            .stickerPack:nth-child(4) {
                 margin-right: 0;
             }
         }
-     
     }
 
     @media (max-width: 456px) {
@@ -170,7 +171,7 @@ $dark_grey: #323237;
                 color: white;
             }
 
-            .stickerPack{
+            .stickerPack {
                 margin-right: 0;
             }
         }
@@ -208,7 +209,7 @@ $dark_grey: #323237;
                 color: white;
             }
 
-            .stickerPack{
+            .stickerPack {
                 margin-right: 0;
             }
         }
@@ -219,9 +220,13 @@ $dark_grey: #323237;
     max-width: 245px;
     padding: 15px;
     border-radius: 10px;
-    margin: 0 1rem 0 0;
+    margin: 0 2rem 0 0;
     border: 1px solid white;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    &:last-child{
+        margin-right: 0;
+    }
 
     @media (max-width: 851px) {
         margin: 0 3rem 2rem 0;
@@ -230,12 +235,12 @@ $dark_grey: #323237;
     @media (max-width: 642px) {
         max-width: 190px;
     }
-    
+
     @media (max-width: 572px) {
         margin: 0 2rem 1.5rem 0;
         max-width: 170px;
     }
-    
+
     @media (max-width: 516px) {
         max-width: 140px;
     }

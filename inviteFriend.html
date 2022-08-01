@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/Dragon_av.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/inviteFriend.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <title>Пригласить друга</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Шапка-->
+        <header class="header">
+            <nav class="header__wrapper">
+                <a href="index.html" class="header__logo-link"><img class="header__logo" src="img/Dragon_av.png"
+                        alt="logo"></a>
+
+                <!--! ----------Переписана шапка---------- -->
+                <div class="header__links-wrapper">
+                    <ul class="header__menu">
+                        <li><a href="index.html" class="header__menu-link">Главная</a></li>
+                        <li><a href="#" class="header__menu-link header__menu-link_select">Стикеры</a>
+                            <ul class="header__sub-menu">
+                                <li><a href="allStickers.html" class="header__sub-menu-link">Все стикеры</a></li>
+                                <li><a id="stickerPacks" href="stickerPacks.html"
+                                        class="header__sub-menu-link">Стикерпаки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="profile.html" class="header__menu-link">Профиль</a></li>
+                        <li><a href="shop.html" class="header__menu-link">Магазин</a></li>
+                        <li><a href="auction.html" class="header__menu-link">Аукцион</a></li>
+                        <li><a href="top.html" class="header__menu-link">Топ коллекционеров</a></li>
+                    </ul>
+                </div>
+                <!--!---------------------------------------- -->
+
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <a href="auth.html" class="header__button">Вход</a>
+            </nav>
+        </header>
+
+        <!--Основная часть-->
+        <main class="main">
+            <div class="main__wrapper">
+                <div class="stickers-bg">
+                    <div class="page-title">
+                        <h2 class="page-title__text">Пригласить друга</h2>
+                    </div>
+
+                    <div class="sickers-page">
+                        <!--! Новое меню навигации -->
+                        <nav class="left-nav">
+                            <ul class="left-nav__menu">
+                                <li><a href="openPacks.html" class="left-nav__link">Открыть пак</a></li>
+                                <li><a href="collection.html" class="left-nav__link">Коллекция</a></li>
+                                <li><a href="joinStickers.html" class="left-nav__link">Объединение стикеров</a></li>
+                                <li><a href="inviteFriend.html" class="left-nav__link">Пригласить друга</a></li>
+                                <li><a href="settingsPage.html" class="left-nav__link">Настройка уведомлений</a></li>
+                            </ul>
+                        </nav>
+                        <!--!-------------------------->
+
+                        <div class="invite">
+                            <div class="invite__block">
+                                <a href="#" class="invite__button">Поделиться ссылкой в Telegram</a>
+                            </div>
+
+                            <div class="invite__block">
+                                <h3 class="invite__title">Пригласите друга и получите бонусы!</h3>
+                                <p class="invite__text">Для этого ваш друг должен перейти <span
+                                        class="invite__text_yellow">по ссылке:</span></p>
+                                <p class="invite__text">
+                                    <a href="https://t.me/wyrm_sticker_bot?start=invite=VEQKL9T" target="_blank"
+                                    class="invite__link invite__text_yellow">https://t.me/wyrm_sticker_bot?start=invite=VEQKL9T</a>
+                                </p>
+                            </div>
+
+                            <div class="invite__block">
+                                <h3 class="invite__title">Приглашенные друзья</h3>
+                                <ol class="invite__friend-list friend-list">
+                                    <li class="friend-list__item invite__text">
+                                        <span class="invite__text_blue">User0000025</span> - до конца заданий новичка
+                                        <span class="invite__text_yellow">7 дней</span>, прогресс 
+                                        <span class="invite__text_yellow">(2/12)</span>
+                                    </li>
+
+                                    <li class="friend-list__item invite__text">
+                                        <span class="invite__text_blue">Vanka0715</span> - до конца заданий новичка
+                                        <span class="invite__text_yellow">2 дня</span>, прогресс 
+                                        <span class="invite__text_yellow">(8/12)</span>
+                                    </li>
+                                </ol>
+
+                                <p class="invite__text">Вы еще не пригласили ни одного друга</p>
+                            </div>
+
+                            <div class="invite__block">
+                                <h3 class="invite__title">Информация о бонусах</h3>
+                                <p class="invite__text">При выполнении заданий <span class="invite__text_blue invite__text_bold">приглашённый</span> получает:</p>
+                               
+                                <ul class="invite__bonus-list bonus-list">
+                                    <li class="bonus-list__item invite__text">
+                                        При выполнении от 1 до 5 заданий (за каждое выполненное) выдается 
+                                        <span class="invite__text_yellow">Обычный пак</span>.
+                                    </li>
+
+                                    <li class="bonus-list__item invite__text">
+                                        При выполнении 6 заданий <span class="invite__text_yellow">дополнительно</span> выдается 
+                                        <span class="invite__text_yellow">случайный стикер 2-го тира</span>. 
+                                    </li>
+
+                                    <li class="bonus-list__item invite__text">
+                                        При выполнении 7 заданий <span class="invite__text_yellow">дополнительно</span> выдается 
+                                        <span class="invite__text_yellow">1000 опыта</span>. 
+                                    </li>
+
+                                    <li class="bonus-list__item invite__text">
+                                        При выполнении 8 заданий <span class="invite__text_yellow">дополнительно</span> выдается 
+                                        <span class="invite__text_yellow">100 алмазов</span>. 
+                                    </li>
+
+                                    <li class="bonus-list__item invite__text">
+                                        При выполнении 9 заданий <span class="invite__text_yellow">дополнительно</span> выдается 
+                                        <span class="invite__text_yellow">100 алмазов</span>. 
+                                    </li>
+
+                                    <li class="bonus-list__item invite__text">
+                                        При выполнении 10 заданий <span class="invite__text_yellow">дополнительно</span> выдается 
+                                        <span class="invite__text_yellow">случайный стикер 2-го тира</span>. 
+                                    </li>
+
+                                    <li class="bonus-list__item invite__text">
+                                        При выполнении 11 заданий <span class="invite__text_yellow">дополнительно</span> выдается 
+                                        <span class="invite__text_yellow">3 случайных стикера 2-го тира</span>. 
+                                    </li>
+
+                                    <li class="bonus-list__item invite__text">
+                                        При выполнении 12 заданий <span class="invite__text_yellow">дополнительно</span> выдается 
+                                        <span class="invite__text_yellow">случайный стикер 3-го тира</span>. 
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="invite__block">
+                                <p class="invite__text">При выполнении заданий <span class="invite__text_blue invite__text_bold">пригласивший</span> получает:</p>
+                               
+                                <ul class="invite__bonus-list bonus-list">
+                                    <li class="bonus-list__item invite__text">
+                                        При выполнении от 1 до 5 заданий (даже если приглашённый выполнил одно задание, но вышло время заданий новичка) выдается 
+                                        <span class="invite__text_yellow">2 обычных пака</span>.
+                                    </li>
+
+                                    <li class="bonus-list__item invite__text">
+                                        При выполнении 6 заданий <span class="invite__text_yellow">дополнительно</span> выдается 
+                                        <span class="invite__text_yellow">100 алмазов</span>. 
+                                    </li>
+
+                                    <li class="bonus-list__item invite__text">
+                                        При выполнении 9 заданий <span class="invite__text_yellow">дополнительно</span> выдается 
+                                        <span class="invite__text_yellow">случайный стикер 2-го тира</span>. 
+                                    </li>
+
+                                    <li class="bonus-list__item invite__text">
+                                        При выполнении 11 заданий <span class="invite__text_yellow">дополнительно</span> выдается 
+                                        <span class="invite__text_yellow">случайный стикер 3-го тира</span>. 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <p class="footer__text">© 2022 WyrmSticker</p>
+                <div>
+                    <a href="documents.html" class="footer__link">Документы</a>
+                    <a href="about.html" class="footer__link">О нас</a>
+                    <a href="https://t.me/wyrm_sticker_bot" class="footer__link">Telegram</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.cycle.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/allStickers.js"></script>
+        <script src="js/tgs-player.js"></script>
+</body>
+
+</html>

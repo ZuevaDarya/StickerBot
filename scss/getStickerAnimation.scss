@@ -1,0 +1,240 @@
+$dark_blue: #282a4f;
+$lite_blue: rgba(158, 163, 255, 0.4);
+$normal_blue: #8b84da;
+$blue: #3e44d2;
+$yellow: #ffd600;
+$dark_grey: #323237;
+
+@mixin adaptiv-font($pcSize, $mobSize, $maxWidth) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+
+    @media (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+    }
+
+    @media (min-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+    }
+}
+
+.get-sticker-window {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0;
+    right: 0;
+
+    background-color: black;
+    width: 100%;
+
+    z-index: 10;
+
+    top: 30%;
+    padding: 25px 0;
+
+    min-height: 340px;
+
+    display: none;
+
+    &__title {
+        font-family: 'Raleway';
+        font-style: italic;
+        font-weight: 700;
+        @include adaptiv-font(24, 18, 1440);
+        line-height: 28px;
+       
+        letter-spacing: 0.1em;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+
+        margin-top: 0;
+    }
+
+    &__sticker {
+        display: none;
+        width: 250px;
+        min-height: 290px;
+
+        //display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px;
+        margin: 0 auto;
+        padding: 10px 0;
+        border: 1px solid white;
+
+        position: relative;
+
+        background-color: $normal_blue;
+        color: white;
+
+        animation: move_img 1s ease, change_color 2s infinite ease;
+
+        overflow: hidden;
+
+        @keyframes move_img {
+            0% {
+                transform: scale(2);
+            }
+
+            100% {
+                transform: scale(1) rotate(360deg);
+            }
+        }
+
+        @keyframes change_color {
+
+            0%,
+            100% {
+                border: 3px solid $yellow;
+            }
+
+            40% {
+                border: 3px solid white;
+            }
+        }
+
+        .flare {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 45px;
+            transform: skewX(-20deg); // Наклон
+            animation: flareAnimation;
+            left: -100%;
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+            animation: flareAnimation 4s infinite linear; // Время и тип анимации можно менять
+        }
+
+        @keyframes flareAnimation {
+            0% {
+                left: -150%;
+            }
+
+            100% {
+                left: 150%;
+            }
+        }
+
+        @media (max-width: 900px) {
+            width: 200px;
+            min-height: 250px;
+        }
+
+        @media (max-width: 420px) {
+            width: 180px;
+            min-height: 220px;
+        }
+
+    }
+
+    &__sticker-img {
+        max-width: 190px;
+        min-width: 90px;
+        height: auto;
+
+        margin: 0 0 0.5em 0;
+
+        @media (max-width: 900px) {
+            max-width: 150px;
+        }
+
+        @media (max-width: 420px) {
+            max-width: 130px;
+        }
+    }
+
+    &__sticker-title {
+        margin: 0 5px 10px 5px;
+
+        font-style: italic;
+        font-weight: bold;
+        @include adaptiv-font(20, 14, 1440);
+        line-height: 1.1em;
+        letter-spacing: 0.1em;
+        text-align: center;
+    }
+
+    &__sticker-star {
+        img {
+            @media (max-width: 900px) {
+                width: 30px;
+            }
+
+            @media (max-width: 607px) {
+                // width: 37px;
+            }
+        }
+    }
+}
+
+.not-scroll {
+    &::before {
+        content: ' ';
+        background-color: black;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        z-index: 6;
+    }
+}
+
+@keyframes move_star {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: scale(2) rotate(180deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+.animation {
+    animation-name: move_star;
+    animation-duration: .8s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+
+    z-index: 1;
+}
+
+.animation-01 {
+    animation-name: move_star;
+    animation-duration: .8s;
+    animation-delay: 1.8s;
+    animation-timing-function: ease;
+
+    z-index: 2;
+}
+
+.animation-02 {
+    animation-name: move_star;
+    animation-duration: .8s;
+    animation-delay: 2.6s;
+    animation-timing-function: ease;
+
+    z-index: 3;
+}
+
+.animation-03 {
+    animation-name: move_star;
+    animation-duration: .8s;
+    animation-delay: 3.4s;
+    animation-timing-function: ease;
+
+    z-index: 4;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/Dragon_av.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/openPacks.css">
+    <link rel="stylesheet" href="css/getStickerAnimation.css">
+    <title>Открытие паков</title>
+</head>
+
+<body>
+    <div class="get-sticker-window">
+        <h2 class="get-sticker-window__title">Получено</h2>
+        <div class="get-sticker-window__sticker">
+            <span class="flare"></span>
+            <img src="img/stickers/05.webp" alt="sticker" class="get-sticker-window__sticker-img">
+            <h2 class="get-sticker-window__sticker-title">Тетрадка "Загляни!"</h2>
+            <div class="get-sticker-window__sticker-star">
+                <img src="img/star.svg" alt="star">
+                <img src="img/star.svg" alt="star">
+                <img src="img/star.svg" alt="star">
+            </div>
+        </div>
+    </div>
+  
+    <div class="wrapper">
+        <!--Шапка-->
+        <header class="header">
+            <nav class="header__wrapper">
+                <a href="index.html" class="header__logo-link"><img class="header__logo" src="img/Dragon_av.png"
+                        alt="logo"></a>
+
+                <!--! ----------Переписана шапка---------- -->
+                <div class="header__links-wrapper">
+                    <ul class="header__menu">
+                        <li><a href="index.html" class="header__menu-link">Главная</a></li>
+                        <li><a href="#" class="header__menu-link header__menu-link_select">Стикеры</a>
+                            <ul class="header__sub-menu">
+                                <li><a href="allStickers.html" class="header__sub-menu-link">Все стикеры</a></li>
+                                <li><a id="stickerPacks" href="stickerPacks.html"
+                                        class="header__sub-menu-link">Стикерпаки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="profile.html" class="header__menu-link">Профиль</a></li>
+                        <li><a href="shop.html" class="header__menu-link">Магазин</a></li>
+                        <li><a href="auction.html" class="header__menu-link">Аукцион</a></li>
+                        <li><a href="top.html" class="header__menu-link">Топ коллекционеров</a></li>
+                    </ul>
+                </div>
+                <!--!---------------------------------------- -->
+
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <a href="auth.html" class="header__button">Вход</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="main__wrapper">
+                <div class="stickers-bg">
+                    <div class="page-title">
+                        <h2 class="page-title__text">Открытие паков</h2>
+                    </div>
+
+                    <div class="sickers-page">
+                        <!--! Новое меню навигации -->
+                        <nav class="left-nav left-nav_filter">
+                            <ul class="left-nav__menu">
+                                <li><a href="openPacks.html" class="left-nav__link">Открыть пак</a></li>
+                                <li><a href="collection.html" class="left-nav__link">Коллекция</a></li>
+                                <li><a href="joinStickers.html" class="left-nav__link">Объединение стикеров</a></li>
+                                <li><a href="inviteFriend.html" class="left-nav__link">Пригласить друга</a></li>
+                                <li><a href="settingsPage.html" class="left-nav__link">Настройка уведомлений</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--!-------------------------->
+
+                        <div class="packs-slider">
+                            <div class="packs-slider__wrapper">
+                                <!--! Каждый слайд будет содержать 6 паков, при клике на кнопки вправо/влево слайд меняется-->
+                                <!--! Т.е. слайд будет меняться, когда у пользователя больше 6-и паков-->
+                                <div class="packs-slider__slide">
+                                    <!--Первый пак-->
+                                    <div class="packs-card">
+                                        <div data-title="Количество неоткрытых паков в коллекции пользователя" class="packs-card__num">2</div>        
+
+                                        <div class="packs-card__img-container">
+                                            <img src="img/stickers/netapai.webp" alt="Пак" class="packs-card__img">
+                                        </div>
+                                        <p class="packs-card__title">NETAPAI</p>
+                                    </div>
+
+                                    <!--Второй пак-->
+                                    <div class="packs-card">
+                                        <div data-title="Количество неоткрытых паков в коллекции пользователя" class="packs-card__num">1</div>
+
+                                        <div class="packs-card__img-container">
+                                            <img src="img/stickers/gif/Анимированное превью 01.gif" alt="Пак" class="packs-card__img">
+                                        </div>
+                                        <p class="packs-card__title">Texic</p>
+                                    </div>
+
+                                    <div class="packs-card">
+                                        <div data-title="Количество неоткрытых паков в коллекции пользователя" class="packs-card__num">1</div>
+
+                                        <div class="packs-card__img-container">
+                                            <img src="img/stickers/gif/Анимированное превью 02.gif" alt="Пак" class="packs-card__img">
+                                        </div>
+                                        <p class="packs-card__title">CeSar</p>
+                                    </div>
+
+                                    <div class="packs-card">
+                                        <div data-title="Количество неоткрытых паков в коллекции пользователя" class="packs-card__num">2</div>
+
+                                        <div class="packs-card__img-container">
+                                            <img src="img/stickers/Компиляция ZDarya.webp" alt="Пак" class="packs-card__img">
+                                        </div>
+                                        <p class="packs-card__title">ZDarya</p>
+                                    </div>
+
+                                    <div class="packs-card">
+                                        <div data-title="Количество неоткрытых паков в коллекции пользователя" class="packs-card__num">5</div>
+
+                                        <div class="packs-card__img-container">
+                                            <img src="img/stickers/dorka.webp" alt="Пак" class="packs-card__img">
+                                        </div>
+                                        <p class="packs-card__title">Dorka_pomidorka</p>
+                                    </div>
+
+                                    <div class="packs-card">
+                                        <div data-title="Количество неоткрытых паков в коллекции пользователя" class="packs-card__num">4</div>
+
+                                        <div class="packs-card__img-container">
+                                            <img src="img/stickers/gif/Анимированное превью.gif" alt="Пак" class="packs-card__img">
+                                        </div>
+                                        <p class="packs-card__title">Shenshila</p>
+                                    </div>
+                                </div>
+
+                                <!--Второй слайд, когда паков больше 6-->
+                                <div class="packs-slider__slide">
+                                    <div class="packs-card">
+                                        <div data-title="Количество неоткрытых паков в коллекции пользователя" class="packs-card__num">1</div>
+
+                                        <div class="packs-card__img-container">
+                                            <img src="img/stickers/Анимированное превью.gif" alt="Пак" class="packs-card__img">
+                                        </div>
+                                        <p class="packs-card__title">Cabbriolet</p>
+                                    </div>
+
+                                    <div class="packs-card">
+                                        <div data-title="Количество неоткрытых паков в коллекции пользователя" class="packs-card__num">1</div>
+
+                                        <div class="packs-card__img-container">
+                                            <img src="img/stickers/Превью.gif" alt="Пак" class="packs-card__img">
+                                        </div>
+                                        <p class="packs-card__title">Gibsi</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <span id="packsNext" class="packs-slider__arrow packs-slider__arrow_next"></span>
+                            <span id="packsPrev" class="packs-slider__arrow packs-slider__arrow_prev"></span>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <p class="footer__text">© 2022 WyrmSticker</p>
+                <div>
+                    <a href="documents.html" class="footer__link">Документы</a>
+                    <a href="about.html" class="footer__link">О нас</a>
+                    <a href="https://t.me/wyrm_sticker_bot" class="footer__link">Telegram</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.cycle.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/openPacks.js"></script>
+        <script src="js/tgs-player.js"></script>
+</body>
+
+</html>

@@ -496,6 +496,10 @@ $dark_grey: #323237;
 
         vertical-align: middle;
 
+        @media (max-width: 390.5px) {
+            max-width: 135px;
+        }
+
         @media (max-width: 370px) {
             max-width: 65px;
         }

@@ -82,9 +82,12 @@ $dark_grey: #323237;
         flex-direction: column;
         align-items: flex-start;
         flex: 0 1 700px;
+        //max-width: 600px;
 
         @media (max-width: 756px) {
             margin: 15px 0 0 0;
+
+            flex: 0 1 auto;
         }
     }
 
@@ -270,4 +273,500 @@ $dark_grey: #323237;
             color: $dark_blue;
         }
     }
+}
+
+.sticker__num-block {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.sticker__num {
+    font-style: italic;
+    font-weight: normal;
+    @include adaptiv-font(18, 16, 1440);
+    line-height: 1.2em;
+
+    background: rgba(158, 163, 255, 0.4);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    padding: 8px 15px;
+    margin: 5px 0 0 5px;
+    display: block;
+
+    &_red {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+
+    &_helper {
+        cursor: pointer;
+
+        &:hover::after {
+            content: attr(data-title);
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+
+            @include adaptiv-font(18, 16, 1440);
+
+            padding: 10px 40px;
+            border: 2px solid $yellow;
+            border-radius: 5px;
+
+            left: -10px;
+            top: 30px;
+            color: white;
+        }
+    }
+}
+
+.auction-info {
+    background-color: black;
+    margin: 30px 0 0 0;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 2rem;
+
+    text-align: center;
+
+    &__title {
+        font-family: "Raleway";
+        font-style: italic;
+        font-weight: 700;
+        @include adaptiv-font(18, 16, 1440);
+        line-height: 21px;
+
+        text-align: center;
+        letter-spacing: 0.1em;
+
+        color: white;
+        text-transform: uppercase;
+
+        display: block;
+        border-bottom: 1px solid rgba(158, 163, 255, 0.34);
+        padding: 0 0 20px 0;
+    }
+
+    &__recommend-price {
+        font-family: "Raleway";
+        font-style: italic;
+        font-weight: 400;
+        @include adaptiv-font(16, 14, 1440);
+        line-height: 21px;
+
+        text-align: center;
+        letter-spacing: 0.1em;
+
+        color: $normal_blue;
+
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__price-num {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    &__symbol {
+        font-style: normal;
+    }
+}
+
+.auction-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    td,
+    th {
+        border: 1px solid rgba(255, 214, 0, 0.3);
+        padding: 10px 5px;
+    }
+
+    tr:nth-child(odd)>td {
+        background-color: rgba(158, 163, 255, 0.34);
+    }
+
+    &__title {
+        background-color: rgba(255, 214, 0, 0.5);
+    }
+
+    &__text {
+        font-family: "Raleway";
+        font-style: italic;
+        font-weight: 400;
+        @include adaptiv-font(16, 14, 1440);
+        line-height: 26px;
+
+        text-align: center;
+        letter-spacing: 0.1em;
+
+        color: $yellow;
+    }
+
+    &__num {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    &__buy-button {
+        font-family: "Raleway";
+        font-style: italic;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+
+        text-transform: uppercase;
+        border-radius: 5px;
+
+        cursor: pointer;
+        color: white;
+
+        background-color: rgba(158, 163, 255, 0.34);
+        border: 1px solid rgba(158, 163, 255, 0.34);
+
+        display: inline-block;
+        padding: 5px 20px;
+
+
+        &:hover {
+            background-color: white;
+            color: #282a4f;
+        }
+    }
+
+    &_scroll {
+        display: block;
+        overflow-x: auto;
+
+        // td{
+        //     width: 100%;
+        // }
+
+        // td:first-child{
+        //     width: 25%;
+        // }
+
+        // td:nth-child(2){
+        //     width: 30%;
+        // }
+
+        td:nth-child(3) {
+            width: 20%;
+        }
+
+        td:nth-child(4) {
+            width: 15%;
+        }
+
+        td:nth-child(5) {
+            width: 25%;
+        }
+    }
+}
+
+.auction-put {
+    margin-top: 40px;
+
+    &__price-title {
+        font-family: "Arial";
+        font-style: italic;
+        font-weight: 400;
+        @include adaptiv-font(18, 16, 1440);
+        line-height: 21px;
+
+        letter-spacing: 0.1em;
+        color: white;
+
+        margin: 10px 0;
+    }
+
+    &__price {
+        background-color: #323237;
+        border: 2px solid $yellow;
+        border-radius: 5px;
+        line-height: 21px;
+        @include adaptiv-font(18, 14, 1440);
+        text-align: right;
+        padding: 5px;
+
+        font-family: "Arial";
+        font-style: italic;
+        font-weight: 400;
+        color: white;
+
+        vertical-align: middle;
+
+        @media (max-width: 400px) {
+            max-width: 135px;
+        }
+
+        @media (max-width: 370px) {
+            max-width: 65px;
+        }
+    }
+}
+
+.auction-add {
+    margin-top: 30px;
+
+    @media (max-width: 455px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__link-prev {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 5px;
+        display: inline-block;
+
+        background-color: $yellow;
+
+        background-image: url("../img/minus.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        vertical-align: middle;
+
+        cursor: pointer;
+        border: 1px solid $yellow;
+
+        &:hover {
+            background-color: white;
+        }
+
+        @media (max-width: 493px) {
+            width: 32px;
+            height: 32px;
+        }
+
+        @media (max-width: 473px) {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media (max-width: 455px) {
+            order: 2;
+            margin: 10px 10px 0 10px;
+        }
+    }
+
+    &__button {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5px;
+
+        background-color: rgba(0, 0, 0, 0);
+        border: 0;
+        cursor: pointer;
+
+        &:hover {
+            background-color: white;
+        }
+    }
+
+    &__text {
+        font-family: "Raleway";
+        font-style: italic;
+        font-weight: 700;
+        @include adaptiv-font(15, 14, 1440);
+        line-height: 18px;
+
+        text-align: center;
+        letter-spacing: 0.1em;
+
+        color: #282a4f;
+        text-transform: uppercase;
+
+        display: inline-block;
+        margin: 0 10px;
+
+        border: 1px slid;
+        background-color: $yellow;
+
+        @media (max-width: 503px) {
+            margin: 0 5px;
+        }
+
+        @media (max-width: 455px) {
+            width: 100%;
+        }
+    }
+
+    &__num {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    &__link-next {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 5px;
+        display: inline-block;
+
+        background-color: $yellow;
+
+        background-image: url("../img/plus.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        vertical-align: middle;
+        cursor: pointer;
+
+        border: 1px solid $yellow;
+
+        &:hover {
+            background-color: white;
+        }
+
+        @media (max-width: 493px) {
+            width: 32px;
+            height: 32px;
+        }
+
+        @media (max-width: 473px) {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media (max-width: 455px) {
+            order: 3;
+            margin: 10px 10px 10px 0;
+        }
+    }
+}
+
+.auction-return {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    @media (max-width: 455px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__link-prev {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 5px;
+        display: inline-block;
+
+        background-color: $normal_blue;
+
+        background-image: url("../img/minus.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        vertical-align: middle;
+        cursor: pointer;
+
+        border: 1px solid $normal_blue;
+
+        &:hover {
+            background-color: white;
+        }
+
+        @media (max-width: 493px) {
+            width: 32px;
+            height: 32px;
+        }
+
+        @media (max-width: 473px) {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media (max-width: 455px) {
+            order: 2;
+            margin: 10px 10px 10px 0;
+        }
+    }
+
+    &__text {
+        font-family: "Raleway";
+        font-style: italic;
+        font-weight: 700;
+        @include adaptiv-font(15, 14, 1440);
+        line-height: 18px;
+
+        text-align: center;
+        letter-spacing: 0.1em;
+
+        color: #282a4f;
+        background-color: $normal_blue;
+        text-transform: uppercase;
+
+        display: inline-block;
+
+        margin: 0 25px;
+
+        @media (max-width: 503px) {
+            margin: 0 5px;
+        }
+
+        @media (max-width: 455px) {
+            width: 100%;
+        }
+    }
+
+    &__num {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    &__link-next {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 5px;
+        display: inline-block;
+
+        background-color: $normal_blue;
+
+        background-image: url("../img/plus.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        vertical-align: middle;
+        cursor: pointer;
+
+        border: 1px solid $normal_blue;
+
+        &:hover {
+            background-color: white;
+        }
+
+        @media (max-width: 493px) {
+            width: 32px;
+            height: 32px;
+        }
+
+        @media (max-width: 473px) {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media (max-width: 455px) {
+            order: 3;
+            margin: 10px 10px 10px 0;
+        }
+    }
+}
+
+.small {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+
+    background-size: 70%;
+}
+
+.num {
+    color: white;
 }

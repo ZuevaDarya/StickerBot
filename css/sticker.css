@@ -655,6 +655,12 @@
   }
 }
 
+@media (max-width: 390.5px) {
+  .auction-put__price {
+    max-width: 135px;
+  }
+}
+
 @media (max-width: 370px) {
   .auction-put__price {
     max-width: 65px;

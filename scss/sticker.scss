@@ -496,7 +496,7 @@ $dark_grey: #323237;
 
         vertical-align: middle;
 
-        @media (max-width: 390.5px) {
+        @media (max-width: 400px) {
             max-width: 135px;
         }
 
@@ -588,8 +588,8 @@ $dark_grey: #323237;
         border: 1px slid;
         background-color: $yellow;
 
-        @media (max-width: 493px) {
-            margin: 0;
+        @media (max-width: 503px) {
+            margin: 0 5px;
         }
 
         @media (max-width: 455px) {
@@ -707,7 +707,7 @@ $dark_grey: #323237;
 
         margin: 0 25px;
 
-        @media (max-width: 493px) {
+        @media (max-width: 503px) {
             margin: 0 5px;
         }
 

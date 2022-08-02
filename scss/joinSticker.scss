@@ -259,10 +259,10 @@ $dark_grey: #323237;
         align-self: end;
         margin-right: 10px;
 
-        @media(max-width: 350px){
+        @media(max-width: 350px) {
             padding: 7px 20px;
         }
-        
+
         &:hover {
             background-color: white;
         }
@@ -286,10 +286,10 @@ $dark_grey: #323237;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+
     &__text {
         display: block;
-        
+
         font-family: 'Arial';
         font-style: normal;
         font-weight: normal;
@@ -305,7 +305,30 @@ $dark_grey: #323237;
         text-align: left;
     }
 
-    &__symbol{
+    &__symbol {
         font-style: normal;
     }
+
+    border-top: 1px solid white;
+    padding-top: 15px;
+}
+
+.help-text {
+    display: block;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: normal;
+    @include adaptiv-font(16, 14, 1440);
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    font-style: italic;
+    color: $yellow;
+
+    margin: 0 10px 20px 10px;
+    text-align: center;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid $yellow;
 }

@@ -321,6 +321,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 1px solid white;
+  padding-top: 15px;
 }
 
 .bottom-pannel__text {
@@ -351,4 +353,32 @@
 
 .bottom-pannel__symbol {
   font-style: normal;
+}
+
+.help-text {
+  display: block;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  color: #ffd600;
+  margin: 0 10px 20px 10px;
+  text-align: center;
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid #ffd600;
+}
+
+@media (max-width: 767px) {
+  .help-text {
+    font-size: calc(14px + 3.4 * ((100vw - 320px) / 1440));
+  }
+}
+
+@media (min-width: 767px) {
+  .help-text {
+    font-size: calc(14px + 2 * (100vw / 1440));
+  }
 }

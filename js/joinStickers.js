@@ -1,11 +1,11 @@
 var stickers = document.querySelectorAll('.stickers__sticker');
-const joinBlock = document.querySelector('.join-block');
+var joinBlock = document.querySelector('.join-block');
 
 var checkSumStar = 0;
 var joinNum = document.querySelector('.join-stickers__agree-button');
 
 stickers.forEach(sticker => {
-    sticker.addEventListener('click', function () {
+    sticker.addEventListener('click', function (e) {
         var namesArr = joinBlock.querySelectorAll('.join-stickers__sticker-title');
         var sumStar = sticker.querySelectorAll('.stickers__sticker-star img').length;
 
@@ -32,6 +32,7 @@ stickers.forEach(sticker => {
                     createCard(sticker);
                     changeNum += 1;
 
+                    console.log('plus before-before', 'chNum:', changeNum)
                     joinNum.innerText = changeNum + '/5';
                     joinNum.classList.remove('join-stickers__agree-button_full');
                 }
@@ -52,8 +53,7 @@ stickers.forEach(sticker => {
         if (namesArr.length >= 0) {
             //Увеличить/уменьшить количество стикеров на кнопки +-
             var stickersForJoin = document.querySelectorAll('.join-stickers__sticker-container');
-
-            stickersForJoin.forEach(joinElement => {
+            stickersForJoin.forEach((joinElement) => {
                 var buttonPlus = joinElement.querySelector('.join-stickers__button_plus');
 
                 var numBlock = joinElement.querySelector('.join-stickers__num').innerText;
@@ -62,7 +62,11 @@ stickers.forEach(sticker => {
                 var changeSumSticker = joinElement.querySelector('.join-stickers__change-num');
                 var sum = parseInt(changeSumSticker.innerText);
 
-                buttonPlus.addEventListener('click', function () {
+                buttonPlus.addEventListener('click', function (e) {
+                    e.stopImmediatePropagation();
+                    buttonNum = String(joinNum.innerText).split('/');
+                    changeNum = parseInt(buttonNum[0]);
+
                     if (changeNum < 5) {
                         if (sum < totalSumSticker && !(joinNum.classList.contains('join-stickers__agree-button_full'))) {
                             sum += 1;
@@ -77,18 +81,34 @@ stickers.forEach(sticker => {
                             changeNum -= 1;
                         }
                     }
-
                     if (changeNum == 5) joinNum.classList.add('join-stickers__agree-button_full');
                 });
 
-                var buttonMinus = joinElement.querySelector('.join-stickers__button_minus');
 
-                buttonMinus.addEventListener('click', function () {
-                    if (sum == 1) {
+
+                //console.log('arr before', stickersForJoin.length)
+                var buttonMinus = joinElement.querySelector('.join-stickers__button_minus');
+                buttonMinus.addEventListener('click', function (e) {
+                    e.stopImmediatePropagation();
+                    buttonNum = String(joinNum.innerText).split('/');
+                    changeNum = parseInt(buttonNum[0]);
+
+                    if (sum > 1 && changeNum > 0) {
+                        sum -= 1;
+                        changeNum -= 1;
+
+                        changeSumSticker.innerText = String(sum);
+                        joinNum.innerText = changeNum + '/5';
+
+                        if (joinNum.classList.contains('join-stickers__agree-button_full')) {
+                            joinNum.classList.remove('join-stickers__agree-button_full');
+                        }
+                    } else if (sum == 1) {
                         changeNum -= 1;
                         joinNum.innerText = changeNum + '/5';
 
                         joinElement.remove();
+                        stickersForJoin = document.querySelectorAll('.join-stickers__sticker-container');
 
                         if (joinBlock.children.length == 0) {
                             sum = 0;
@@ -96,16 +116,6 @@ stickers.forEach(sticker => {
                             sumStar = 0;
                             checkSumStar = 0;
                         }
-
-                        if (joinNum.classList.contains('join-stickers__agree-button_full')) {
-                            joinNum.classList.remove('join-stickers__agree-button_full');
-                        }
-                    } else if (sum > 1 && changeNum > 0) {
-                        sum -= 1;
-                        changeNum -= 1;
-
-                        changeSumSticker.innerText = String(sum);
-                        joinNum.innerText = changeNum + '/5';
 
                         if (joinNum.classList.contains('join-stickers__agree-button_full')) {
                             joinNum.classList.remove('join-stickers__agree-button_full');

@@ -132,8 +132,18 @@
   line-height: 16px;
   letter-spacing: 0.1em;
   color: white;
-  min-height: 800px;
+  min-height: 450px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 767px) {
@@ -154,7 +164,7 @@
   display: grid;
   -ms-grid-columns: (minmax(150px, 200px))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
-  max-height: 750px;
+  max-height: 450px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -170,7 +180,7 @@
 
 .shop__buttons {
   max-width: 170px;
-  margin: 15px 0 20px 0;
+  margin: 15px 0 20px 5px;
   text-align: center;
 }
 
@@ -226,7 +236,6 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0 20px;
-  position: absolute;
   width: 95%;
   left: 0;
   bottom: 0;

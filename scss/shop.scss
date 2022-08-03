@@ -131,8 +131,12 @@ $dark_grey: #323237;
 
         color: white;
 
-        min-height: 800px;
+        min-height: 450px;
         position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__tabs-block {
@@ -140,7 +144,7 @@ $dark_grey: #323237;
 
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
-        max-height: 750px;
+        max-height: 450px;
         justify-content: space-around;
 
         &::-webkit-scrollbar {
@@ -158,7 +162,7 @@ $dark_grey: #323237;
 
     &__buttons {
         max-width: 170px;
-        margin: 15px 0 20px 0;
+        margin: 15px 0 20px 5px;
         text-align: center;
     }
 
@@ -213,12 +217,14 @@ $dark_grey: #323237;
         align-items: center;
 
         padding: 0 20px;
-
-        position: absolute;
+        
+       // position: absolute;
+        
         width: 95%;
 
         left: 0;
         bottom: 0;
+
 
         z-index: 5;
 
